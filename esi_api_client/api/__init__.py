@@ -1,0 +1,34 @@
+# flake8: noqa
+
+# import apis into api package
+from esi_api_client.api.alliance_esi_api import AllianceEsiApi
+from esi_api_client.api.assets_esi_api import AssetsEsiApi
+from esi_api_client.api.calendar_esi_api import CalendarEsiApi
+from esi_api_client.api.character_esi_api import CharacterEsiApi
+from esi_api_client.api.clones_esi_api import ClonesEsiApi
+from esi_api_client.api.contacts_esi_api import ContactsEsiApi
+from esi_api_client.api.contracts_esi_api import ContractsEsiApi
+from esi_api_client.api.corporation_esi_api import CorporationEsiApi
+from esi_api_client.api.dogma_esi_api import DogmaEsiApi
+from esi_api_client.api.faction_warfare_esi_api import FactionWarfareEsiApi
+from esi_api_client.api.fittings_esi_api import FittingsEsiApi
+from esi_api_client.api.fleets_esi_api import FleetsEsiApi
+from esi_api_client.api.incursions_esi_api import IncursionsEsiApi
+from esi_api_client.api.industry_esi_api import IndustryEsiApi
+from esi_api_client.api.insurance_esi_api import InsuranceEsiApi
+from esi_api_client.api.killmails_esi_api import KillmailsEsiApi
+from esi_api_client.api.location_esi_api import LocationEsiApi
+from esi_api_client.api.loyalty_esi_api import LoyaltyEsiApi
+from esi_api_client.api.mail_esi_api import MailEsiApi
+from esi_api_client.api.market_esi_api import MarketEsiApi
+from esi_api_client.api.planetary_interaction_esi_api import PlanetaryInteractionEsiApi
+from esi_api_client.api.routes_esi_api import RoutesEsiApi
+from esi_api_client.api.search_esi_api import SearchEsiApi
+from esi_api_client.api.skills_esi_api import SkillsEsiApi
+from esi_api_client.api.sovereignty_esi_api import SovereigntyEsiApi
+from esi_api_client.api.status_esi_api import StatusEsiApi
+from esi_api_client.api.universe_esi_api import UniverseEsiApi
+from esi_api_client.api.user_interface_esi_api import UserInterfaceEsiApi
+from esi_api_client.api.wallet_esi_api import WalletEsiApi
+from esi_api_client.api.wars_esi_api import WarsEsiApi
+

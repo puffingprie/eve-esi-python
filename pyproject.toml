@@ -1,7 +1,7 @@
 [project]
 name = "eve-esi-python"
 version = "0.1.0"
-description = "EVE ESI Python Client generated with openapi-generator"
+description = "EVE ESI Python Client generated with openapi-generator with strong typing features."
 authors = [{ name = "puffingprie", email = "morte1916@gmail.com" }]
 license = { text = "MIT" }
 keywords = ["eve-online", "esi", "api", "python", "mmo", "gaming"]

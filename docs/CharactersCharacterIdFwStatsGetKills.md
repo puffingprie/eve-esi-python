@@ -13,7 +13,7 @@ Name | Type | Description | Notes
 ## Example
 
 ```python
-from esi_api_client.models.characters_character_id_fw_stats_get_kills import CharactersCharacterIdFwStatsGetKills
+from esi_client.models.characters_character_id_fw_stats_get_kills import CharactersCharacterIdFwStatsGetKills
 
 # TODO update the JSON string below
 json = "{}"

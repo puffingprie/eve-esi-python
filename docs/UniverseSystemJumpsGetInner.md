@@ -11,7 +11,7 @@ Name | Type | Description | Notes
 ## Example
 
 ```python
-from esi_api_client.models.universe_system_jumps_get_inner import UniverseSystemJumpsGetInner
+from esi_client.models.universe_system_jumps_get_inner import UniverseSystemJumpsGetInner
 
 # TODO update the JSON string below
 json = "{}"

@@ -13,7 +13,7 @@ Name | Type | Description | Notes
 ## Example
 
 ```python
-from esi_api_client.models.killmails_killmail_id_killmail_hash_get_victim_position import KillmailsKillmailIdKillmailHashGetVictimPosition
+from esi_client.models.killmails_killmail_id_killmail_hash_get_victim_position import KillmailsKillmailIdKillmailHashGetVictimPosition
 
 # TODO update the JSON string below
 json = "{}"

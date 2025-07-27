@@ -10,7 +10,7 @@ Name | Type | Description | Notes
 ## Example
 
 ```python
-from esi_api_client.models.put_fleets_fleet_id_squads_squad_id_request import PutFleetsFleetIdSquadsSquadIdRequest
+from esi_client.models.put_fleets_fleet_id_squads_squad_id_request import PutFleetsFleetIdSquadsSquadIdRequest
 
 # TODO update the JSON string below
 json = "{}"

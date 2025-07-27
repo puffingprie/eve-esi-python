@@ -13,7 +13,7 @@ Name | Type | Description | Notes
 ## Example
 
 ```python
-from esi_api_client.models.status_get import StatusGet
+from esi_client.models.status_get import StatusGet
 
 # TODO update the JSON string below
 json = "{}"

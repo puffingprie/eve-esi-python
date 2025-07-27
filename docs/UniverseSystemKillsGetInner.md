@@ -13,7 +13,7 @@ Name | Type | Description | Notes
 ## Example
 
 ```python
-from esi_api_client.models.universe_system_kills_get_inner import UniverseSystemKillsGetInner
+from esi_client.models.universe_system_kills_get_inner import UniverseSystemKillsGetInner
 
 # TODO update the JSON string below
 json = "{}"

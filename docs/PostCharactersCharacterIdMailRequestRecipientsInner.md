@@ -12,7 +12,7 @@ Name | Type | Description | Notes
 ## Example
 
 ```python
-from esi_api_client.models.post_characters_character_id_mail_request_recipients_inner import PostCharactersCharacterIdMailRequestRecipientsInner
+from esi_client.models.post_characters_character_id_mail_request_recipients_inner import PostCharactersCharacterIdMailRequestRecipientsInner
 
 # TODO update the JSON string below
 json = "{}"

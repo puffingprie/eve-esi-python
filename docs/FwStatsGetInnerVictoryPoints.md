@@ -13,7 +13,7 @@ Name | Type | Description | Notes
 ## Example
 
 ```python
-from esi_api_client.models.fw_stats_get_inner_victory_points import FwStatsGetInnerVictoryPoints
+from esi_client.models.fw_stats_get_inner_victory_points import FwStatsGetInnerVictoryPoints
 
 # TODO update the JSON string below
 json = "{}"

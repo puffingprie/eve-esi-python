@@ -13,7 +13,7 @@ Name | Type | Description | Notes
 ## Example
 
 ```python
-from esi_api_client.models.sovereignty_map_get_inner import SovereigntyMapGetInner
+from esi_client.models.sovereignty_map_get_inner import SovereigntyMapGetInner
 
 # TODO update the JSON string below
 json = "{}"

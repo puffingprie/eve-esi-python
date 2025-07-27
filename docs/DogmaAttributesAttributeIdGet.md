@@ -19,7 +19,7 @@ Name | Type | Description | Notes
 ## Example
 
 ```python
-from esi_api_client.models.dogma_attributes_attribute_id_get import DogmaAttributesAttributeIdGet
+from esi_client.models.dogma_attributes_attribute_id_get import DogmaAttributesAttributeIdGet
 
 # TODO update the JSON string below
 json = "{}"

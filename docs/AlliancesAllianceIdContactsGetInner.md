@@ -13,7 +13,7 @@ Name | Type | Description | Notes
 ## Example
 
 ```python
-from esi_api_client.models.alliances_alliance_id_contacts_get_inner import AlliancesAllianceIdContactsGetInner
+from esi_client.models.alliances_alliance_id_contacts_get_inner import AlliancesAllianceIdContactsGetInner
 
 # TODO update the JSON string below
 json = "{}"

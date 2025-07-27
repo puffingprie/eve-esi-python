@@ -14,7 +14,7 @@ Name | Type | Description | Notes
 ## Example
 
 ```python
-from esi_api_client.models.characters_character_id_fittings_get_inner import CharactersCharacterIdFittingsGetInner
+from esi_client.models.characters_character_id_fittings_get_inner import CharactersCharacterIdFittingsGetInner
 
 # TODO update the JSON string below
 json = "{}"

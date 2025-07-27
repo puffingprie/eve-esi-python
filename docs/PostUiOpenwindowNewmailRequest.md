@@ -14,7 +14,7 @@ Name | Type | Description | Notes
 ## Example
 
 ```python
-from esi_api_client.models.post_ui_openwindow_newmail_request import PostUiOpenwindowNewmailRequest
+from esi_client.models.post_ui_openwindow_newmail_request import PostUiOpenwindowNewmailRequest
 
 # TODO update the JSON string below
 json = "{}"

@@ -23,7 +23,7 @@ Name | Type | Description | Notes
 ## Example
 
 ```python
-from esi_api_client.models.corporations_corporation_id_starbases_starbase_id_get import CorporationsCorporationIdStarbasesStarbaseIdGet
+from esi_client.models.corporations_corporation_id_starbases_starbase_id_get import CorporationsCorporationIdStarbasesStarbaseIdGet
 
 # TODO update the JSON string below
 json = "{}"

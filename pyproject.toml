@@ -1,22 +1,24 @@
 [project]
-name = "eve-esi-python"
+name = "esi_client"
 version = "0.1.0"
-description = "EVE ESI Python Client generated with openapi-generator with strong typing features."
-authors = [{ name = "puffingprie", email = "morte1916@gmail.com" }]
-license = { text = "MIT" }
-keywords = ["eve-online", "esi", "api", "python", "mmo", "gaming"]
+description = "EVE Stellar Information (ESI) - tranquility"
+authors = [
+  {name = "puffingprie",email = "morte1916@gmail.com"},
+]
+license = "MIT"
 readme = "README.md"
+keywords = ["OpenAPI", "OpenAPI-Generator", "EVE Stellar Information (ESI) - tranquility"]
 requires-python = ">=3.9"
 
 dependencies = [
   "urllib3 (>=2.1.0,<3.0.0)",
   "python-dateutil (>=2.8.2)",
   "pydantic (>=2)",
-  "typing-extensions (>=4.7.1)",
+  "typing-extensions (>=4.7.1)"
 ]
 
 [project.urls]
-Repository = "https://github.com/puffingprie/eve-esi-client"
+Repository = "https://github.com/puffingprie/eve-esi-python"
 
 [tool.poetry]
 requires-poetry = ">=2.0"
@@ -39,7 +41,7 @@ extension-pkg-whitelist = "pydantic"
 
 [tool.mypy]
 files = [
-  "esi_api_client",
+  "esi_client",
   #"test",  # auto-generated tests
   "tests", # hand-written tests
 ]
@@ -76,7 +78,9 @@ disallow_any_generics = true
 #warn_return_any = true
 
 [[tool.mypy.overrides]]
-module = ["esi_api_client.configuration"]
+module = [
+  "esi_client.configuration",
+]
 warn_unused_ignores = true
 strict_equality = true
 extra_checks = true

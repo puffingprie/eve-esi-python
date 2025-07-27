@@ -15,7 +15,7 @@ Name | Type | Description | Notes
 ## Example
 
 ```python
-from esi_api_client.models.fw_systems_get_inner import FwSystemsGetInner
+from esi_client.models.fw_systems_get_inner import FwSystemsGetInner
 
 # TODO update the JSON string below
 json = "{}"

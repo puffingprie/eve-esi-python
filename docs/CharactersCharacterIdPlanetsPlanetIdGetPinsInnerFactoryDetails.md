@@ -10,7 +10,7 @@ Name | Type | Description | Notes
 ## Example
 
 ```python
-from esi_api_client.models.characters_character_id_planets_planet_id_get_pins_inner_factory_details import CharactersCharacterIdPlanetsPlanetIdGetPinsInnerFactoryDetails
+from esi_client.models.characters_character_id_planets_planet_id_get_pins_inner_factory_details import CharactersCharacterIdPlanetsPlanetIdGetPinsInnerFactoryDetails
 
 # TODO update the JSON string below
 json = "{}"

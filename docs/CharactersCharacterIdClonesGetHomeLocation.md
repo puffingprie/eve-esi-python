@@ -11,7 +11,7 @@ Name | Type | Description | Notes
 ## Example
 
 ```python
-from esi_api_client.models.characters_character_id_clones_get_home_location import CharactersCharacterIdClonesGetHomeLocation
+from esi_client.models.characters_character_id_clones_get_home_location import CharactersCharacterIdClonesGetHomeLocation
 
 # TODO update the JSON string below
 json = "{}"

@@ -14,7 +14,7 @@ Name | Type | Description | Notes
 ## Example
 
 ```python
-from esi_api_client.models.dogma_dynamic_items_type_id_item_id_get import DogmaDynamicItemsTypeIdItemIdGet
+from esi_client.models.dogma_dynamic_items_type_id_item_id_get import DogmaDynamicItemsTypeIdItemIdGet
 
 # TODO update the JSON string below
 json = "{}"

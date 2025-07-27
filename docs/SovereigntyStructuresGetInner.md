@@ -16,7 +16,7 @@ Name | Type | Description | Notes
 ## Example
 
 ```python
-from esi_api_client.models.sovereignty_structures_get_inner import SovereigntyStructuresGetInner
+from esi_client.models.sovereignty_structures_get_inner import SovereigntyStructuresGetInner
 
 # TODO update the JSON string below
 json = "{}"

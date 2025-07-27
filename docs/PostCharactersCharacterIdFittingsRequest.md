@@ -13,7 +13,7 @@ Name | Type | Description | Notes
 ## Example
 
 ```python
-from esi_api_client.models.post_characters_character_id_fittings_request import PostCharactersCharacterIdFittingsRequest
+from esi_client.models.post_characters_character_id_fittings_request import PostCharactersCharacterIdFittingsRequest
 
 # TODO update the JSON string below
 json = "{}"

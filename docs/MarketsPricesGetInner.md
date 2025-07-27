@@ -12,7 +12,7 @@ Name | Type | Description | Notes
 ## Example
 
 ```python
-from esi_api_client.models.markets_prices_get_inner import MarketsPricesGetInner
+from esi_client.models.markets_prices_get_inner import MarketsPricesGetInner
 
 # TODO update the JSON string below
 json = "{}"

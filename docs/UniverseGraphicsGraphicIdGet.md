@@ -17,7 +17,7 @@ Name | Type | Description | Notes
 ## Example
 
 ```python
-from esi_api_client.models.universe_graphics_graphic_id_get import UniverseGraphicsGraphicIdGet
+from esi_client.models.universe_graphics_graphic_id_get import UniverseGraphicsGraphicIdGet
 
 # TODO update the JSON string below
 json = "{}"

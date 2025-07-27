@@ -21,7 +21,7 @@ Name | Type | Description | Notes
 ## Example
 
 ```python
-from esi_api_client.models.universe_stations_station_id_get import UniverseStationsStationIdGet
+from esi_client.models.universe_stations_station_id_get import UniverseStationsStationIdGet
 
 # TODO update the JSON string below
 json = "{}"

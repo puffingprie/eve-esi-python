@@ -2,19 +2,22 @@
 name = "esi_client"
 version = "0.1.0"
 description = "EVE Stellar Information (ESI) - tranquility"
-authors = [
-  {name = "puffingprie",email = "morte1916@gmail.com"},
-]
-license = "MIT"
+authors = [{ name = "puffingprie", email = "morte1916@gmail.com" }]
+license = "BSD-3-Clause"
+license-files = ["LICENSE.txt"]
 readme = "README.md"
-keywords = ["OpenAPI", "OpenAPI-Generator", "EVE Stellar Information (ESI) - tranquility"]
+keywords = [
+  "OpenAPI",
+  "OpenAPI-Generator",
+  "EVE Stellar Information (ESI) - tranquility",
+]
 requires-python = ">=3.9"
 
 dependencies = [
   "urllib3 (>=2.1.0,<3.0.0)",
   "python-dateutil (>=2.8.2)",
   "pydantic (>=2)",
-  "typing-extensions (>=4.7.1)"
+  "typing-extensions (>=4.7.1)",
 ]
 
 [project.urls]
@@ -78,9 +81,7 @@ disallow_any_generics = true
 #warn_return_any = true
 
 [[tool.mypy.overrides]]
-module = [
-  "esi_client.configuration",
-]
+module = ["esi_client.configuration"]
 warn_unused_ignores = true
 strict_equality = true
 extra_checks = true

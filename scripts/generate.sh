@@ -5,7 +5,7 @@
 set -e  # Exit on any error
 
 # Default values
-OUTPUT_DIR="./eve-esi-client"
+OUTPUT_DIR="./"
 INPUT_SPEC="openapi.json"
 GENERATOR="python"
 PACKAGE_NAME="esi_client"

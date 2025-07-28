@@ -15,7 +15,7 @@
 
 import unittest
 
-from esi_client.api.industry_api import IndustryApi
+from eve_esi_python.api.industry_api import IndustryApi
 
 
 class TestIndustryApi(unittest.TestCase):

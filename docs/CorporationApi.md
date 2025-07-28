@@ -1,4 +1,4 @@
-# esi_client.CorporationApi
+# eve_esi_python.CorporationApi
 
 All URIs are relative to *https://esi.evetech.net*
 
@@ -39,22 +39,22 @@ Public information about a corporation
 
 
 ```python
-import esi_client
-from esi_client.models.corporations_corporation_id_get import CorporationsCorporationIdGet
-from esi_client.rest import ApiException
+import eve_esi_python
+from eve_esi_python.models.corporations_corporation_id_get import CorporationsCorporationIdGet
+from eve_esi_python.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to https://esi.evetech.net
 # See configuration.py for a list of all supported configuration parameters.
-configuration = esi_client.Configuration(
+configuration = eve_esi_python.Configuration(
     host = "https://esi.evetech.net"
 )
 
 
 # Enter a context with an instance of the API client
-with esi_client.ApiClient(configuration) as api_client:
+with eve_esi_python.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = esi_client.CorporationApi(api_client)
+    api_instance = eve_esi_python.CorporationApi(api_client)
     corporation_id = 56 # int | The ID of the corporation
     x_compatibility_date = '2020-01-01' # date | The compatibility date for the request.
     accept_language = 'en' # str | The language to use for the response. Defaults to 'en'. (optional)
@@ -116,22 +116,22 @@ Get a list of all the alliances a corporation has been a member of
 
 
 ```python
-import esi_client
-from esi_client.models.corporations_corporation_id_alliancehistory_get_inner import CorporationsCorporationIdAlliancehistoryGetInner
-from esi_client.rest import ApiException
+import eve_esi_python
+from eve_esi_python.models.corporations_corporation_id_alliancehistory_get_inner import CorporationsCorporationIdAlliancehistoryGetInner
+from eve_esi_python.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to https://esi.evetech.net
 # See configuration.py for a list of all supported configuration parameters.
-configuration = esi_client.Configuration(
+configuration = eve_esi_python.Configuration(
     host = "https://esi.evetech.net"
 )
 
 
 # Enter a context with an instance of the API client
-with esi_client.ApiClient(configuration) as api_client:
+with eve_esi_python.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = esi_client.CorporationApi(api_client)
+    api_instance = eve_esi_python.CorporationApi(api_client)
     corporation_id = 56 # int | The ID of the corporation
     x_compatibility_date = '2020-01-01' # date | The compatibility date for the request.
     accept_language = 'en' # str | The language to use for the response. Defaults to 'en'. (optional)
@@ -196,14 +196,14 @@ Requires one of the following EVE corporation role(s): Director
 * OAuth Authentication (OAuth2):
 
 ```python
-import esi_client
-from esi_client.models.corporations_corporation_id_blueprints_get_inner import CorporationsCorporationIdBlueprintsGetInner
-from esi_client.rest import ApiException
+import eve_esi_python
+from eve_esi_python.models.corporations_corporation_id_blueprints_get_inner import CorporationsCorporationIdBlueprintsGetInner
+from eve_esi_python.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to https://esi.evetech.net
 # See configuration.py for a list of all supported configuration parameters.
-configuration = esi_client.Configuration(
+configuration = eve_esi_python.Configuration(
     host = "https://esi.evetech.net"
 )
 
@@ -215,9 +215,9 @@ configuration = esi_client.Configuration(
 configuration.access_token = os.environ["ACCESS_TOKEN"]
 
 # Enter a context with an instance of the API client
-with esi_client.ApiClient(configuration) as api_client:
+with eve_esi_python.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = esi_client.CorporationApi(api_client)
+    api_instance = eve_esi_python.CorporationApi(api_client)
     corporation_id = 56 # int | The ID of the corporation
     x_compatibility_date = '2020-01-01' # date | The compatibility date for the request.
     page = 56 # int |  (optional)
@@ -284,14 +284,14 @@ Requires one of the following EVE corporation role(s): Director
 * OAuth Authentication (OAuth2):
 
 ```python
-import esi_client
-from esi_client.models.corporations_corporation_id_containers_logs_get_inner import CorporationsCorporationIdContainersLogsGetInner
-from esi_client.rest import ApiException
+import eve_esi_python
+from eve_esi_python.models.corporations_corporation_id_containers_logs_get_inner import CorporationsCorporationIdContainersLogsGetInner
+from eve_esi_python.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to https://esi.evetech.net
 # See configuration.py for a list of all supported configuration parameters.
-configuration = esi_client.Configuration(
+configuration = eve_esi_python.Configuration(
     host = "https://esi.evetech.net"
 )
 
@@ -303,9 +303,9 @@ configuration = esi_client.Configuration(
 configuration.access_token = os.environ["ACCESS_TOKEN"]
 
 # Enter a context with an instance of the API client
-with esi_client.ApiClient(configuration) as api_client:
+with eve_esi_python.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = esi_client.CorporationApi(api_client)
+    api_instance = eve_esi_python.CorporationApi(api_client)
     corporation_id = 56 # int | The ID of the corporation
     x_compatibility_date = '2020-01-01' # date | The compatibility date for the request.
     page = 56 # int |  (optional)
@@ -372,14 +372,14 @@ Requires one of the following EVE corporation role(s): Director
 * OAuth Authentication (OAuth2):
 
 ```python
-import esi_client
-from esi_client.models.corporations_corporation_id_divisions_get import CorporationsCorporationIdDivisionsGet
-from esi_client.rest import ApiException
+import eve_esi_python
+from eve_esi_python.models.corporations_corporation_id_divisions_get import CorporationsCorporationIdDivisionsGet
+from eve_esi_python.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to https://esi.evetech.net
 # See configuration.py for a list of all supported configuration parameters.
-configuration = esi_client.Configuration(
+configuration = eve_esi_python.Configuration(
     host = "https://esi.evetech.net"
 )
 
@@ -391,9 +391,9 @@ configuration = esi_client.Configuration(
 configuration.access_token = os.environ["ACCESS_TOKEN"]
 
 # Enter a context with an instance of the API client
-with esi_client.ApiClient(configuration) as api_client:
+with eve_esi_python.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = esi_client.CorporationApi(api_client)
+    api_instance = eve_esi_python.CorporationApi(api_client)
     corporation_id = 56 # int | The ID of the corporation
     x_compatibility_date = '2020-01-01' # date | The compatibility date for the request.
     accept_language = 'en' # str | The language to use for the response. Defaults to 'en'. (optional)
@@ -458,14 +458,14 @@ Requires one of the following EVE corporation role(s): Factory_Manager
 * OAuth Authentication (OAuth2):
 
 ```python
-import esi_client
-from esi_client.models.corporations_corporation_id_facilities_get_inner import CorporationsCorporationIdFacilitiesGetInner
-from esi_client.rest import ApiException
+import eve_esi_python
+from eve_esi_python.models.corporations_corporation_id_facilities_get_inner import CorporationsCorporationIdFacilitiesGetInner
+from eve_esi_python.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to https://esi.evetech.net
 # See configuration.py for a list of all supported configuration parameters.
-configuration = esi_client.Configuration(
+configuration = eve_esi_python.Configuration(
     host = "https://esi.evetech.net"
 )
 
@@ -477,9 +477,9 @@ configuration = esi_client.Configuration(
 configuration.access_token = os.environ["ACCESS_TOKEN"]
 
 # Enter a context with an instance of the API client
-with esi_client.ApiClient(configuration) as api_client:
+with eve_esi_python.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = esi_client.CorporationApi(api_client)
+    api_instance = eve_esi_python.CorporationApi(api_client)
     corporation_id = 56 # int | The ID of the corporation
     x_compatibility_date = '2020-01-01' # date | The compatibility date for the request.
     accept_language = 'en' # str | The language to use for the response. Defaults to 'en'. (optional)
@@ -541,22 +541,22 @@ Get the icon urls for a corporation
 
 
 ```python
-import esi_client
-from esi_client.models.corporations_corporation_id_icons_get import CorporationsCorporationIdIconsGet
-from esi_client.rest import ApiException
+import eve_esi_python
+from eve_esi_python.models.corporations_corporation_id_icons_get import CorporationsCorporationIdIconsGet
+from eve_esi_python.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to https://esi.evetech.net
 # See configuration.py for a list of all supported configuration parameters.
-configuration = esi_client.Configuration(
+configuration = eve_esi_python.Configuration(
     host = "https://esi.evetech.net"
 )
 
 
 # Enter a context with an instance of the API client
-with esi_client.ApiClient(configuration) as api_client:
+with eve_esi_python.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = esi_client.CorporationApi(api_client)
+    api_instance = eve_esi_python.CorporationApi(api_client)
     corporation_id = 56 # int | The ID of the corporation
     x_compatibility_date = '2020-01-01' # date | The compatibility date for the request.
     accept_language = 'en' # str | The language to use for the response. Defaults to 'en'. (optional)
@@ -619,14 +619,14 @@ Returns a corporation's medals
 * OAuth Authentication (OAuth2):
 
 ```python
-import esi_client
-from esi_client.models.corporations_corporation_id_medals_get_inner import CorporationsCorporationIdMedalsGetInner
-from esi_client.rest import ApiException
+import eve_esi_python
+from eve_esi_python.models.corporations_corporation_id_medals_get_inner import CorporationsCorporationIdMedalsGetInner
+from eve_esi_python.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to https://esi.evetech.net
 # See configuration.py for a list of all supported configuration parameters.
-configuration = esi_client.Configuration(
+configuration = eve_esi_python.Configuration(
     host = "https://esi.evetech.net"
 )
 
@@ -638,9 +638,9 @@ configuration = esi_client.Configuration(
 configuration.access_token = os.environ["ACCESS_TOKEN"]
 
 # Enter a context with an instance of the API client
-with esi_client.ApiClient(configuration) as api_client:
+with eve_esi_python.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = esi_client.CorporationApi(api_client)
+    api_instance = eve_esi_python.CorporationApi(api_client)
     corporation_id = 56 # int | The ID of the corporation
     x_compatibility_date = '2020-01-01' # date | The compatibility date for the request.
     page = 56 # int |  (optional)
@@ -707,14 +707,14 @@ Requires one of the following EVE corporation role(s): Director
 * OAuth Authentication (OAuth2):
 
 ```python
-import esi_client
-from esi_client.models.corporations_corporation_id_medals_issued_get_inner import CorporationsCorporationIdMedalsIssuedGetInner
-from esi_client.rest import ApiException
+import eve_esi_python
+from eve_esi_python.models.corporations_corporation_id_medals_issued_get_inner import CorporationsCorporationIdMedalsIssuedGetInner
+from eve_esi_python.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to https://esi.evetech.net
 # See configuration.py for a list of all supported configuration parameters.
-configuration = esi_client.Configuration(
+configuration = eve_esi_python.Configuration(
     host = "https://esi.evetech.net"
 )
 
@@ -726,9 +726,9 @@ configuration = esi_client.Configuration(
 configuration.access_token = os.environ["ACCESS_TOKEN"]
 
 # Enter a context with an instance of the API client
-with esi_client.ApiClient(configuration) as api_client:
+with eve_esi_python.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = esi_client.CorporationApi(api_client)
+    api_instance = eve_esi_python.CorporationApi(api_client)
     corporation_id = 56 # int | The ID of the corporation
     x_compatibility_date = '2020-01-01' # date | The compatibility date for the request.
     page = 56 # int |  (optional)
@@ -793,13 +793,13 @@ Return the current member list of a corporation, the token's character need to b
 * OAuth Authentication (OAuth2):
 
 ```python
-import esi_client
-from esi_client.rest import ApiException
+import eve_esi_python
+from eve_esi_python.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to https://esi.evetech.net
 # See configuration.py for a list of all supported configuration parameters.
-configuration = esi_client.Configuration(
+configuration = eve_esi_python.Configuration(
     host = "https://esi.evetech.net"
 )
 
@@ -811,9 +811,9 @@ configuration = esi_client.Configuration(
 configuration.access_token = os.environ["ACCESS_TOKEN"]
 
 # Enter a context with an instance of the API client
-with esi_client.ApiClient(configuration) as api_client:
+with eve_esi_python.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = esi_client.CorporationApi(api_client)
+    api_instance = eve_esi_python.CorporationApi(api_client)
     corporation_id = 56 # int | The ID of the corporation
     x_compatibility_date = '2020-01-01' # date | The compatibility date for the request.
     accept_language = 'en' # str | The language to use for the response. Defaults to 'en'. (optional)
@@ -878,13 +878,13 @@ Requires one of the following EVE corporation role(s): Director
 * OAuth Authentication (OAuth2):
 
 ```python
-import esi_client
-from esi_client.rest import ApiException
+import eve_esi_python
+from eve_esi_python.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to https://esi.evetech.net
 # See configuration.py for a list of all supported configuration parameters.
-configuration = esi_client.Configuration(
+configuration = eve_esi_python.Configuration(
     host = "https://esi.evetech.net"
 )
 
@@ -896,9 +896,9 @@ configuration = esi_client.Configuration(
 configuration.access_token = os.environ["ACCESS_TOKEN"]
 
 # Enter a context with an instance of the API client
-with esi_client.ApiClient(configuration) as api_client:
+with eve_esi_python.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = esi_client.CorporationApi(api_client)
+    api_instance = eve_esi_python.CorporationApi(api_client)
     corporation_id = 56 # int | The ID of the corporation
     x_compatibility_date = '2020-01-01' # date | The compatibility date for the request.
     accept_language = 'en' # str | The language to use for the response. Defaults to 'en'. (optional)
@@ -963,14 +963,14 @@ Requires one of the following EVE corporation role(s): Director
 * OAuth Authentication (OAuth2):
 
 ```python
-import esi_client
-from esi_client.models.corporations_corporation_id_members_titles_get_inner import CorporationsCorporationIdMembersTitlesGetInner
-from esi_client.rest import ApiException
+import eve_esi_python
+from eve_esi_python.models.corporations_corporation_id_members_titles_get_inner import CorporationsCorporationIdMembersTitlesGetInner
+from eve_esi_python.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to https://esi.evetech.net
 # See configuration.py for a list of all supported configuration parameters.
-configuration = esi_client.Configuration(
+configuration = eve_esi_python.Configuration(
     host = "https://esi.evetech.net"
 )
 
@@ -982,9 +982,9 @@ configuration = esi_client.Configuration(
 configuration.access_token = os.environ["ACCESS_TOKEN"]
 
 # Enter a context with an instance of the API client
-with esi_client.ApiClient(configuration) as api_client:
+with eve_esi_python.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = esi_client.CorporationApi(api_client)
+    api_instance = eve_esi_python.CorporationApi(api_client)
     corporation_id = 56 # int | The ID of the corporation
     x_compatibility_date = '2020-01-01' # date | The compatibility date for the request.
     accept_language = 'en' # str | The language to use for the response. Defaults to 'en'. (optional)
@@ -1049,14 +1049,14 @@ Requires one of the following EVE corporation role(s): Director
 * OAuth Authentication (OAuth2):
 
 ```python
-import esi_client
-from esi_client.models.corporations_corporation_id_membertracking_get_inner import CorporationsCorporationIdMembertrackingGetInner
-from esi_client.rest import ApiException
+import eve_esi_python
+from eve_esi_python.models.corporations_corporation_id_membertracking_get_inner import CorporationsCorporationIdMembertrackingGetInner
+from eve_esi_python.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to https://esi.evetech.net
 # See configuration.py for a list of all supported configuration parameters.
-configuration = esi_client.Configuration(
+configuration = eve_esi_python.Configuration(
     host = "https://esi.evetech.net"
 )
 
@@ -1068,9 +1068,9 @@ configuration = esi_client.Configuration(
 configuration.access_token = os.environ["ACCESS_TOKEN"]
 
 # Enter a context with an instance of the API client
-with esi_client.ApiClient(configuration) as api_client:
+with eve_esi_python.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = esi_client.CorporationApi(api_client)
+    api_instance = eve_esi_python.CorporationApi(api_client)
     corporation_id = 56 # int | The ID of the corporation
     x_compatibility_date = '2020-01-01' # date | The compatibility date for the request.
     accept_language = 'en' # str | The language to use for the response. Defaults to 'en'. (optional)
@@ -1133,14 +1133,14 @@ Return the roles of all members if the character has the personnel manager role 
 * OAuth Authentication (OAuth2):
 
 ```python
-import esi_client
-from esi_client.models.corporations_corporation_id_roles_get_inner import CorporationsCorporationIdRolesGetInner
-from esi_client.rest import ApiException
+import eve_esi_python
+from eve_esi_python.models.corporations_corporation_id_roles_get_inner import CorporationsCorporationIdRolesGetInner
+from eve_esi_python.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to https://esi.evetech.net
 # See configuration.py for a list of all supported configuration parameters.
-configuration = esi_client.Configuration(
+configuration = eve_esi_python.Configuration(
     host = "https://esi.evetech.net"
 )
 
@@ -1152,9 +1152,9 @@ configuration = esi_client.Configuration(
 configuration.access_token = os.environ["ACCESS_TOKEN"]
 
 # Enter a context with an instance of the API client
-with esi_client.ApiClient(configuration) as api_client:
+with eve_esi_python.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = esi_client.CorporationApi(api_client)
+    api_instance = eve_esi_python.CorporationApi(api_client)
     corporation_id = 56 # int | The ID of the corporation
     x_compatibility_date = '2020-01-01' # date | The compatibility date for the request.
     accept_language = 'en' # str | The language to use for the response. Defaults to 'en'. (optional)
@@ -1219,14 +1219,14 @@ Requires one of the following EVE corporation role(s): Director
 * OAuth Authentication (OAuth2):
 
 ```python
-import esi_client
-from esi_client.models.corporations_corporation_id_roles_history_get_inner import CorporationsCorporationIdRolesHistoryGetInner
-from esi_client.rest import ApiException
+import eve_esi_python
+from eve_esi_python.models.corporations_corporation_id_roles_history_get_inner import CorporationsCorporationIdRolesHistoryGetInner
+from eve_esi_python.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to https://esi.evetech.net
 # See configuration.py for a list of all supported configuration parameters.
-configuration = esi_client.Configuration(
+configuration = eve_esi_python.Configuration(
     host = "https://esi.evetech.net"
 )
 
@@ -1238,9 +1238,9 @@ configuration = esi_client.Configuration(
 configuration.access_token = os.environ["ACCESS_TOKEN"]
 
 # Enter a context with an instance of the API client
-with esi_client.ApiClient(configuration) as api_client:
+with eve_esi_python.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = esi_client.CorporationApi(api_client)
+    api_instance = eve_esi_python.CorporationApi(api_client)
     corporation_id = 56 # int | The ID of the corporation
     x_compatibility_date = '2020-01-01' # date | The compatibility date for the request.
     page = 56 # int |  (optional)
@@ -1307,14 +1307,14 @@ Requires one of the following EVE corporation role(s): Director
 * OAuth Authentication (OAuth2):
 
 ```python
-import esi_client
-from esi_client.models.corporations_corporation_id_shareholders_get_inner import CorporationsCorporationIdShareholdersGetInner
-from esi_client.rest import ApiException
+import eve_esi_python
+from eve_esi_python.models.corporations_corporation_id_shareholders_get_inner import CorporationsCorporationIdShareholdersGetInner
+from eve_esi_python.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to https://esi.evetech.net
 # See configuration.py for a list of all supported configuration parameters.
-configuration = esi_client.Configuration(
+configuration = eve_esi_python.Configuration(
     host = "https://esi.evetech.net"
 )
 
@@ -1326,9 +1326,9 @@ configuration = esi_client.Configuration(
 configuration.access_token = os.environ["ACCESS_TOKEN"]
 
 # Enter a context with an instance of the API client
-with esi_client.ApiClient(configuration) as api_client:
+with eve_esi_python.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = esi_client.CorporationApi(api_client)
+    api_instance = eve_esi_python.CorporationApi(api_client)
     corporation_id = 56 # int | The ID of the corporation
     x_compatibility_date = '2020-01-01' # date | The compatibility date for the request.
     page = 56 # int |  (optional)
@@ -1393,14 +1393,14 @@ Return corporation standings from agents, NPC corporations, and factions
 * OAuth Authentication (OAuth2):
 
 ```python
-import esi_client
-from esi_client.models.characters_character_id_standings_get_inner import CharactersCharacterIdStandingsGetInner
-from esi_client.rest import ApiException
+import eve_esi_python
+from eve_esi_python.models.characters_character_id_standings_get_inner import CharactersCharacterIdStandingsGetInner
+from eve_esi_python.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to https://esi.evetech.net
 # See configuration.py for a list of all supported configuration parameters.
-configuration = esi_client.Configuration(
+configuration = eve_esi_python.Configuration(
     host = "https://esi.evetech.net"
 )
 
@@ -1412,9 +1412,9 @@ configuration = esi_client.Configuration(
 configuration.access_token = os.environ["ACCESS_TOKEN"]
 
 # Enter a context with an instance of the API client
-with esi_client.ApiClient(configuration) as api_client:
+with eve_esi_python.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = esi_client.CorporationApi(api_client)
+    api_instance = eve_esi_python.CorporationApi(api_client)
     corporation_id = 56 # int | The ID of the corporation
     x_compatibility_date = '2020-01-01' # date | The compatibility date for the request.
     page = 56 # int |  (optional)
@@ -1481,14 +1481,14 @@ Requires one of the following EVE corporation role(s): Director
 * OAuth Authentication (OAuth2):
 
 ```python
-import esi_client
-from esi_client.models.corporations_corporation_id_starbases_get_inner import CorporationsCorporationIdStarbasesGetInner
-from esi_client.rest import ApiException
+import eve_esi_python
+from eve_esi_python.models.corporations_corporation_id_starbases_get_inner import CorporationsCorporationIdStarbasesGetInner
+from eve_esi_python.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to https://esi.evetech.net
 # See configuration.py for a list of all supported configuration parameters.
-configuration = esi_client.Configuration(
+configuration = eve_esi_python.Configuration(
     host = "https://esi.evetech.net"
 )
 
@@ -1500,9 +1500,9 @@ configuration = esi_client.Configuration(
 configuration.access_token = os.environ["ACCESS_TOKEN"]
 
 # Enter a context with an instance of the API client
-with esi_client.ApiClient(configuration) as api_client:
+with eve_esi_python.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = esi_client.CorporationApi(api_client)
+    api_instance = eve_esi_python.CorporationApi(api_client)
     corporation_id = 56 # int | The ID of the corporation
     x_compatibility_date = '2020-01-01' # date | The compatibility date for the request.
     page = 56 # int |  (optional)
@@ -1569,14 +1569,14 @@ Requires one of the following EVE corporation role(s): Director
 * OAuth Authentication (OAuth2):
 
 ```python
-import esi_client
-from esi_client.models.corporations_corporation_id_starbases_starbase_id_get import CorporationsCorporationIdStarbasesStarbaseIdGet
-from esi_client.rest import ApiException
+import eve_esi_python
+from eve_esi_python.models.corporations_corporation_id_starbases_starbase_id_get import CorporationsCorporationIdStarbasesStarbaseIdGet
+from eve_esi_python.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to https://esi.evetech.net
 # See configuration.py for a list of all supported configuration parameters.
-configuration = esi_client.Configuration(
+configuration = eve_esi_python.Configuration(
     host = "https://esi.evetech.net"
 )
 
@@ -1588,9 +1588,9 @@ configuration = esi_client.Configuration(
 configuration.access_token = os.environ["ACCESS_TOKEN"]
 
 # Enter a context with an instance of the API client
-with esi_client.ApiClient(configuration) as api_client:
+with eve_esi_python.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = esi_client.CorporationApi(api_client)
+    api_instance = eve_esi_python.CorporationApi(api_client)
     corporation_id = 56 # int | The ID of the corporation
     starbase_id = 56 # int | 
     system_id = 56 # int | 
@@ -1659,14 +1659,14 @@ Requires one of the following EVE corporation role(s): Station_Manager
 * OAuth Authentication (OAuth2):
 
 ```python
-import esi_client
-from esi_client.models.corporations_corporation_id_structures_get_inner import CorporationsCorporationIdStructuresGetInner
-from esi_client.rest import ApiException
+import eve_esi_python
+from eve_esi_python.models.corporations_corporation_id_structures_get_inner import CorporationsCorporationIdStructuresGetInner
+from eve_esi_python.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to https://esi.evetech.net
 # See configuration.py for a list of all supported configuration parameters.
-configuration = esi_client.Configuration(
+configuration = eve_esi_python.Configuration(
     host = "https://esi.evetech.net"
 )
 
@@ -1678,9 +1678,9 @@ configuration = esi_client.Configuration(
 configuration.access_token = os.environ["ACCESS_TOKEN"]
 
 # Enter a context with an instance of the API client
-with esi_client.ApiClient(configuration) as api_client:
+with eve_esi_python.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = esi_client.CorporationApi(api_client)
+    api_instance = eve_esi_python.CorporationApi(api_client)
     corporation_id = 56 # int | The ID of the corporation
     x_compatibility_date = '2020-01-01' # date | The compatibility date for the request.
     page = 56 # int |  (optional)
@@ -1747,14 +1747,14 @@ Requires one of the following EVE corporation role(s): Director
 * OAuth Authentication (OAuth2):
 
 ```python
-import esi_client
-from esi_client.models.corporations_corporation_id_titles_get_inner import CorporationsCorporationIdTitlesGetInner
-from esi_client.rest import ApiException
+import eve_esi_python
+from eve_esi_python.models.corporations_corporation_id_titles_get_inner import CorporationsCorporationIdTitlesGetInner
+from eve_esi_python.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to https://esi.evetech.net
 # See configuration.py for a list of all supported configuration parameters.
-configuration = esi_client.Configuration(
+configuration = eve_esi_python.Configuration(
     host = "https://esi.evetech.net"
 )
 
@@ -1766,9 +1766,9 @@ configuration = esi_client.Configuration(
 configuration.access_token = os.environ["ACCESS_TOKEN"]
 
 # Enter a context with an instance of the API client
-with esi_client.ApiClient(configuration) as api_client:
+with eve_esi_python.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = esi_client.CorporationApi(api_client)
+    api_instance = eve_esi_python.CorporationApi(api_client)
     corporation_id = 56 # int | The ID of the corporation
     x_compatibility_date = '2020-01-01' # date | The compatibility date for the request.
     accept_language = 'en' # str | The language to use for the response. Defaults to 'en'. (optional)
@@ -1832,21 +1832,21 @@ This route expires daily at 11:05
 
 
 ```python
-import esi_client
-from esi_client.rest import ApiException
+import eve_esi_python
+from eve_esi_python.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to https://esi.evetech.net
 # See configuration.py for a list of all supported configuration parameters.
-configuration = esi_client.Configuration(
+configuration = eve_esi_python.Configuration(
     host = "https://esi.evetech.net"
 )
 
 
 # Enter a context with an instance of the API client
-with esi_client.ApiClient(configuration) as api_client:
+with eve_esi_python.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = esi_client.CorporationApi(api_client)
+    api_instance = eve_esi_python.CorporationApi(api_client)
     x_compatibility_date = '2020-01-01' # date | The compatibility date for the request.
     accept_language = 'en' # str | The language to use for the response. Defaults to 'en'. (optional)
     if_none_match = 'if_none_match_example' # str | The ETag of the previous request. A 304 will be returned if this matches the current ETag. (optional)

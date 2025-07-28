@@ -15,7 +15,7 @@
 
 import unittest
 
-from esi_client.api.incursions_api import IncursionsApi
+from eve_esi_python.api.incursions_api import IncursionsApi
 
 
 class TestIncursionsApi(unittest.TestCase):

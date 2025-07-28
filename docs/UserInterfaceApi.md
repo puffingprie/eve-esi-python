@@ -1,4 +1,4 @@
-# esi_client.UserInterfaceApi
+# eve_esi_python.UserInterfaceApi
 
 All URIs are relative to *https://esi.evetech.net*
 
@@ -23,13 +23,13 @@ Set a solar system as autopilot waypoint
 * OAuth Authentication (OAuth2):
 
 ```python
-import esi_client
-from esi_client.rest import ApiException
+import eve_esi_python
+from eve_esi_python.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to https://esi.evetech.net
 # See configuration.py for a list of all supported configuration parameters.
-configuration = esi_client.Configuration(
+configuration = eve_esi_python.Configuration(
     host = "https://esi.evetech.net"
 )
 
@@ -41,9 +41,9 @@ configuration = esi_client.Configuration(
 configuration.access_token = os.environ["ACCESS_TOKEN"]
 
 # Enter a context with an instance of the API client
-with esi_client.ApiClient(configuration) as api_client:
+with eve_esi_python.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = esi_client.UserInterfaceApi(api_client)
+    api_instance = eve_esi_python.UserInterfaceApi(api_client)
     add_to_beginning = False # bool |  (default to False)
     clear_other_waypoints = False # bool |  (default to False)
     destination_id = 56 # int | 
@@ -110,13 +110,13 @@ Open the contract window inside the client
 * OAuth Authentication (OAuth2):
 
 ```python
-import esi_client
-from esi_client.rest import ApiException
+import eve_esi_python
+from eve_esi_python.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to https://esi.evetech.net
 # See configuration.py for a list of all supported configuration parameters.
-configuration = esi_client.Configuration(
+configuration = eve_esi_python.Configuration(
     host = "https://esi.evetech.net"
 )
 
@@ -128,9 +128,9 @@ configuration = esi_client.Configuration(
 configuration.access_token = os.environ["ACCESS_TOKEN"]
 
 # Enter a context with an instance of the API client
-with esi_client.ApiClient(configuration) as api_client:
+with eve_esi_python.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = esi_client.UserInterfaceApi(api_client)
+    api_instance = eve_esi_python.UserInterfaceApi(api_client)
     contract_id = 56 # int | 
     x_compatibility_date = '2020-01-01' # date | The compatibility date for the request.
     accept_language = 'en' # str | The language to use for the response. Defaults to 'en'. (optional)
@@ -193,13 +193,13 @@ Open the information window for a character, corporation or alliance inside the 
 * OAuth Authentication (OAuth2):
 
 ```python
-import esi_client
-from esi_client.rest import ApiException
+import eve_esi_python
+from eve_esi_python.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to https://esi.evetech.net
 # See configuration.py for a list of all supported configuration parameters.
-configuration = esi_client.Configuration(
+configuration = eve_esi_python.Configuration(
     host = "https://esi.evetech.net"
 )
 
@@ -211,9 +211,9 @@ configuration = esi_client.Configuration(
 configuration.access_token = os.environ["ACCESS_TOKEN"]
 
 # Enter a context with an instance of the API client
-with esi_client.ApiClient(configuration) as api_client:
+with eve_esi_python.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = esi_client.UserInterfaceApi(api_client)
+    api_instance = eve_esi_python.UserInterfaceApi(api_client)
     target_id = 56 # int | 
     x_compatibility_date = '2020-01-01' # date | The compatibility date for the request.
     accept_language = 'en' # str | The language to use for the response. Defaults to 'en'. (optional)
@@ -276,13 +276,13 @@ Open the market details window for a specific typeID inside the client
 * OAuth Authentication (OAuth2):
 
 ```python
-import esi_client
-from esi_client.rest import ApiException
+import eve_esi_python
+from eve_esi_python.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to https://esi.evetech.net
 # See configuration.py for a list of all supported configuration parameters.
-configuration = esi_client.Configuration(
+configuration = eve_esi_python.Configuration(
     host = "https://esi.evetech.net"
 )
 
@@ -294,9 +294,9 @@ configuration = esi_client.Configuration(
 configuration.access_token = os.environ["ACCESS_TOKEN"]
 
 # Enter a context with an instance of the API client
-with esi_client.ApiClient(configuration) as api_client:
+with eve_esi_python.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = esi_client.UserInterfaceApi(api_client)
+    api_instance = eve_esi_python.UserInterfaceApi(api_client)
     type_id = 56 # int | 
     x_compatibility_date = '2020-01-01' # date | The compatibility date for the request.
     accept_language = 'en' # str | The language to use for the response. Defaults to 'en'. (optional)
@@ -359,14 +359,14 @@ Open the New Mail window, according to settings from the request if applicable
 * OAuth Authentication (OAuth2):
 
 ```python
-import esi_client
-from esi_client.models.post_ui_openwindow_newmail_request import PostUiOpenwindowNewmailRequest
-from esi_client.rest import ApiException
+import eve_esi_python
+from eve_esi_python.models.post_ui_openwindow_newmail_request import PostUiOpenwindowNewmailRequest
+from eve_esi_python.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to https://esi.evetech.net
 # See configuration.py for a list of all supported configuration parameters.
-configuration = esi_client.Configuration(
+configuration = eve_esi_python.Configuration(
     host = "https://esi.evetech.net"
 )
 
@@ -378,14 +378,14 @@ configuration = esi_client.Configuration(
 configuration.access_token = os.environ["ACCESS_TOKEN"]
 
 # Enter a context with an instance of the API client
-with esi_client.ApiClient(configuration) as api_client:
+with eve_esi_python.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = esi_client.UserInterfaceApi(api_client)
+    api_instance = eve_esi_python.UserInterfaceApi(api_client)
     x_compatibility_date = '2020-01-01' # date | The compatibility date for the request.
     accept_language = 'en' # str | The language to use for the response. Defaults to 'en'. (optional)
     if_none_match = 'if_none_match_example' # str | The ETag of the previous request. A 304 will be returned if this matches the current ETag. (optional)
     x_tenant = 'tranquility' # str | The tenant ID for the request. Defaults to 'tranquility'. (optional)
-    post_ui_openwindow_newmail_request = esi_client.PostUiOpenwindowNewmailRequest() # PostUiOpenwindowNewmailRequest |  (optional)
+    post_ui_openwindow_newmail_request = eve_esi_python.PostUiOpenwindowNewmailRequest() # PostUiOpenwindowNewmailRequest |  (optional)
 
     try:
         # Open New Mail Window

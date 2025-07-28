@@ -1,4 +1,4 @@
-# esi_client.AllianceApi
+# eve_esi_python.AllianceApi
 
 All URIs are relative to *https://esi.evetech.net*
 
@@ -21,21 +21,21 @@ List all active player alliances
 
 
 ```python
-import esi_client
-from esi_client.rest import ApiException
+import eve_esi_python
+from eve_esi_python.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to https://esi.evetech.net
 # See configuration.py for a list of all supported configuration parameters.
-configuration = esi_client.Configuration(
+configuration = eve_esi_python.Configuration(
     host = "https://esi.evetech.net"
 )
 
 
 # Enter a context with an instance of the API client
-with esi_client.ApiClient(configuration) as api_client:
+with eve_esi_python.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = esi_client.AllianceApi(api_client)
+    api_instance = eve_esi_python.AllianceApi(api_client)
     x_compatibility_date = '2020-01-01' # date | The compatibility date for the request.
     accept_language = 'en' # str | The language to use for the response. Defaults to 'en'. (optional)
     if_none_match = 'if_none_match_example' # str | The ETag of the previous request. A 304 will be returned if this matches the current ETag. (optional)
@@ -95,22 +95,22 @@ Public information about an alliance
 
 
 ```python
-import esi_client
-from esi_client.models.alliances_alliance_id_get import AlliancesAllianceIdGet
-from esi_client.rest import ApiException
+import eve_esi_python
+from eve_esi_python.models.alliances_alliance_id_get import AlliancesAllianceIdGet
+from eve_esi_python.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to https://esi.evetech.net
 # See configuration.py for a list of all supported configuration parameters.
-configuration = esi_client.Configuration(
+configuration = eve_esi_python.Configuration(
     host = "https://esi.evetech.net"
 )
 
 
 # Enter a context with an instance of the API client
-with esi_client.ApiClient(configuration) as api_client:
+with eve_esi_python.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = esi_client.AllianceApi(api_client)
+    api_instance = eve_esi_python.AllianceApi(api_client)
     alliance_id = 56 # int | The ID of the alliance
     x_compatibility_date = '2020-01-01' # date | The compatibility date for the request.
     accept_language = 'en' # str | The language to use for the response. Defaults to 'en'. (optional)
@@ -172,21 +172,21 @@ List all current member corporations of an alliance
 
 
 ```python
-import esi_client
-from esi_client.rest import ApiException
+import eve_esi_python
+from eve_esi_python.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to https://esi.evetech.net
 # See configuration.py for a list of all supported configuration parameters.
-configuration = esi_client.Configuration(
+configuration = eve_esi_python.Configuration(
     host = "https://esi.evetech.net"
 )
 
 
 # Enter a context with an instance of the API client
-with esi_client.ApiClient(configuration) as api_client:
+with eve_esi_python.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = esi_client.AllianceApi(api_client)
+    api_instance = eve_esi_python.AllianceApi(api_client)
     alliance_id = 56 # int | The ID of the alliance
     x_compatibility_date = '2020-01-01' # date | The compatibility date for the request.
     accept_language = 'en' # str | The language to use for the response. Defaults to 'en'. (optional)
@@ -250,22 +250,22 @@ This route expires daily at 11:05
 
 
 ```python
-import esi_client
-from esi_client.models.alliances_alliance_id_icons_get import AlliancesAllianceIdIconsGet
-from esi_client.rest import ApiException
+import eve_esi_python
+from eve_esi_python.models.alliances_alliance_id_icons_get import AlliancesAllianceIdIconsGet
+from eve_esi_python.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to https://esi.evetech.net
 # See configuration.py for a list of all supported configuration parameters.
-configuration = esi_client.Configuration(
+configuration = eve_esi_python.Configuration(
     host = "https://esi.evetech.net"
 )
 
 
 # Enter a context with an instance of the API client
-with esi_client.ApiClient(configuration) as api_client:
+with eve_esi_python.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = esi_client.AllianceApi(api_client)
+    api_instance = eve_esi_python.AllianceApi(api_client)
     alliance_id = 56 # int | The ID of the alliance
     x_compatibility_date = '2020-01-01' # date | The compatibility date for the request.
     accept_language = 'en' # str | The language to use for the response. Defaults to 'en'. (optional)

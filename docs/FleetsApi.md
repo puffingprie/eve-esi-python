@@ -1,4 +1,4 @@
-# esi_client.FleetsApi
+# eve_esi_python.FleetsApi
 
 All URIs are relative to *https://esi.evetech.net*
 
@@ -32,13 +32,13 @@ Kick a fleet member
 * OAuth Authentication (OAuth2):
 
 ```python
-import esi_client
-from esi_client.rest import ApiException
+import eve_esi_python
+from eve_esi_python.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to https://esi.evetech.net
 # See configuration.py for a list of all supported configuration parameters.
-configuration = esi_client.Configuration(
+configuration = eve_esi_python.Configuration(
     host = "https://esi.evetech.net"
 )
 
@@ -50,9 +50,9 @@ configuration = esi_client.Configuration(
 configuration.access_token = os.environ["ACCESS_TOKEN"]
 
 # Enter a context with an instance of the API client
-with esi_client.ApiClient(configuration) as api_client:
+with eve_esi_python.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = esi_client.FleetsApi(api_client)
+    api_instance = eve_esi_python.FleetsApi(api_client)
     fleet_id = 56 # int | 
     member_id = 56 # int | 
     x_compatibility_date = '2020-01-01' # date | The compatibility date for the request.
@@ -117,13 +117,13 @@ Delete a fleet squad, only empty squads can be deleted
 * OAuth Authentication (OAuth2):
 
 ```python
-import esi_client
-from esi_client.rest import ApiException
+import eve_esi_python
+from eve_esi_python.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to https://esi.evetech.net
 # See configuration.py for a list of all supported configuration parameters.
-configuration = esi_client.Configuration(
+configuration = eve_esi_python.Configuration(
     host = "https://esi.evetech.net"
 )
 
@@ -135,9 +135,9 @@ configuration = esi_client.Configuration(
 configuration.access_token = os.environ["ACCESS_TOKEN"]
 
 # Enter a context with an instance of the API client
-with esi_client.ApiClient(configuration) as api_client:
+with eve_esi_python.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = esi_client.FleetsApi(api_client)
+    api_instance = eve_esi_python.FleetsApi(api_client)
     fleet_id = 56 # int | 
     squad_id = 56 # int | 
     x_compatibility_date = '2020-01-01' # date | The compatibility date for the request.
@@ -202,13 +202,13 @@ Delete a fleet wing, only empty wings can be deleted. The wing may contain squad
 * OAuth Authentication (OAuth2):
 
 ```python
-import esi_client
-from esi_client.rest import ApiException
+import eve_esi_python
+from eve_esi_python.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to https://esi.evetech.net
 # See configuration.py for a list of all supported configuration parameters.
-configuration = esi_client.Configuration(
+configuration = eve_esi_python.Configuration(
     host = "https://esi.evetech.net"
 )
 
@@ -220,9 +220,9 @@ configuration = esi_client.Configuration(
 configuration.access_token = os.environ["ACCESS_TOKEN"]
 
 # Enter a context with an instance of the API client
-with esi_client.ApiClient(configuration) as api_client:
+with eve_esi_python.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = esi_client.FleetsApi(api_client)
+    api_instance = eve_esi_python.FleetsApi(api_client)
     fleet_id = 56 # int | 
     wing_id = 56 # int | 
     x_compatibility_date = '2020-01-01' # date | The compatibility date for the request.
@@ -287,14 +287,14 @@ Return the fleet ID the character is in, if any.
 * OAuth Authentication (OAuth2):
 
 ```python
-import esi_client
-from esi_client.models.characters_character_id_fleet_get import CharactersCharacterIdFleetGet
-from esi_client.rest import ApiException
+import eve_esi_python
+from eve_esi_python.models.characters_character_id_fleet_get import CharactersCharacterIdFleetGet
+from eve_esi_python.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to https://esi.evetech.net
 # See configuration.py for a list of all supported configuration parameters.
-configuration = esi_client.Configuration(
+configuration = eve_esi_python.Configuration(
     host = "https://esi.evetech.net"
 )
 
@@ -306,9 +306,9 @@ configuration = esi_client.Configuration(
 configuration.access_token = os.environ["ACCESS_TOKEN"]
 
 # Enter a context with an instance of the API client
-with esi_client.ApiClient(configuration) as api_client:
+with eve_esi_python.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = esi_client.FleetsApi(api_client)
+    api_instance = eve_esi_python.FleetsApi(api_client)
     character_id = 56 # int | The ID of the character
     x_compatibility_date = '2020-01-01' # date | The compatibility date for the request.
     accept_language = 'en' # str | The language to use for the response. Defaults to 'en'. (optional)
@@ -371,14 +371,14 @@ Return details about a fleet
 * OAuth Authentication (OAuth2):
 
 ```python
-import esi_client
-from esi_client.models.fleets_fleet_id_get import FleetsFleetIdGet
-from esi_client.rest import ApiException
+import eve_esi_python
+from eve_esi_python.models.fleets_fleet_id_get import FleetsFleetIdGet
+from eve_esi_python.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to https://esi.evetech.net
 # See configuration.py for a list of all supported configuration parameters.
-configuration = esi_client.Configuration(
+configuration = eve_esi_python.Configuration(
     host = "https://esi.evetech.net"
 )
 
@@ -390,9 +390,9 @@ configuration = esi_client.Configuration(
 configuration.access_token = os.environ["ACCESS_TOKEN"]
 
 # Enter a context with an instance of the API client
-with esi_client.ApiClient(configuration) as api_client:
+with eve_esi_python.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = esi_client.FleetsApi(api_client)
+    api_instance = eve_esi_python.FleetsApi(api_client)
     fleet_id = 56 # int | 
     x_compatibility_date = '2020-01-01' # date | The compatibility date for the request.
     accept_language = 'en' # str | The language to use for the response. Defaults to 'en'. (optional)
@@ -455,14 +455,14 @@ Return information about fleet members
 * OAuth Authentication (OAuth2):
 
 ```python
-import esi_client
-from esi_client.models.fleets_fleet_id_members_get_inner import FleetsFleetIdMembersGetInner
-from esi_client.rest import ApiException
+import eve_esi_python
+from eve_esi_python.models.fleets_fleet_id_members_get_inner import FleetsFleetIdMembersGetInner
+from eve_esi_python.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to https://esi.evetech.net
 # See configuration.py for a list of all supported configuration parameters.
-configuration = esi_client.Configuration(
+configuration = eve_esi_python.Configuration(
     host = "https://esi.evetech.net"
 )
 
@@ -474,9 +474,9 @@ configuration = esi_client.Configuration(
 configuration.access_token = os.environ["ACCESS_TOKEN"]
 
 # Enter a context with an instance of the API client
-with esi_client.ApiClient(configuration) as api_client:
+with eve_esi_python.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = esi_client.FleetsApi(api_client)
+    api_instance = eve_esi_python.FleetsApi(api_client)
     fleet_id = 56 # int | 
     x_compatibility_date = '2020-01-01' # date | The compatibility date for the request.
     accept_language = 'en' # str | The language to use for the response. Defaults to 'en'. (optional)
@@ -539,14 +539,14 @@ Return information about wings in a fleet
 * OAuth Authentication (OAuth2):
 
 ```python
-import esi_client
-from esi_client.models.fleets_fleet_id_wings_get_inner import FleetsFleetIdWingsGetInner
-from esi_client.rest import ApiException
+import eve_esi_python
+from eve_esi_python.models.fleets_fleet_id_wings_get_inner import FleetsFleetIdWingsGetInner
+from eve_esi_python.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to https://esi.evetech.net
 # See configuration.py for a list of all supported configuration parameters.
-configuration = esi_client.Configuration(
+configuration = eve_esi_python.Configuration(
     host = "https://esi.evetech.net"
 )
 
@@ -558,9 +558,9 @@ configuration = esi_client.Configuration(
 configuration.access_token = os.environ["ACCESS_TOKEN"]
 
 # Enter a context with an instance of the API client
-with esi_client.ApiClient(configuration) as api_client:
+with eve_esi_python.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = esi_client.FleetsApi(api_client)
+    api_instance = eve_esi_python.FleetsApi(api_client)
     fleet_id = 56 # int | 
     x_compatibility_date = '2020-01-01' # date | The compatibility date for the request.
     accept_language = 'en' # str | The language to use for the response. Defaults to 'en'. (optional)
@@ -623,14 +623,14 @@ Invite a character into the fleet. If a character has a CSPA charge set it is no
 * OAuth Authentication (OAuth2):
 
 ```python
-import esi_client
-from esi_client.models.post_fleets_fleet_id_members_request import PostFleetsFleetIdMembersRequest
-from esi_client.rest import ApiException
+import eve_esi_python
+from eve_esi_python.models.post_fleets_fleet_id_members_request import PostFleetsFleetIdMembersRequest
+from eve_esi_python.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to https://esi.evetech.net
 # See configuration.py for a list of all supported configuration parameters.
-configuration = esi_client.Configuration(
+configuration = eve_esi_python.Configuration(
     host = "https://esi.evetech.net"
 )
 
@@ -642,15 +642,15 @@ configuration = esi_client.Configuration(
 configuration.access_token = os.environ["ACCESS_TOKEN"]
 
 # Enter a context with an instance of the API client
-with esi_client.ApiClient(configuration) as api_client:
+with eve_esi_python.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = esi_client.FleetsApi(api_client)
+    api_instance = eve_esi_python.FleetsApi(api_client)
     fleet_id = 56 # int | 
     x_compatibility_date = '2020-01-01' # date | The compatibility date for the request.
     accept_language = 'en' # str | The language to use for the response. Defaults to 'en'. (optional)
     if_none_match = 'if_none_match_example' # str | The ETag of the previous request. A 304 will be returned if this matches the current ETag. (optional)
     x_tenant = 'tranquility' # str | The tenant ID for the request. Defaults to 'tranquility'. (optional)
-    post_fleets_fleet_id_members_request = esi_client.PostFleetsFleetIdMembersRequest() # PostFleetsFleetIdMembersRequest |  (optional)
+    post_fleets_fleet_id_members_request = eve_esi_python.PostFleetsFleetIdMembersRequest() # PostFleetsFleetIdMembersRequest |  (optional)
 
     try:
         # Create fleet invitation
@@ -709,14 +709,14 @@ Create a new wing in a fleet
 * OAuth Authentication (OAuth2):
 
 ```python
-import esi_client
-from esi_client.models.fleets_fleet_id_wings_post import FleetsFleetIdWingsPost
-from esi_client.rest import ApiException
+import eve_esi_python
+from eve_esi_python.models.fleets_fleet_id_wings_post import FleetsFleetIdWingsPost
+from eve_esi_python.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to https://esi.evetech.net
 # See configuration.py for a list of all supported configuration parameters.
-configuration = esi_client.Configuration(
+configuration = eve_esi_python.Configuration(
     host = "https://esi.evetech.net"
 )
 
@@ -728,9 +728,9 @@ configuration = esi_client.Configuration(
 configuration.access_token = os.environ["ACCESS_TOKEN"]
 
 # Enter a context with an instance of the API client
-with esi_client.ApiClient(configuration) as api_client:
+with eve_esi_python.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = esi_client.FleetsApi(api_client)
+    api_instance = eve_esi_python.FleetsApi(api_client)
     fleet_id = 56 # int | 
     x_compatibility_date = '2020-01-01' # date | The compatibility date for the request.
     accept_language = 'en' # str | The language to use for the response. Defaults to 'en'. (optional)
@@ -793,14 +793,14 @@ Create a new squad in a fleet
 * OAuth Authentication (OAuth2):
 
 ```python
-import esi_client
-from esi_client.models.fleets_fleet_id_wings_wing_id_squads_post import FleetsFleetIdWingsWingIdSquadsPost
-from esi_client.rest import ApiException
+import eve_esi_python
+from eve_esi_python.models.fleets_fleet_id_wings_wing_id_squads_post import FleetsFleetIdWingsWingIdSquadsPost
+from eve_esi_python.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to https://esi.evetech.net
 # See configuration.py for a list of all supported configuration parameters.
-configuration = esi_client.Configuration(
+configuration = eve_esi_python.Configuration(
     host = "https://esi.evetech.net"
 )
 
@@ -812,9 +812,9 @@ configuration = esi_client.Configuration(
 configuration.access_token = os.environ["ACCESS_TOKEN"]
 
 # Enter a context with an instance of the API client
-with esi_client.ApiClient(configuration) as api_client:
+with eve_esi_python.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = esi_client.FleetsApi(api_client)
+    api_instance = eve_esi_python.FleetsApi(api_client)
     fleet_id = 56 # int | 
     wing_id = 56 # int | 
     x_compatibility_date = '2020-01-01' # date | The compatibility date for the request.
@@ -879,14 +879,14 @@ Update settings about a fleet
 * OAuth Authentication (OAuth2):
 
 ```python
-import esi_client
-from esi_client.models.put_fleets_fleet_id_request import PutFleetsFleetIdRequest
-from esi_client.rest import ApiException
+import eve_esi_python
+from eve_esi_python.models.put_fleets_fleet_id_request import PutFleetsFleetIdRequest
+from eve_esi_python.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to https://esi.evetech.net
 # See configuration.py for a list of all supported configuration parameters.
-configuration = esi_client.Configuration(
+configuration = eve_esi_python.Configuration(
     host = "https://esi.evetech.net"
 )
 
@@ -898,15 +898,15 @@ configuration = esi_client.Configuration(
 configuration.access_token = os.environ["ACCESS_TOKEN"]
 
 # Enter a context with an instance of the API client
-with esi_client.ApiClient(configuration) as api_client:
+with eve_esi_python.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = esi_client.FleetsApi(api_client)
+    api_instance = eve_esi_python.FleetsApi(api_client)
     fleet_id = 56 # int | 
     x_compatibility_date = '2020-01-01' # date | The compatibility date for the request.
     accept_language = 'en' # str | The language to use for the response. Defaults to 'en'. (optional)
     if_none_match = 'if_none_match_example' # str | The ETag of the previous request. A 304 will be returned if this matches the current ETag. (optional)
     x_tenant = 'tranquility' # str | The tenant ID for the request. Defaults to 'tranquility'. (optional)
-    put_fleets_fleet_id_request = esi_client.PutFleetsFleetIdRequest() # PutFleetsFleetIdRequest |  (optional)
+    put_fleets_fleet_id_request = eve_esi_python.PutFleetsFleetIdRequest() # PutFleetsFleetIdRequest |  (optional)
 
     try:
         # Update fleet
@@ -965,14 +965,14 @@ Move a fleet member around
 * OAuth Authentication (OAuth2):
 
 ```python
-import esi_client
-from esi_client.models.put_fleets_fleet_id_members_member_id_request import PutFleetsFleetIdMembersMemberIdRequest
-from esi_client.rest import ApiException
+import eve_esi_python
+from eve_esi_python.models.put_fleets_fleet_id_members_member_id_request import PutFleetsFleetIdMembersMemberIdRequest
+from eve_esi_python.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to https://esi.evetech.net
 # See configuration.py for a list of all supported configuration parameters.
-configuration = esi_client.Configuration(
+configuration = eve_esi_python.Configuration(
     host = "https://esi.evetech.net"
 )
 
@@ -984,16 +984,16 @@ configuration = esi_client.Configuration(
 configuration.access_token = os.environ["ACCESS_TOKEN"]
 
 # Enter a context with an instance of the API client
-with esi_client.ApiClient(configuration) as api_client:
+with eve_esi_python.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = esi_client.FleetsApi(api_client)
+    api_instance = eve_esi_python.FleetsApi(api_client)
     fleet_id = 56 # int | 
     member_id = 56 # int | 
     x_compatibility_date = '2020-01-01' # date | The compatibility date for the request.
     accept_language = 'en' # str | The language to use for the response. Defaults to 'en'. (optional)
     if_none_match = 'if_none_match_example' # str | The ETag of the previous request. A 304 will be returned if this matches the current ETag. (optional)
     x_tenant = 'tranquility' # str | The tenant ID for the request. Defaults to 'tranquility'. (optional)
-    put_fleets_fleet_id_members_member_id_request = esi_client.PutFleetsFleetIdMembersMemberIdRequest() # PutFleetsFleetIdMembersMemberIdRequest |  (optional)
+    put_fleets_fleet_id_members_member_id_request = eve_esi_python.PutFleetsFleetIdMembersMemberIdRequest() # PutFleetsFleetIdMembersMemberIdRequest |  (optional)
 
     try:
         # Move fleet member
@@ -1053,14 +1053,14 @@ Rename a fleet squad
 * OAuth Authentication (OAuth2):
 
 ```python
-import esi_client
-from esi_client.models.put_fleets_fleet_id_squads_squad_id_request import PutFleetsFleetIdSquadsSquadIdRequest
-from esi_client.rest import ApiException
+import eve_esi_python
+from eve_esi_python.models.put_fleets_fleet_id_squads_squad_id_request import PutFleetsFleetIdSquadsSquadIdRequest
+from eve_esi_python.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to https://esi.evetech.net
 # See configuration.py for a list of all supported configuration parameters.
-configuration = esi_client.Configuration(
+configuration = eve_esi_python.Configuration(
     host = "https://esi.evetech.net"
 )
 
@@ -1072,16 +1072,16 @@ configuration = esi_client.Configuration(
 configuration.access_token = os.environ["ACCESS_TOKEN"]
 
 # Enter a context with an instance of the API client
-with esi_client.ApiClient(configuration) as api_client:
+with eve_esi_python.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = esi_client.FleetsApi(api_client)
+    api_instance = eve_esi_python.FleetsApi(api_client)
     fleet_id = 56 # int | 
     squad_id = 56 # int | 
     x_compatibility_date = '2020-01-01' # date | The compatibility date for the request.
     accept_language = 'en' # str | The language to use for the response. Defaults to 'en'. (optional)
     if_none_match = 'if_none_match_example' # str | The ETag of the previous request. A 304 will be returned if this matches the current ETag. (optional)
     x_tenant = 'tranquility' # str | The tenant ID for the request. Defaults to 'tranquility'. (optional)
-    put_fleets_fleet_id_squads_squad_id_request = esi_client.PutFleetsFleetIdSquadsSquadIdRequest() # PutFleetsFleetIdSquadsSquadIdRequest |  (optional)
+    put_fleets_fleet_id_squads_squad_id_request = eve_esi_python.PutFleetsFleetIdSquadsSquadIdRequest() # PutFleetsFleetIdSquadsSquadIdRequest |  (optional)
 
     try:
         # Rename fleet squad
@@ -1141,14 +1141,14 @@ Rename a fleet wing
 * OAuth Authentication (OAuth2):
 
 ```python
-import esi_client
-from esi_client.models.put_fleets_fleet_id_squads_squad_id_request import PutFleetsFleetIdSquadsSquadIdRequest
-from esi_client.rest import ApiException
+import eve_esi_python
+from eve_esi_python.models.put_fleets_fleet_id_squads_squad_id_request import PutFleetsFleetIdSquadsSquadIdRequest
+from eve_esi_python.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to https://esi.evetech.net
 # See configuration.py for a list of all supported configuration parameters.
-configuration = esi_client.Configuration(
+configuration = eve_esi_python.Configuration(
     host = "https://esi.evetech.net"
 )
 
@@ -1160,16 +1160,16 @@ configuration = esi_client.Configuration(
 configuration.access_token = os.environ["ACCESS_TOKEN"]
 
 # Enter a context with an instance of the API client
-with esi_client.ApiClient(configuration) as api_client:
+with eve_esi_python.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = esi_client.FleetsApi(api_client)
+    api_instance = eve_esi_python.FleetsApi(api_client)
     fleet_id = 56 # int | 
     wing_id = 56 # int | 
     x_compatibility_date = '2020-01-01' # date | The compatibility date for the request.
     accept_language = 'en' # str | The language to use for the response. Defaults to 'en'. (optional)
     if_none_match = 'if_none_match_example' # str | The ETag of the previous request. A 304 will be returned if this matches the current ETag. (optional)
     x_tenant = 'tranquility' # str | The tenant ID for the request. Defaults to 'tranquility'. (optional)
-    put_fleets_fleet_id_squads_squad_id_request = esi_client.PutFleetsFleetIdSquadsSquadIdRequest() # PutFleetsFleetIdSquadsSquadIdRequest |  (optional)
+    put_fleets_fleet_id_squads_squad_id_request = eve_esi_python.PutFleetsFleetIdSquadsSquadIdRequest() # PutFleetsFleetIdSquadsSquadIdRequest |  (optional)
 
     try:
         # Rename fleet wing

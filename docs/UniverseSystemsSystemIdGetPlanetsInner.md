@@ -13,7 +13,7 @@ Name | Type | Description | Notes
 ## Example
 
 ```python
-from esi_client.models.universe_systems_system_id_get_planets_inner import UniverseSystemsSystemIdGetPlanetsInner
+from eve_esi_python.models.universe_systems_system_id_get_planets_inner import UniverseSystemsSystemIdGetPlanetsInner
 
 # TODO update the JSON string below
 json = "{}"

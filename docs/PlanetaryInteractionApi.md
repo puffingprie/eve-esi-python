@@ -1,4 +1,4 @@
-# esi_client.PlanetaryInteractionApi
+# eve_esi_python.PlanetaryInteractionApi
 
 All URIs are relative to *https://esi.evetech.net*
 
@@ -22,14 +22,14 @@ Returns a list of all planetary colonies owned by a character.
 * OAuth Authentication (OAuth2):
 
 ```python
-import esi_client
-from esi_client.models.characters_character_id_planets_get_inner import CharactersCharacterIdPlanetsGetInner
-from esi_client.rest import ApiException
+import eve_esi_python
+from eve_esi_python.models.characters_character_id_planets_get_inner import CharactersCharacterIdPlanetsGetInner
+from eve_esi_python.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to https://esi.evetech.net
 # See configuration.py for a list of all supported configuration parameters.
-configuration = esi_client.Configuration(
+configuration = eve_esi_python.Configuration(
     host = "https://esi.evetech.net"
 )
 
@@ -41,9 +41,9 @@ configuration = esi_client.Configuration(
 configuration.access_token = os.environ["ACCESS_TOKEN"]
 
 # Enter a context with an instance of the API client
-with esi_client.ApiClient(configuration) as api_client:
+with eve_esi_python.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = esi_client.PlanetaryInteractionApi(api_client)
+    api_instance = eve_esi_python.PlanetaryInteractionApi(api_client)
     character_id = 56 # int | The ID of the character
     x_compatibility_date = '2020-01-01' # date | The compatibility date for the request.
     accept_language = 'en' # str | The language to use for the response. Defaults to 'en'. (optional)
@@ -106,14 +106,14 @@ Returns full details on the layout of a single planetary colony, including links
 * OAuth Authentication (OAuth2):
 
 ```python
-import esi_client
-from esi_client.models.characters_character_id_planets_planet_id_get import CharactersCharacterIdPlanetsPlanetIdGet
-from esi_client.rest import ApiException
+import eve_esi_python
+from eve_esi_python.models.characters_character_id_planets_planet_id_get import CharactersCharacterIdPlanetsPlanetIdGet
+from eve_esi_python.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to https://esi.evetech.net
 # See configuration.py for a list of all supported configuration parameters.
-configuration = esi_client.Configuration(
+configuration = eve_esi_python.Configuration(
     host = "https://esi.evetech.net"
 )
 
@@ -125,9 +125,9 @@ configuration = esi_client.Configuration(
 configuration.access_token = os.environ["ACCESS_TOKEN"]
 
 # Enter a context with an instance of the API client
-with esi_client.ApiClient(configuration) as api_client:
+with eve_esi_python.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = esi_client.PlanetaryInteractionApi(api_client)
+    api_instance = eve_esi_python.PlanetaryInteractionApi(api_client)
     character_id = 56 # int | The ID of the character
     planet_id = 56 # int | 
     x_compatibility_date = '2020-01-01' # date | The compatibility date for the request.
@@ -194,14 +194,14 @@ Requires one of the following EVE corporation role(s): Director
 * OAuth Authentication (OAuth2):
 
 ```python
-import esi_client
-from esi_client.models.corporations_corporation_id_customs_offices_get_inner import CorporationsCorporationIdCustomsOfficesGetInner
-from esi_client.rest import ApiException
+import eve_esi_python
+from eve_esi_python.models.corporations_corporation_id_customs_offices_get_inner import CorporationsCorporationIdCustomsOfficesGetInner
+from eve_esi_python.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to https://esi.evetech.net
 # See configuration.py for a list of all supported configuration parameters.
-configuration = esi_client.Configuration(
+configuration = eve_esi_python.Configuration(
     host = "https://esi.evetech.net"
 )
 
@@ -213,9 +213,9 @@ configuration = esi_client.Configuration(
 configuration.access_token = os.environ["ACCESS_TOKEN"]
 
 # Enter a context with an instance of the API client
-with esi_client.ApiClient(configuration) as api_client:
+with eve_esi_python.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = esi_client.PlanetaryInteractionApi(api_client)
+    api_instance = eve_esi_python.PlanetaryInteractionApi(api_client)
     corporation_id = 56 # int | The ID of the corporation
     x_compatibility_date = '2020-01-01' # date | The compatibility date for the request.
     page = 56 # int |  (optional)
@@ -279,22 +279,22 @@ Get information on a planetary factory schematic
 
 
 ```python
-import esi_client
-from esi_client.models.universe_schematics_schematic_id_get import UniverseSchematicsSchematicIdGet
-from esi_client.rest import ApiException
+import eve_esi_python
+from eve_esi_python.models.universe_schematics_schematic_id_get import UniverseSchematicsSchematicIdGet
+from eve_esi_python.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to https://esi.evetech.net
 # See configuration.py for a list of all supported configuration parameters.
-configuration = esi_client.Configuration(
+configuration = eve_esi_python.Configuration(
     host = "https://esi.evetech.net"
 )
 
 
 # Enter a context with an instance of the API client
-with esi_client.ApiClient(configuration) as api_client:
+with eve_esi_python.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = esi_client.PlanetaryInteractionApi(api_client)
+    api_instance = eve_esi_python.PlanetaryInteractionApi(api_client)
     schematic_id = 56 # int | 
     x_compatibility_date = '2020-01-01' # date | The compatibility date for the request.
     accept_language = 'en' # str | The language to use for the response. Defaults to 'en'. (optional)

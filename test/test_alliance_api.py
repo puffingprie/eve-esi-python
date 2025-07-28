@@ -15,7 +15,7 @@
 
 import unittest
 
-from esi_client.api.alliance_api import AllianceApi
+from eve_esi_python.api.alliance_api import AllianceApi
 
 
 class TestAllianceApi(unittest.TestCase):

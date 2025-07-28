@@ -20,7 +20,7 @@ Name | Type | Description | Notes
 ## Example
 
 ```python
-from esi_client.models.characters_character_id_calendar_event_id_get import CharactersCharacterIdCalendarEventIdGet
+from eve_esi_python.models.characters_character_id_calendar_event_id_get import CharactersCharacterIdCalendarEventIdGet
 
 # TODO update the JSON string below
 json = "{}"

@@ -43,10 +43,9 @@ setup(
     packages=find_packages(exclude=["test", "tests"]),
     include_package_data=True,
     license="BSD-3-Clause",
-    license_files=("LICENSE.txt"),
     long_description_content_type='text/markdown',
     long_description="""\
     EVE ESI Python Client generated with openapi-generator with strong typing features.
     """,  # noqa: E501
-    package_data={"esi_client": ["py.typed"]},
+    package_data={"eve_esi_python": ["py.typed"]},
 )

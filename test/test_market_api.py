@@ -15,7 +15,7 @@
 
 import unittest
 
-from esi_client.api.market_api import MarketApi
+from eve_esi_python.api.market_api import MarketApi
 
 
 class TestMarketApi(unittest.TestCase):

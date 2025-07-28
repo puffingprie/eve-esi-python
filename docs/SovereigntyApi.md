@@ -1,4 +1,4 @@
-# esi_client.SovereigntyApi
+# eve_esi_python.SovereigntyApi
 
 All URIs are relative to *https://esi.evetech.net*
 
@@ -20,22 +20,22 @@ Shows sovereignty data for campaigns.
 
 
 ```python
-import esi_client
-from esi_client.models.sovereignty_campaigns_get_inner import SovereigntyCampaignsGetInner
-from esi_client.rest import ApiException
+import eve_esi_python
+from eve_esi_python.models.sovereignty_campaigns_get_inner import SovereigntyCampaignsGetInner
+from eve_esi_python.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to https://esi.evetech.net
 # See configuration.py for a list of all supported configuration parameters.
-configuration = esi_client.Configuration(
+configuration = eve_esi_python.Configuration(
     host = "https://esi.evetech.net"
 )
 
 
 # Enter a context with an instance of the API client
-with esi_client.ApiClient(configuration) as api_client:
+with eve_esi_python.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = esi_client.SovereigntyApi(api_client)
+    api_instance = eve_esi_python.SovereigntyApi(api_client)
     x_compatibility_date = '2020-01-01' # date | The compatibility date for the request.
     accept_language = 'en' # str | The language to use for the response. Defaults to 'en'. (optional)
     if_none_match = 'if_none_match_example' # str | The ETag of the previous request. A 304 will be returned if this matches the current ETag. (optional)
@@ -95,22 +95,22 @@ Shows sovereignty information for solar systems
 
 
 ```python
-import esi_client
-from esi_client.models.sovereignty_map_get_inner import SovereigntyMapGetInner
-from esi_client.rest import ApiException
+import eve_esi_python
+from eve_esi_python.models.sovereignty_map_get_inner import SovereigntyMapGetInner
+from eve_esi_python.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to https://esi.evetech.net
 # See configuration.py for a list of all supported configuration parameters.
-configuration = esi_client.Configuration(
+configuration = eve_esi_python.Configuration(
     host = "https://esi.evetech.net"
 )
 
 
 # Enter a context with an instance of the API client
-with esi_client.ApiClient(configuration) as api_client:
+with eve_esi_python.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = esi_client.SovereigntyApi(api_client)
+    api_instance = eve_esi_python.SovereigntyApi(api_client)
     x_compatibility_date = '2020-01-01' # date | The compatibility date for the request.
     accept_language = 'en' # str | The language to use for the response. Defaults to 'en'. (optional)
     if_none_match = 'if_none_match_example' # str | The ETag of the previous request. A 304 will be returned if this matches the current ETag. (optional)
@@ -170,22 +170,22 @@ Shows sovereignty data for structures.
 
 
 ```python
-import esi_client
-from esi_client.models.sovereignty_structures_get_inner import SovereigntyStructuresGetInner
-from esi_client.rest import ApiException
+import eve_esi_python
+from eve_esi_python.models.sovereignty_structures_get_inner import SovereigntyStructuresGetInner
+from eve_esi_python.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to https://esi.evetech.net
 # See configuration.py for a list of all supported configuration parameters.
-configuration = esi_client.Configuration(
+configuration = eve_esi_python.Configuration(
     host = "https://esi.evetech.net"
 )
 
 
 # Enter a context with an instance of the API client
-with esi_client.ApiClient(configuration) as api_client:
+with eve_esi_python.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = esi_client.SovereigntyApi(api_client)
+    api_instance = eve_esi_python.SovereigntyApi(api_client)
     x_compatibility_date = '2020-01-01' # date | The compatibility date for the request.
     accept_language = 'en' # str | The language to use for the response. Defaults to 'en'. (optional)
     if_none_match = 'if_none_match_example' # str | The ETag of the previous request. A 304 will be returned if this matches the current ETag. (optional)

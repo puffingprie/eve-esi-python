@@ -13,7 +13,7 @@ Name | Type | Description | Notes
 ## Example
 
 ```python
-from esi_client.models.fw_stats_get_inner_kills import FwStatsGetInnerKills
+from eve_esi_python.models.fw_stats_get_inner_kills import FwStatsGetInnerKills
 
 # TODO update the JSON string below
 json = "{}"

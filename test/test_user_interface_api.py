@@ -15,7 +15,7 @@
 
 import unittest
 
-from esi_client.api.user_interface_api import UserInterfaceApi
+from eve_esi_python.api.user_interface_api import UserInterfaceApi
 
 
 class TestUserInterfaceApi(unittest.TestCase):

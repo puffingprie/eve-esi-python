@@ -15,7 +15,7 @@
 
 import unittest
 
-from esi_client.api.wallet_api import WalletApi
+from eve_esi_python.api.wallet_api import WalletApi
 
 
 class TestWalletApi(unittest.TestCase):

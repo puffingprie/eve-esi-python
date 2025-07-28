@@ -11,7 +11,7 @@ Name | Type | Description | Notes
 ## Example
 
 ```python
-from esi_client.models.universe_schematics_schematic_id_get import UniverseSchematicsSchematicIdGet
+from eve_esi_python.models.universe_schematics_schematic_id_get import UniverseSchematicsSchematicIdGet
 
 # TODO update the JSON string below
 json = "{}"

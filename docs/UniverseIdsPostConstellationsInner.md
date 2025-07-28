@@ -12,7 +12,7 @@ Name | Type | Description | Notes
 ## Example
 
 ```python
-from esi_client.models.universe_ids_post_constellations_inner import UniverseIdsPostConstellationsInner
+from eve_esi_python.models.universe_ids_post_constellations_inner import UniverseIdsPostConstellationsInner
 
 # TODO update the JSON string below
 json = "{}"

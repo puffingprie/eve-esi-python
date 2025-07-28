@@ -8,7 +8,7 @@ set -e  # Exit on any error
 OUTPUT_DIR="./"
 INPUT_SPEC="openapi.json"
 GENERATOR="python"
-PACKAGE_NAME="esi_client"
+PACKAGE_NAME="eve_esi_python"
 PACKAGE_VERSION="0.1.0"
 PROJECT_NAME="eve-esi-python"
 API_NAME_SUFFIX=""

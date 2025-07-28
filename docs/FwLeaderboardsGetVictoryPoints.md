@@ -13,7 +13,7 @@ Name | Type | Description | Notes
 ## Example
 
 ```python
-from esi_client.models.fw_leaderboards_get_victory_points import FwLeaderboardsGetVictoryPoints
+from eve_esi_python.models.fw_leaderboards_get_victory_points import FwLeaderboardsGetVictoryPoints
 
 # TODO update the JSON string below
 json = "{}"

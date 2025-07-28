@@ -15,7 +15,7 @@
 
 import unittest
 
-from esi_client.api.location_api import LocationApi
+from eve_esi_python.api.location_api import LocationApi
 
 
 class TestLocationApi(unittest.TestCase):

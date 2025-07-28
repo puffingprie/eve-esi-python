@@ -12,7 +12,7 @@ Name | Type | Description | Notes
 ## Example
 
 ```python
-from esi_client.models.universe_asteroid_belts_asteroid_belt_id_get import UniverseAsteroidBeltsAsteroidBeltIdGet
+from eve_esi_python.models.universe_asteroid_belts_asteroid_belt_id_get import UniverseAsteroidBeltsAsteroidBeltIdGet
 
 # TODO update the JSON string below
 json = "{}"

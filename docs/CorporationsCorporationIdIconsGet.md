@@ -12,7 +12,7 @@ Name | Type | Description | Notes
 ## Example
 
 ```python
-from esi_client.models.corporations_corporation_id_icons_get import CorporationsCorporationIdIconsGet
+from eve_esi_python.models.corporations_corporation_id_icons_get import CorporationsCorporationIdIconsGet
 
 # TODO update the JSON string below
 json = "{}"

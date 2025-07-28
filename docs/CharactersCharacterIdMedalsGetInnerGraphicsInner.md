@@ -14,7 +14,7 @@ Name | Type | Description | Notes
 ## Example
 
 ```python
-from esi_client.models.characters_character_id_medals_get_inner_graphics_inner import CharactersCharacterIdMedalsGetInnerGraphicsInner
+from eve_esi_python.models.characters_character_id_medals_get_inner_graphics_inner import CharactersCharacterIdMedalsGetInnerGraphicsInner
 
 # TODO update the JSON string below
 json = "{}"

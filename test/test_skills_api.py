@@ -15,7 +15,7 @@
 
 import unittest
 
-from esi_client.api.skills_api import SkillsApi
+from eve_esi_python.api.skills_api import SkillsApi
 
 
 class TestSkillsApi(unittest.TestCase):

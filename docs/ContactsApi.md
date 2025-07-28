@@ -1,4 +1,4 @@
-# esi_client.ContactsApi
+# eve_esi_python.ContactsApi
 
 All URIs are relative to *https://esi.evetech.net*
 
@@ -27,13 +27,13 @@ Bulk delete contacts
 * OAuth Authentication (OAuth2):
 
 ```python
-import esi_client
-from esi_client.rest import ApiException
+import eve_esi_python
+from eve_esi_python.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to https://esi.evetech.net
 # See configuration.py for a list of all supported configuration parameters.
-configuration = esi_client.Configuration(
+configuration = eve_esi_python.Configuration(
     host = "https://esi.evetech.net"
 )
 
@@ -45,9 +45,9 @@ configuration = esi_client.Configuration(
 configuration.access_token = os.environ["ACCESS_TOKEN"]
 
 # Enter a context with an instance of the API client
-with esi_client.ApiClient(configuration) as api_client:
+with eve_esi_python.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = esi_client.ContactsApi(api_client)
+    api_instance = eve_esi_python.ContactsApi(api_client)
     character_id = 56 # int | The ID of the character
     contact_ids = [56] # List[int] | 
     x_compatibility_date = '2020-01-01' # date | The compatibility date for the request.
@@ -112,14 +112,14 @@ Return contacts of an alliance
 * OAuth Authentication (OAuth2):
 
 ```python
-import esi_client
-from esi_client.models.alliances_alliance_id_contacts_get_inner import AlliancesAllianceIdContactsGetInner
-from esi_client.rest import ApiException
+import eve_esi_python
+from eve_esi_python.models.alliances_alliance_id_contacts_get_inner import AlliancesAllianceIdContactsGetInner
+from eve_esi_python.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to https://esi.evetech.net
 # See configuration.py for a list of all supported configuration parameters.
-configuration = esi_client.Configuration(
+configuration = eve_esi_python.Configuration(
     host = "https://esi.evetech.net"
 )
 
@@ -131,9 +131,9 @@ configuration = esi_client.Configuration(
 configuration.access_token = os.environ["ACCESS_TOKEN"]
 
 # Enter a context with an instance of the API client
-with esi_client.ApiClient(configuration) as api_client:
+with eve_esi_python.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = esi_client.ContactsApi(api_client)
+    api_instance = eve_esi_python.ContactsApi(api_client)
     alliance_id = 56 # int | The ID of the alliance
     x_compatibility_date = '2020-01-01' # date | The compatibility date for the request.
     page = 56 # int |  (optional)
@@ -198,14 +198,14 @@ Return custom labels for an alliance's contacts
 * OAuth Authentication (OAuth2):
 
 ```python
-import esi_client
-from esi_client.models.alliances_alliance_id_contacts_labels_get_inner import AlliancesAllianceIdContactsLabelsGetInner
-from esi_client.rest import ApiException
+import eve_esi_python
+from eve_esi_python.models.alliances_alliance_id_contacts_labels_get_inner import AlliancesAllianceIdContactsLabelsGetInner
+from eve_esi_python.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to https://esi.evetech.net
 # See configuration.py for a list of all supported configuration parameters.
-configuration = esi_client.Configuration(
+configuration = eve_esi_python.Configuration(
     host = "https://esi.evetech.net"
 )
 
@@ -217,9 +217,9 @@ configuration = esi_client.Configuration(
 configuration.access_token = os.environ["ACCESS_TOKEN"]
 
 # Enter a context with an instance of the API client
-with esi_client.ApiClient(configuration) as api_client:
+with eve_esi_python.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = esi_client.ContactsApi(api_client)
+    api_instance = eve_esi_python.ContactsApi(api_client)
     alliance_id = 56 # int | The ID of the alliance
     x_compatibility_date = '2020-01-01' # date | The compatibility date for the request.
     accept_language = 'en' # str | The language to use for the response. Defaults to 'en'. (optional)
@@ -282,14 +282,14 @@ Return contacts of a character
 * OAuth Authentication (OAuth2):
 
 ```python
-import esi_client
-from esi_client.models.characters_character_id_contacts_get_inner import CharactersCharacterIdContactsGetInner
-from esi_client.rest import ApiException
+import eve_esi_python
+from eve_esi_python.models.characters_character_id_contacts_get_inner import CharactersCharacterIdContactsGetInner
+from eve_esi_python.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to https://esi.evetech.net
 # See configuration.py for a list of all supported configuration parameters.
-configuration = esi_client.Configuration(
+configuration = eve_esi_python.Configuration(
     host = "https://esi.evetech.net"
 )
 
@@ -301,9 +301,9 @@ configuration = esi_client.Configuration(
 configuration.access_token = os.environ["ACCESS_TOKEN"]
 
 # Enter a context with an instance of the API client
-with esi_client.ApiClient(configuration) as api_client:
+with eve_esi_python.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = esi_client.ContactsApi(api_client)
+    api_instance = eve_esi_python.ContactsApi(api_client)
     character_id = 56 # int | The ID of the character
     x_compatibility_date = '2020-01-01' # date | The compatibility date for the request.
     page = 56 # int |  (optional)
@@ -368,14 +368,14 @@ Return custom labels for a character's contacts
 * OAuth Authentication (OAuth2):
 
 ```python
-import esi_client
-from esi_client.models.alliances_alliance_id_contacts_labels_get_inner import AlliancesAllianceIdContactsLabelsGetInner
-from esi_client.rest import ApiException
+import eve_esi_python
+from eve_esi_python.models.alliances_alliance_id_contacts_labels_get_inner import AlliancesAllianceIdContactsLabelsGetInner
+from eve_esi_python.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to https://esi.evetech.net
 # See configuration.py for a list of all supported configuration parameters.
-configuration = esi_client.Configuration(
+configuration = eve_esi_python.Configuration(
     host = "https://esi.evetech.net"
 )
 
@@ -387,9 +387,9 @@ configuration = esi_client.Configuration(
 configuration.access_token = os.environ["ACCESS_TOKEN"]
 
 # Enter a context with an instance of the API client
-with esi_client.ApiClient(configuration) as api_client:
+with eve_esi_python.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = esi_client.ContactsApi(api_client)
+    api_instance = eve_esi_python.ContactsApi(api_client)
     character_id = 56 # int | The ID of the character
     x_compatibility_date = '2020-01-01' # date | The compatibility date for the request.
     accept_language = 'en' # str | The language to use for the response. Defaults to 'en'. (optional)
@@ -452,14 +452,14 @@ Return contacts of a corporation
 * OAuth Authentication (OAuth2):
 
 ```python
-import esi_client
-from esi_client.models.corporations_corporation_id_contacts_get_inner import CorporationsCorporationIdContactsGetInner
-from esi_client.rest import ApiException
+import eve_esi_python
+from eve_esi_python.models.corporations_corporation_id_contacts_get_inner import CorporationsCorporationIdContactsGetInner
+from eve_esi_python.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to https://esi.evetech.net
 # See configuration.py for a list of all supported configuration parameters.
-configuration = esi_client.Configuration(
+configuration = eve_esi_python.Configuration(
     host = "https://esi.evetech.net"
 )
 
@@ -471,9 +471,9 @@ configuration = esi_client.Configuration(
 configuration.access_token = os.environ["ACCESS_TOKEN"]
 
 # Enter a context with an instance of the API client
-with esi_client.ApiClient(configuration) as api_client:
+with eve_esi_python.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = esi_client.ContactsApi(api_client)
+    api_instance = eve_esi_python.ContactsApi(api_client)
     corporation_id = 56 # int | The ID of the corporation
     x_compatibility_date = '2020-01-01' # date | The compatibility date for the request.
     page = 56 # int |  (optional)
@@ -538,14 +538,14 @@ Return custom labels for a corporation's contacts
 * OAuth Authentication (OAuth2):
 
 ```python
-import esi_client
-from esi_client.models.alliances_alliance_id_contacts_labels_get_inner import AlliancesAllianceIdContactsLabelsGetInner
-from esi_client.rest import ApiException
+import eve_esi_python
+from eve_esi_python.models.alliances_alliance_id_contacts_labels_get_inner import AlliancesAllianceIdContactsLabelsGetInner
+from eve_esi_python.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to https://esi.evetech.net
 # See configuration.py for a list of all supported configuration parameters.
-configuration = esi_client.Configuration(
+configuration = eve_esi_python.Configuration(
     host = "https://esi.evetech.net"
 )
 
@@ -557,9 +557,9 @@ configuration = esi_client.Configuration(
 configuration.access_token = os.environ["ACCESS_TOKEN"]
 
 # Enter a context with an instance of the API client
-with esi_client.ApiClient(configuration) as api_client:
+with eve_esi_python.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = esi_client.ContactsApi(api_client)
+    api_instance = eve_esi_python.ContactsApi(api_client)
     corporation_id = 56 # int | The ID of the corporation
     x_compatibility_date = '2020-01-01' # date | The compatibility date for the request.
     accept_language = 'en' # str | The language to use for the response. Defaults to 'en'. (optional)
@@ -622,13 +622,13 @@ Bulk add contacts with same settings
 * OAuth Authentication (OAuth2):
 
 ```python
-import esi_client
-from esi_client.rest import ApiException
+import eve_esi_python
+from eve_esi_python.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to https://esi.evetech.net
 # See configuration.py for a list of all supported configuration parameters.
-configuration = esi_client.Configuration(
+configuration = eve_esi_python.Configuration(
     host = "https://esi.evetech.net"
 )
 
@@ -640,9 +640,9 @@ configuration = esi_client.Configuration(
 configuration.access_token = os.environ["ACCESS_TOKEN"]
 
 # Enter a context with an instance of the API client
-with esi_client.ApiClient(configuration) as api_client:
+with eve_esi_python.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = esi_client.ContactsApi(api_client)
+    api_instance = eve_esi_python.ContactsApi(api_client)
     character_id = 56 # int | The ID of the character
     standing = 3.4 # float | 
     x_compatibility_date = '2020-01-01' # date | The compatibility date for the request.
@@ -713,13 +713,13 @@ Bulk edit contacts with same settings
 * OAuth Authentication (OAuth2):
 
 ```python
-import esi_client
-from esi_client.rest import ApiException
+import eve_esi_python
+from eve_esi_python.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to https://esi.evetech.net
 # See configuration.py for a list of all supported configuration parameters.
-configuration = esi_client.Configuration(
+configuration = eve_esi_python.Configuration(
     host = "https://esi.evetech.net"
 )
 
@@ -731,9 +731,9 @@ configuration = esi_client.Configuration(
 configuration.access_token = os.environ["ACCESS_TOKEN"]
 
 # Enter a context with an instance of the API client
-with esi_client.ApiClient(configuration) as api_client:
+with eve_esi_python.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = esi_client.ContactsApi(api_client)
+    api_instance = eve_esi_python.ContactsApi(api_client)
     character_id = 56 # int | The ID of the character
     standing = 3.4 # float | 
     x_compatibility_date = '2020-01-01' # date | The compatibility date for the request.

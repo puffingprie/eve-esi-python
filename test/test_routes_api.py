@@ -15,7 +15,7 @@
 
 import unittest
 
-from esi_client.api.routes_api import RoutesApi
+from eve_esi_python.api.routes_api import RoutesApi
 
 
 class TestRoutesApi(unittest.TestCase):

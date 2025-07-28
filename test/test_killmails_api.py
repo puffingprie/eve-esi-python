@@ -15,7 +15,7 @@
 
 import unittest
 
-from esi_client.api.killmails_api import KillmailsApi
+from eve_esi_python.api.killmails_api import KillmailsApi
 
 
 class TestKillmailsApi(unittest.TestCase):

@@ -15,7 +15,7 @@
 
 import unittest
 
-from esi_client.api.search_api import SearchApi
+from eve_esi_python.api.search_api import SearchApi
 
 
 class TestSearchApi(unittest.TestCase):

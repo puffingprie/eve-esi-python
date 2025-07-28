@@ -11,7 +11,7 @@ Name | Type | Description | Notes
 ## Example
 
 ```python
-from esi_client.models.error import Error
+from eve_esi_python.models.error import Error
 
 # TODO update the JSON string below
 json = "{}"

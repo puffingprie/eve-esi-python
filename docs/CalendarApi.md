@@ -1,4 +1,4 @@
-# esi_client.CalendarApi
+# eve_esi_python.CalendarApi
 
 All URIs are relative to *https://esi.evetech.net*
 
@@ -22,14 +22,14 @@ Get 50 event summaries from the calendar. If no from_event ID is given, the reso
 * OAuth Authentication (OAuth2):
 
 ```python
-import esi_client
-from esi_client.models.characters_character_id_calendar_get_inner import CharactersCharacterIdCalendarGetInner
-from esi_client.rest import ApiException
+import eve_esi_python
+from eve_esi_python.models.characters_character_id_calendar_get_inner import CharactersCharacterIdCalendarGetInner
+from eve_esi_python.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to https://esi.evetech.net
 # See configuration.py for a list of all supported configuration parameters.
-configuration = esi_client.Configuration(
+configuration = eve_esi_python.Configuration(
     host = "https://esi.evetech.net"
 )
 
@@ -41,9 +41,9 @@ configuration = esi_client.Configuration(
 configuration.access_token = os.environ["ACCESS_TOKEN"]
 
 # Enter a context with an instance of the API client
-with esi_client.ApiClient(configuration) as api_client:
+with eve_esi_python.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = esi_client.CalendarApi(api_client)
+    api_instance = eve_esi_python.CalendarApi(api_client)
     character_id = 56 # int | The ID of the character
     x_compatibility_date = '2020-01-01' # date | The compatibility date for the request.
     from_event = 56 # int |  (optional)
@@ -108,14 +108,14 @@ Get all the information for a specific event
 * OAuth Authentication (OAuth2):
 
 ```python
-import esi_client
-from esi_client.models.characters_character_id_calendar_event_id_get import CharactersCharacterIdCalendarEventIdGet
-from esi_client.rest import ApiException
+import eve_esi_python
+from eve_esi_python.models.characters_character_id_calendar_event_id_get import CharactersCharacterIdCalendarEventIdGet
+from eve_esi_python.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to https://esi.evetech.net
 # See configuration.py for a list of all supported configuration parameters.
-configuration = esi_client.Configuration(
+configuration = eve_esi_python.Configuration(
     host = "https://esi.evetech.net"
 )
 
@@ -127,9 +127,9 @@ configuration = esi_client.Configuration(
 configuration.access_token = os.environ["ACCESS_TOKEN"]
 
 # Enter a context with an instance of the API client
-with esi_client.ApiClient(configuration) as api_client:
+with eve_esi_python.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = esi_client.CalendarApi(api_client)
+    api_instance = eve_esi_python.CalendarApi(api_client)
     character_id = 56 # int | The ID of the character
     event_id = 56 # int | 
     x_compatibility_date = '2020-01-01' # date | The compatibility date for the request.
@@ -194,14 +194,14 @@ Get all invited attendees for a given event
 * OAuth Authentication (OAuth2):
 
 ```python
-import esi_client
-from esi_client.models.characters_character_id_calendar_event_id_attendees_get_inner import CharactersCharacterIdCalendarEventIdAttendeesGetInner
-from esi_client.rest import ApiException
+import eve_esi_python
+from eve_esi_python.models.characters_character_id_calendar_event_id_attendees_get_inner import CharactersCharacterIdCalendarEventIdAttendeesGetInner
+from eve_esi_python.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to https://esi.evetech.net
 # See configuration.py for a list of all supported configuration parameters.
-configuration = esi_client.Configuration(
+configuration = eve_esi_python.Configuration(
     host = "https://esi.evetech.net"
 )
 
@@ -213,9 +213,9 @@ configuration = esi_client.Configuration(
 configuration.access_token = os.environ["ACCESS_TOKEN"]
 
 # Enter a context with an instance of the API client
-with esi_client.ApiClient(configuration) as api_client:
+with eve_esi_python.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = esi_client.CalendarApi(api_client)
+    api_instance = eve_esi_python.CalendarApi(api_client)
     character_id = 56 # int | The ID of the character
     event_id = 56 # int | 
     x_compatibility_date = '2020-01-01' # date | The compatibility date for the request.
@@ -280,14 +280,14 @@ Set your response status to an event
 * OAuth Authentication (OAuth2):
 
 ```python
-import esi_client
-from esi_client.models.put_characters_character_id_calendar_event_id_request import PutCharactersCharacterIdCalendarEventIdRequest
-from esi_client.rest import ApiException
+import eve_esi_python
+from eve_esi_python.models.put_characters_character_id_calendar_event_id_request import PutCharactersCharacterIdCalendarEventIdRequest
+from eve_esi_python.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to https://esi.evetech.net
 # See configuration.py for a list of all supported configuration parameters.
-configuration = esi_client.Configuration(
+configuration = eve_esi_python.Configuration(
     host = "https://esi.evetech.net"
 )
 
@@ -299,16 +299,16 @@ configuration = esi_client.Configuration(
 configuration.access_token = os.environ["ACCESS_TOKEN"]
 
 # Enter a context with an instance of the API client
-with esi_client.ApiClient(configuration) as api_client:
+with eve_esi_python.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = esi_client.CalendarApi(api_client)
+    api_instance = eve_esi_python.CalendarApi(api_client)
     character_id = 56 # int | The ID of the character
     event_id = 56 # int | 
     x_compatibility_date = '2020-01-01' # date | The compatibility date for the request.
     accept_language = 'en' # str | The language to use for the response. Defaults to 'en'. (optional)
     if_none_match = 'if_none_match_example' # str | The ETag of the previous request. A 304 will be returned if this matches the current ETag. (optional)
     x_tenant = 'tranquility' # str | The tenant ID for the request. Defaults to 'tranquility'. (optional)
-    put_characters_character_id_calendar_event_id_request = esi_client.PutCharactersCharacterIdCalendarEventIdRequest() # PutCharactersCharacterIdCalendarEventIdRequest |  (optional)
+    put_characters_character_id_calendar_event_id_request = eve_esi_python.PutCharactersCharacterIdCalendarEventIdRequest() # PutCharactersCharacterIdCalendarEventIdRequest |  (optional)
 
     try:
         # Respond to an event

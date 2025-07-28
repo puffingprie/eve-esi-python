@@ -15,7 +15,7 @@
 
 import unittest
 
-from esi_client.api.clones_api import ClonesApi
+from eve_esi_python.api.clones_api import ClonesApi
 
 
 class TestClonesApi(unittest.TestCase):

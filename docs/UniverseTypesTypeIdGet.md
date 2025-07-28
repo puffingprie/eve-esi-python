@@ -25,7 +25,7 @@ Name | Type | Description | Notes
 ## Example
 
 ```python
-from esi_client.models.universe_types_type_id_get import UniverseTypesTypeIdGet
+from eve_esi_python.models.universe_types_type_id_get import UniverseTypesTypeIdGet
 
 # TODO update the JSON string below
 json = "{}"

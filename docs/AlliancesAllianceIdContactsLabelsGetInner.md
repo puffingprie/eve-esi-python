@@ -11,7 +11,7 @@ Name | Type | Description | Notes
 ## Example
 
 ```python
-from esi_client.models.alliances_alliance_id_contacts_labels_get_inner import AlliancesAllianceIdContactsLabelsGetInner
+from eve_esi_python.models.alliances_alliance_id_contacts_labels_get_inner import AlliancesAllianceIdContactsLabelsGetInner
 
 # TODO update the JSON string below
 json = "{}"

@@ -13,7 +13,7 @@ Name | Type | Description | Notes
 ## Example
 
 ```python
-from esi_client.models.characters_character_id_fittings_get_inner_items_inner import CharactersCharacterIdFittingsGetInnerItemsInner
+from eve_esi_python.models.characters_character_id_fittings_get_inner_items_inner import CharactersCharacterIdFittingsGetInnerItemsInner
 
 # TODO update the JSON string below
 json = "{}"

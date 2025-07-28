@@ -12,7 +12,7 @@ Name | Type | Description | Notes
 ## Example
 
 ```python
-from esi_client.models.dogma_dynamic_items_type_id_item_id_get_dogma_effects_inner import DogmaDynamicItemsTypeIdItemIdGetDogmaEffectsInner
+from eve_esi_python.models.dogma_dynamic_items_type_id_item_id_get_dogma_effects_inner import DogmaDynamicItemsTypeIdItemIdGetDogmaEffectsInner
 
 # TODO update the JSON string below
 json = "{}"

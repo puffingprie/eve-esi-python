@@ -15,7 +15,7 @@
 
 import unittest
 
-from esi_client.api.contracts_api import ContractsApi
+from eve_esi_python.api.contracts_api import ContractsApi
 
 
 class TestContractsApi(unittest.TestCase):

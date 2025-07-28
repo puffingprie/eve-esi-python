@@ -17,7 +17,7 @@ Name | Type | Description | Notes
 ## Example
 
 ```python
-from esi_client.models.incursions_get_inner import IncursionsGetInner
+from eve_esi_python.models.incursions_get_inner import IncursionsGetInner
 
 # TODO update the JSON string below
 json = "{}"

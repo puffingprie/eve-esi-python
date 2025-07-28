@@ -15,7 +15,7 @@
 
 import unittest
 
-from esi_client.api.planetary_interaction_api import PlanetaryInteractionApi
+from eve_esi_python.api.planetary_interaction_api import PlanetaryInteractionApi
 
 
 class TestPlanetaryInteractionApi(unittest.TestCase):

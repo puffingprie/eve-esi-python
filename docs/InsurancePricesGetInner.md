@@ -11,7 +11,7 @@ Name | Type | Description | Notes
 ## Example
 
 ```python
-from esi_client.models.insurance_prices_get_inner import InsurancePricesGetInner
+from eve_esi_python.models.insurance_prices_get_inner import InsurancePricesGetInner
 
 # TODO update the JSON string below
 json = "{}"

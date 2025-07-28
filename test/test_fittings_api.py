@@ -15,7 +15,7 @@
 
 import unittest
 
-from esi_client.api.fittings_api import FittingsApi
+from eve_esi_python.api.fittings_api import FittingsApi
 
 
 class TestFittingsApi(unittest.TestCase):

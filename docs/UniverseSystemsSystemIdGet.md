@@ -19,7 +19,7 @@ Name | Type | Description | Notes
 ## Example
 
 ```python
-from esi_client.models.universe_systems_system_id_get import UniverseSystemsSystemIdGet
+from eve_esi_python.models.universe_systems_system_id_get import UniverseSystemsSystemIdGet
 
 # TODO update the JSON string below
 json = "{}"

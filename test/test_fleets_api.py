@@ -15,7 +15,7 @@
 
 import unittest
 
-from esi_client.api.fleets_api import FleetsApi
+from eve_esi_python.api.fleets_api import FleetsApi
 
 
 class TestFleetsApi(unittest.TestCase):

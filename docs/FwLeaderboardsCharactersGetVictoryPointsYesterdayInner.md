@@ -12,7 +12,7 @@ Name | Type | Description | Notes
 ## Example
 
 ```python
-from esi_client.models.fw_leaderboards_characters_get_victory_points_yesterday_inner import FwLeaderboardsCharactersGetVictoryPointsYesterdayInner
+from eve_esi_python.models.fw_leaderboards_characters_get_victory_points_yesterday_inner import FwLeaderboardsCharactersGetVictoryPointsYesterdayInner
 
 # TODO update the JSON string below
 json = "{}"

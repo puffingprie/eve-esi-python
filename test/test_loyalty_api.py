@@ -15,7 +15,7 @@
 
 import unittest
 
-from esi_client.api.loyalty_api import LoyaltyApi
+from eve_esi_python.api.loyalty_api import LoyaltyApi
 
 
 class TestLoyaltyApi(unittest.TestCase):

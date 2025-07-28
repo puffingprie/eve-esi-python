@@ -15,7 +15,7 @@
 
 import unittest
 
-from esi_client.api.calendar_api import CalendarApi
+from eve_esi_python.api.calendar_api import CalendarApi
 
 
 class TestCalendarApi(unittest.TestCase):

@@ -15,7 +15,7 @@
 
 import unittest
 
-from esi_client.api.dogma_api import DogmaApi
+from eve_esi_python.api.dogma_api import DogmaApi
 
 
 class TestDogmaApi(unittest.TestCase):

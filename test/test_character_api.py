@@ -15,7 +15,7 @@
 
 import unittest
 
-from esi_client.api.character_api import CharacterApi
+from eve_esi_python.api.character_api import CharacterApi
 
 
 class TestCharacterApi(unittest.TestCase):

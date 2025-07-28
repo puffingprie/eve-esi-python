@@ -15,7 +15,7 @@
 
 import unittest
 
-from esi_client.api.status_api import StatusApi
+from eve_esi_python.api.status_api import StatusApi
 
 
 class TestStatusApi(unittest.TestCase):

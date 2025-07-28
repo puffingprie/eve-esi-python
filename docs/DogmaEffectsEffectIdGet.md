@@ -30,7 +30,7 @@ Name | Type | Description | Notes
 ## Example
 
 ```python
-from esi_client.models.dogma_effects_effect_id_get import DogmaEffectsEffectIdGet
+from eve_esi_python.models.dogma_effects_effect_id_get import DogmaEffectsEffectIdGet
 
 # TODO update the JSON string below
 json = "{}"

@@ -1,4 +1,4 @@
-# esi_client.MarketApi
+# eve_esi_python.MarketApi
 
 All URIs are relative to *https://esi.evetech.net*
 
@@ -29,14 +29,14 @@ List open market orders placed by a character
 * OAuth Authentication (OAuth2):
 
 ```python
-import esi_client
-from esi_client.models.characters_character_id_orders_get_inner import CharactersCharacterIdOrdersGetInner
-from esi_client.rest import ApiException
+import eve_esi_python
+from eve_esi_python.models.characters_character_id_orders_get_inner import CharactersCharacterIdOrdersGetInner
+from eve_esi_python.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to https://esi.evetech.net
 # See configuration.py for a list of all supported configuration parameters.
-configuration = esi_client.Configuration(
+configuration = eve_esi_python.Configuration(
     host = "https://esi.evetech.net"
 )
 
@@ -48,9 +48,9 @@ configuration = esi_client.Configuration(
 configuration.access_token = os.environ["ACCESS_TOKEN"]
 
 # Enter a context with an instance of the API client
-with esi_client.ApiClient(configuration) as api_client:
+with eve_esi_python.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = esi_client.MarketApi(api_client)
+    api_instance = eve_esi_python.MarketApi(api_client)
     character_id = 56 # int | The ID of the character
     x_compatibility_date = '2020-01-01' # date | The compatibility date for the request.
     accept_language = 'en' # str | The language to use for the response. Defaults to 'en'. (optional)
@@ -113,14 +113,14 @@ List cancelled and expired market orders placed by a character up to 90 days in 
 * OAuth Authentication (OAuth2):
 
 ```python
-import esi_client
-from esi_client.models.characters_character_id_orders_history_get_inner import CharactersCharacterIdOrdersHistoryGetInner
-from esi_client.rest import ApiException
+import eve_esi_python
+from eve_esi_python.models.characters_character_id_orders_history_get_inner import CharactersCharacterIdOrdersHistoryGetInner
+from eve_esi_python.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to https://esi.evetech.net
 # See configuration.py for a list of all supported configuration parameters.
-configuration = esi_client.Configuration(
+configuration = eve_esi_python.Configuration(
     host = "https://esi.evetech.net"
 )
 
@@ -132,9 +132,9 @@ configuration = esi_client.Configuration(
 configuration.access_token = os.environ["ACCESS_TOKEN"]
 
 # Enter a context with an instance of the API client
-with esi_client.ApiClient(configuration) as api_client:
+with eve_esi_python.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = esi_client.MarketApi(api_client)
+    api_instance = eve_esi_python.MarketApi(api_client)
     character_id = 56 # int | The ID of the character
     x_compatibility_date = '2020-01-01' # date | The compatibility date for the request.
     page = 56 # int |  (optional)
@@ -201,14 +201,14 @@ Requires one of the following EVE corporation role(s): Accountant, Trader
 * OAuth Authentication (OAuth2):
 
 ```python
-import esi_client
-from esi_client.models.corporations_corporation_id_orders_get_inner import CorporationsCorporationIdOrdersGetInner
-from esi_client.rest import ApiException
+import eve_esi_python
+from eve_esi_python.models.corporations_corporation_id_orders_get_inner import CorporationsCorporationIdOrdersGetInner
+from eve_esi_python.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to https://esi.evetech.net
 # See configuration.py for a list of all supported configuration parameters.
-configuration = esi_client.Configuration(
+configuration = eve_esi_python.Configuration(
     host = "https://esi.evetech.net"
 )
 
@@ -220,9 +220,9 @@ configuration = esi_client.Configuration(
 configuration.access_token = os.environ["ACCESS_TOKEN"]
 
 # Enter a context with an instance of the API client
-with esi_client.ApiClient(configuration) as api_client:
+with eve_esi_python.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = esi_client.MarketApi(api_client)
+    api_instance = eve_esi_python.MarketApi(api_client)
     corporation_id = 56 # int | The ID of the corporation
     x_compatibility_date = '2020-01-01' # date | The compatibility date for the request.
     page = 56 # int |  (optional)
@@ -289,14 +289,14 @@ Requires one of the following EVE corporation role(s): Accountant, Trader
 * OAuth Authentication (OAuth2):
 
 ```python
-import esi_client
-from esi_client.models.corporations_corporation_id_orders_history_get_inner import CorporationsCorporationIdOrdersHistoryGetInner
-from esi_client.rest import ApiException
+import eve_esi_python
+from eve_esi_python.models.corporations_corporation_id_orders_history_get_inner import CorporationsCorporationIdOrdersHistoryGetInner
+from eve_esi_python.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to https://esi.evetech.net
 # See configuration.py for a list of all supported configuration parameters.
-configuration = esi_client.Configuration(
+configuration = eve_esi_python.Configuration(
     host = "https://esi.evetech.net"
 )
 
@@ -308,9 +308,9 @@ configuration = esi_client.Configuration(
 configuration.access_token = os.environ["ACCESS_TOKEN"]
 
 # Enter a context with an instance of the API client
-with esi_client.ApiClient(configuration) as api_client:
+with eve_esi_python.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = esi_client.MarketApi(api_client)
+    api_instance = eve_esi_python.MarketApi(api_client)
     corporation_id = 56 # int | The ID of the corporation
     x_compatibility_date = '2020-01-01' # date | The compatibility date for the request.
     page = 56 # int |  (optional)
@@ -376,21 +376,21 @@ This route expires daily at 11:05
 
 
 ```python
-import esi_client
-from esi_client.rest import ApiException
+import eve_esi_python
+from eve_esi_python.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to https://esi.evetech.net
 # See configuration.py for a list of all supported configuration parameters.
-configuration = esi_client.Configuration(
+configuration = eve_esi_python.Configuration(
     host = "https://esi.evetech.net"
 )
 
 
 # Enter a context with an instance of the API client
-with esi_client.ApiClient(configuration) as api_client:
+with eve_esi_python.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = esi_client.MarketApi(api_client)
+    api_instance = eve_esi_python.MarketApi(api_client)
     x_compatibility_date = '2020-01-01' # date | The compatibility date for the request.
     accept_language = 'en' # str | The language to use for the response. Defaults to 'en'. (optional)
     if_none_match = 'if_none_match_example' # str | The ETag of the previous request. A 304 will be returned if this matches the current ETag. (optional)
@@ -452,22 +452,22 @@ This route expires daily at 11:05
 
 
 ```python
-import esi_client
-from esi_client.models.markets_groups_market_group_id_get import MarketsGroupsMarketGroupIdGet
-from esi_client.rest import ApiException
+import eve_esi_python
+from eve_esi_python.models.markets_groups_market_group_id_get import MarketsGroupsMarketGroupIdGet
+from eve_esi_python.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to https://esi.evetech.net
 # See configuration.py for a list of all supported configuration parameters.
-configuration = esi_client.Configuration(
+configuration = eve_esi_python.Configuration(
     host = "https://esi.evetech.net"
 )
 
 
 # Enter a context with an instance of the API client
-with esi_client.ApiClient(configuration) as api_client:
+with eve_esi_python.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = esi_client.MarketApi(api_client)
+    api_instance = eve_esi_python.MarketApi(api_client)
     market_group_id = 56 # int | 
     x_compatibility_date = '2020-01-01' # date | The compatibility date for the request.
     accept_language = 'en' # str | The language to use for the response. Defaults to 'en'. (optional)
@@ -529,22 +529,22 @@ Return a list of prices
 
 
 ```python
-import esi_client
-from esi_client.models.markets_prices_get_inner import MarketsPricesGetInner
-from esi_client.rest import ApiException
+import eve_esi_python
+from eve_esi_python.models.markets_prices_get_inner import MarketsPricesGetInner
+from eve_esi_python.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to https://esi.evetech.net
 # See configuration.py for a list of all supported configuration parameters.
-configuration = esi_client.Configuration(
+configuration = eve_esi_python.Configuration(
     host = "https://esi.evetech.net"
 )
 
 
 # Enter a context with an instance of the API client
-with esi_client.ApiClient(configuration) as api_client:
+with eve_esi_python.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = esi_client.MarketApi(api_client)
+    api_instance = eve_esi_python.MarketApi(api_client)
     x_compatibility_date = '2020-01-01' # date | The compatibility date for the request.
     accept_language = 'en' # str | The language to use for the response. Defaults to 'en'. (optional)
     if_none_match = 'if_none_match_example' # str | The ETag of the previous request. A 304 will be returned if this matches the current ETag. (optional)
@@ -606,22 +606,22 @@ This route expires daily at 11:05
 
 
 ```python
-import esi_client
-from esi_client.models.markets_region_id_history_get_inner import MarketsRegionIdHistoryGetInner
-from esi_client.rest import ApiException
+import eve_esi_python
+from eve_esi_python.models.markets_region_id_history_get_inner import MarketsRegionIdHistoryGetInner
+from eve_esi_python.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to https://esi.evetech.net
 # See configuration.py for a list of all supported configuration parameters.
-configuration = esi_client.Configuration(
+configuration = eve_esi_python.Configuration(
     host = "https://esi.evetech.net"
 )
 
 
 # Enter a context with an instance of the API client
-with esi_client.ApiClient(configuration) as api_client:
+with eve_esi_python.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = esi_client.MarketApi(api_client)
+    api_instance = eve_esi_python.MarketApi(api_client)
     region_id = 56 # int | 
     type_id = 56 # int | 
     x_compatibility_date = '2020-01-01' # date | The compatibility date for the request.
@@ -685,22 +685,22 @@ Return a list of orders in a region
 
 
 ```python
-import esi_client
-from esi_client.models.markets_region_id_orders_get_inner import MarketsRegionIdOrdersGetInner
-from esi_client.rest import ApiException
+import eve_esi_python
+from eve_esi_python.models.markets_region_id_orders_get_inner import MarketsRegionIdOrdersGetInner
+from eve_esi_python.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to https://esi.evetech.net
 # See configuration.py for a list of all supported configuration parameters.
-configuration = esi_client.Configuration(
+configuration = eve_esi_python.Configuration(
     host = "https://esi.evetech.net"
 )
 
 
 # Enter a context with an instance of the API client
-with esi_client.ApiClient(configuration) as api_client:
+with eve_esi_python.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = esi_client.MarketApi(api_client)
+    api_instance = eve_esi_python.MarketApi(api_client)
     order_type = all # str |  (default to all)
     region_id = 56 # int | 
     x_compatibility_date = '2020-01-01' # date | The compatibility date for the request.
@@ -768,21 +768,21 @@ Return a list of type IDs that have active orders in the region, for efficient m
 
 
 ```python
-import esi_client
-from esi_client.rest import ApiException
+import eve_esi_python
+from eve_esi_python.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to https://esi.evetech.net
 # See configuration.py for a list of all supported configuration parameters.
-configuration = esi_client.Configuration(
+configuration = eve_esi_python.Configuration(
     host = "https://esi.evetech.net"
 )
 
 
 # Enter a context with an instance of the API client
-with esi_client.ApiClient(configuration) as api_client:
+with eve_esi_python.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = esi_client.MarketApi(api_client)
+    api_instance = eve_esi_python.MarketApi(api_client)
     region_id = 56 # int | 
     x_compatibility_date = '2020-01-01' # date | The compatibility date for the request.
     page = 56 # int |  (optional)
@@ -847,14 +847,14 @@ Return all orders in a structure
 * OAuth Authentication (OAuth2):
 
 ```python
-import esi_client
-from esi_client.models.markets_structures_structure_id_get_inner import MarketsStructuresStructureIdGetInner
-from esi_client.rest import ApiException
+import eve_esi_python
+from eve_esi_python.models.markets_structures_structure_id_get_inner import MarketsStructuresStructureIdGetInner
+from eve_esi_python.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to https://esi.evetech.net
 # See configuration.py for a list of all supported configuration parameters.
-configuration = esi_client.Configuration(
+configuration = eve_esi_python.Configuration(
     host = "https://esi.evetech.net"
 )
 
@@ -866,9 +866,9 @@ configuration = esi_client.Configuration(
 configuration.access_token = os.environ["ACCESS_TOKEN"]
 
 # Enter a context with an instance of the API client
-with esi_client.ApiClient(configuration) as api_client:
+with eve_esi_python.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = esi_client.MarketApi(api_client)
+    api_instance = eve_esi_python.MarketApi(api_client)
     structure_id = 56 # int | 
     x_compatibility_date = '2020-01-01' # date | The compatibility date for the request.
     page = 56 # int |  (optional)

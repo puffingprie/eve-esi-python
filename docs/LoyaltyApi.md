@@ -1,4 +1,4 @@
-# esi_client.LoyaltyApi
+# eve_esi_python.LoyaltyApi
 
 All URIs are relative to *https://esi.evetech.net*
 
@@ -20,14 +20,14 @@ Return a list of loyalty points for all corporations the character has worked fo
 * OAuth Authentication (OAuth2):
 
 ```python
-import esi_client
-from esi_client.models.characters_character_id_loyalty_points_get_inner import CharactersCharacterIdLoyaltyPointsGetInner
-from esi_client.rest import ApiException
+import eve_esi_python
+from eve_esi_python.models.characters_character_id_loyalty_points_get_inner import CharactersCharacterIdLoyaltyPointsGetInner
+from eve_esi_python.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to https://esi.evetech.net
 # See configuration.py for a list of all supported configuration parameters.
-configuration = esi_client.Configuration(
+configuration = eve_esi_python.Configuration(
     host = "https://esi.evetech.net"
 )
 
@@ -39,9 +39,9 @@ configuration = esi_client.Configuration(
 configuration.access_token = os.environ["ACCESS_TOKEN"]
 
 # Enter a context with an instance of the API client
-with esi_client.ApiClient(configuration) as api_client:
+with eve_esi_python.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = esi_client.LoyaltyApi(api_client)
+    api_instance = eve_esi_python.LoyaltyApi(api_client)
     character_id = 56 # int | The ID of the character
     x_compatibility_date = '2020-01-01' # date | The compatibility date for the request.
     accept_language = 'en' # str | The language to use for the response. Defaults to 'en'. (optional)
@@ -105,22 +105,22 @@ This route expires daily at 11:05
 
 
 ```python
-import esi_client
-from esi_client.models.loyalty_stores_corporation_id_offers_get_inner import LoyaltyStoresCorporationIdOffersGetInner
-from esi_client.rest import ApiException
+import eve_esi_python
+from eve_esi_python.models.loyalty_stores_corporation_id_offers_get_inner import LoyaltyStoresCorporationIdOffersGetInner
+from eve_esi_python.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to https://esi.evetech.net
 # See configuration.py for a list of all supported configuration parameters.
-configuration = esi_client.Configuration(
+configuration = eve_esi_python.Configuration(
     host = "https://esi.evetech.net"
 )
 
 
 # Enter a context with an instance of the API client
-with esi_client.ApiClient(configuration) as api_client:
+with eve_esi_python.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = esi_client.LoyaltyApi(api_client)
+    api_instance = eve_esi_python.LoyaltyApi(api_client)
     corporation_id = 56 # int | The ID of the corporation
     x_compatibility_date = '2020-01-01' # date | The compatibility date for the request.
     accept_language = 'en' # str | The language to use for the response. Defaults to 'en'. (optional)

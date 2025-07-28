@@ -1,4 +1,4 @@
-# esi_client.KillmailsApi
+# eve_esi_python.KillmailsApi
 
 All URIs are relative to *https://esi.evetech.net*
 
@@ -21,14 +21,14 @@ Return a list of a character's kills and losses going back 90 days
 * OAuth Authentication (OAuth2):
 
 ```python
-import esi_client
-from esi_client.models.characters_character_id_killmails_recent_get_inner import CharactersCharacterIdKillmailsRecentGetInner
-from esi_client.rest import ApiException
+import eve_esi_python
+from eve_esi_python.models.characters_character_id_killmails_recent_get_inner import CharactersCharacterIdKillmailsRecentGetInner
+from eve_esi_python.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to https://esi.evetech.net
 # See configuration.py for a list of all supported configuration parameters.
-configuration = esi_client.Configuration(
+configuration = eve_esi_python.Configuration(
     host = "https://esi.evetech.net"
 )
 
@@ -40,9 +40,9 @@ configuration = esi_client.Configuration(
 configuration.access_token = os.environ["ACCESS_TOKEN"]
 
 # Enter a context with an instance of the API client
-with esi_client.ApiClient(configuration) as api_client:
+with eve_esi_python.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = esi_client.KillmailsApi(api_client)
+    api_instance = eve_esi_python.KillmailsApi(api_client)
     character_id = 56 # int | The ID of the character
     x_compatibility_date = '2020-01-01' # date | The compatibility date for the request.
     page = 56 # int |  (optional)
@@ -109,14 +109,14 @@ Requires one of the following EVE corporation role(s): Director
 * OAuth Authentication (OAuth2):
 
 ```python
-import esi_client
-from esi_client.models.characters_character_id_killmails_recent_get_inner import CharactersCharacterIdKillmailsRecentGetInner
-from esi_client.rest import ApiException
+import eve_esi_python
+from eve_esi_python.models.characters_character_id_killmails_recent_get_inner import CharactersCharacterIdKillmailsRecentGetInner
+from eve_esi_python.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to https://esi.evetech.net
 # See configuration.py for a list of all supported configuration parameters.
-configuration = esi_client.Configuration(
+configuration = eve_esi_python.Configuration(
     host = "https://esi.evetech.net"
 )
 
@@ -128,9 +128,9 @@ configuration = esi_client.Configuration(
 configuration.access_token = os.environ["ACCESS_TOKEN"]
 
 # Enter a context with an instance of the API client
-with esi_client.ApiClient(configuration) as api_client:
+with eve_esi_python.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = esi_client.KillmailsApi(api_client)
+    api_instance = eve_esi_python.KillmailsApi(api_client)
     corporation_id = 56 # int | The ID of the corporation
     x_compatibility_date = '2020-01-01' # date | The compatibility date for the request.
     page = 56 # int |  (optional)
@@ -194,22 +194,22 @@ Return a single killmail from its ID and hash
 
 
 ```python
-import esi_client
-from esi_client.models.killmails_killmail_id_killmail_hash_get import KillmailsKillmailIdKillmailHashGet
-from esi_client.rest import ApiException
+import eve_esi_python
+from eve_esi_python.models.killmails_killmail_id_killmail_hash_get import KillmailsKillmailIdKillmailHashGet
+from eve_esi_python.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to https://esi.evetech.net
 # See configuration.py for a list of all supported configuration parameters.
-configuration = esi_client.Configuration(
+configuration = eve_esi_python.Configuration(
     host = "https://esi.evetech.net"
 )
 
 
 # Enter a context with an instance of the API client
-with esi_client.ApiClient(configuration) as api_client:
+with eve_esi_python.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = esi_client.KillmailsApi(api_client)
+    api_instance = eve_esi_python.KillmailsApi(api_client)
     killmail_hash = 'killmail_hash_example' # str | 
     killmail_id = 56 # int | 
     x_compatibility_date = '2020-01-01' # date | The compatibility date for the request.

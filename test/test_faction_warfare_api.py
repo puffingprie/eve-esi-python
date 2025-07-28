@@ -15,7 +15,7 @@
 
 import unittest
 
-from esi_client.api.faction_warfare_api import FactionWarfareApi
+from eve_esi_python.api.faction_warfare_api import FactionWarfareApi
 
 
 class TestFactionWarfareApi(unittest.TestCase):

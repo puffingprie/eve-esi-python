@@ -14,7 +14,7 @@ Name | Type | Description | Notes
 ## Example
 
 ```python
-from esi_client.models.universe_groups_group_id_get import UniverseGroupsGroupIdGet
+from eve_esi_python.models.universe_groups_group_id_get import UniverseGroupsGroupIdGet
 
 # TODO update the JSON string below
 json = "{}"

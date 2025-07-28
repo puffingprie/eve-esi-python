@@ -1,10 +1,8 @@
 [project]
-name = "esi_client"
+name = "eve_esi_python"
 version = "0.1.0"
 description = "EVE Stellar Information (ESI) - tranquility"
 authors = [{ name = "puffingprie", email = "morte1916@gmail.com" }]
-license = "BSD-3-Clause"
-license-files = ["LICENSE.txt"]
 readme = "README.md"
 keywords = [
   "OpenAPI",
@@ -44,7 +42,7 @@ extension-pkg-whitelist = "pydantic"
 
 [tool.mypy]
 files = [
-  "esi_client",
+  "eve_esi_python",
   #"test",  # auto-generated tests
   "tests", # hand-written tests
 ]
@@ -81,7 +79,7 @@ disallow_any_generics = true
 #warn_return_any = true
 
 [[tool.mypy.overrides]]
-module = ["esi_client.configuration"]
+module = ["eve_esi_python.configuration"]
 warn_unused_ignores = true
 strict_equality = true
 extra_checks = true

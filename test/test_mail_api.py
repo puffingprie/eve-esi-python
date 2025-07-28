@@ -15,7 +15,7 @@
 
 import unittest
 
-from esi_client.api.mail_api import MailApi
+from eve_esi_python.api.mail_api import MailApi
 
 
 class TestMailApi(unittest.TestCase):

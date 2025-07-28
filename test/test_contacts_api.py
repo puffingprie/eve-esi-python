@@ -15,7 +15,7 @@
 
 import unittest
 
-from esi_client.api.contacts_api import ContactsApi
+from eve_esi_python.api.contacts_api import ContactsApi
 
 
 class TestContactsApi(unittest.TestCase):

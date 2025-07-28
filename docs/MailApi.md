@@ -1,4 +1,4 @@
-# esi_client.MailApi
+# eve_esi_python.MailApi
 
 All URIs are relative to *https://esi.evetech.net*
 
@@ -27,13 +27,13 @@ Delete a mail label
 * OAuth Authentication (OAuth2):
 
 ```python
-import esi_client
-from esi_client.rest import ApiException
+import eve_esi_python
+from eve_esi_python.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to https://esi.evetech.net
 # See configuration.py for a list of all supported configuration parameters.
-configuration = esi_client.Configuration(
+configuration = eve_esi_python.Configuration(
     host = "https://esi.evetech.net"
 )
 
@@ -45,9 +45,9 @@ configuration = esi_client.Configuration(
 configuration.access_token = os.environ["ACCESS_TOKEN"]
 
 # Enter a context with an instance of the API client
-with esi_client.ApiClient(configuration) as api_client:
+with eve_esi_python.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = esi_client.MailApi(api_client)
+    api_instance = eve_esi_python.MailApi(api_client)
     character_id = 56 # int | The ID of the character
     label_id = 56 # int | 
     x_compatibility_date = '2020-01-01' # date | The compatibility date for the request.
@@ -112,13 +112,13 @@ Delete a mail
 * OAuth Authentication (OAuth2):
 
 ```python
-import esi_client
-from esi_client.rest import ApiException
+import eve_esi_python
+from eve_esi_python.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to https://esi.evetech.net
 # See configuration.py for a list of all supported configuration parameters.
-configuration = esi_client.Configuration(
+configuration = eve_esi_python.Configuration(
     host = "https://esi.evetech.net"
 )
 
@@ -130,9 +130,9 @@ configuration = esi_client.Configuration(
 configuration.access_token = os.environ["ACCESS_TOKEN"]
 
 # Enter a context with an instance of the API client
-with esi_client.ApiClient(configuration) as api_client:
+with eve_esi_python.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = esi_client.MailApi(api_client)
+    api_instance = eve_esi_python.MailApi(api_client)
     character_id = 56 # int | The ID of the character
     mail_id = 56 # int | 
     x_compatibility_date = '2020-01-01' # date | The compatibility date for the request.
@@ -197,14 +197,14 @@ Return the 50 most recent mail headers belonging to the character that match the
 * OAuth Authentication (OAuth2):
 
 ```python
-import esi_client
-from esi_client.models.characters_character_id_mail_get_inner import CharactersCharacterIdMailGetInner
-from esi_client.rest import ApiException
+import eve_esi_python
+from eve_esi_python.models.characters_character_id_mail_get_inner import CharactersCharacterIdMailGetInner
+from eve_esi_python.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to https://esi.evetech.net
 # See configuration.py for a list of all supported configuration parameters.
-configuration = esi_client.Configuration(
+configuration = eve_esi_python.Configuration(
     host = "https://esi.evetech.net"
 )
 
@@ -216,9 +216,9 @@ configuration = esi_client.Configuration(
 configuration.access_token = os.environ["ACCESS_TOKEN"]
 
 # Enter a context with an instance of the API client
-with esi_client.ApiClient(configuration) as api_client:
+with eve_esi_python.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = esi_client.MailApi(api_client)
+    api_instance = eve_esi_python.MailApi(api_client)
     character_id = 56 # int | The ID of the character
     x_compatibility_date = '2020-01-01' # date | The compatibility date for the request.
     labels = [56] # List[int] |  (optional)
@@ -285,14 +285,14 @@ Return a list of the users mail labels, unread counts for each label and a total
 * OAuth Authentication (OAuth2):
 
 ```python
-import esi_client
-from esi_client.models.characters_character_id_mail_labels_get import CharactersCharacterIdMailLabelsGet
-from esi_client.rest import ApiException
+import eve_esi_python
+from eve_esi_python.models.characters_character_id_mail_labels_get import CharactersCharacterIdMailLabelsGet
+from eve_esi_python.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to https://esi.evetech.net
 # See configuration.py for a list of all supported configuration parameters.
-configuration = esi_client.Configuration(
+configuration = eve_esi_python.Configuration(
     host = "https://esi.evetech.net"
 )
 
@@ -304,9 +304,9 @@ configuration = esi_client.Configuration(
 configuration.access_token = os.environ["ACCESS_TOKEN"]
 
 # Enter a context with an instance of the API client
-with esi_client.ApiClient(configuration) as api_client:
+with eve_esi_python.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = esi_client.MailApi(api_client)
+    api_instance = eve_esi_python.MailApi(api_client)
     character_id = 56 # int | The ID of the character
     x_compatibility_date = '2020-01-01' # date | The compatibility date for the request.
     accept_language = 'en' # str | The language to use for the response. Defaults to 'en'. (optional)
@@ -369,14 +369,14 @@ Return all mailing lists that the character is subscribed to
 * OAuth Authentication (OAuth2):
 
 ```python
-import esi_client
-from esi_client.models.characters_character_id_mail_lists_get_inner import CharactersCharacterIdMailListsGetInner
-from esi_client.rest import ApiException
+import eve_esi_python
+from eve_esi_python.models.characters_character_id_mail_lists_get_inner import CharactersCharacterIdMailListsGetInner
+from eve_esi_python.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to https://esi.evetech.net
 # See configuration.py for a list of all supported configuration parameters.
-configuration = esi_client.Configuration(
+configuration = eve_esi_python.Configuration(
     host = "https://esi.evetech.net"
 )
 
@@ -388,9 +388,9 @@ configuration = esi_client.Configuration(
 configuration.access_token = os.environ["ACCESS_TOKEN"]
 
 # Enter a context with an instance of the API client
-with esi_client.ApiClient(configuration) as api_client:
+with eve_esi_python.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = esi_client.MailApi(api_client)
+    api_instance = eve_esi_python.MailApi(api_client)
     character_id = 56 # int | The ID of the character
     x_compatibility_date = '2020-01-01' # date | The compatibility date for the request.
     accept_language = 'en' # str | The language to use for the response. Defaults to 'en'. (optional)
@@ -453,14 +453,14 @@ Return the contents of an EVE mail
 * OAuth Authentication (OAuth2):
 
 ```python
-import esi_client
-from esi_client.models.characters_character_id_mail_mail_id_get import CharactersCharacterIdMailMailIdGet
-from esi_client.rest import ApiException
+import eve_esi_python
+from eve_esi_python.models.characters_character_id_mail_mail_id_get import CharactersCharacterIdMailMailIdGet
+from eve_esi_python.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to https://esi.evetech.net
 # See configuration.py for a list of all supported configuration parameters.
-configuration = esi_client.Configuration(
+configuration = eve_esi_python.Configuration(
     host = "https://esi.evetech.net"
 )
 
@@ -472,9 +472,9 @@ configuration = esi_client.Configuration(
 configuration.access_token = os.environ["ACCESS_TOKEN"]
 
 # Enter a context with an instance of the API client
-with esi_client.ApiClient(configuration) as api_client:
+with eve_esi_python.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = esi_client.MailApi(api_client)
+    api_instance = eve_esi_python.MailApi(api_client)
     character_id = 56 # int | The ID of the character
     mail_id = 56 # int | 
     x_compatibility_date = '2020-01-01' # date | The compatibility date for the request.
@@ -539,14 +539,14 @@ Create and send a new mail
 * OAuth Authentication (OAuth2):
 
 ```python
-import esi_client
-from esi_client.models.post_characters_character_id_mail_request import PostCharactersCharacterIdMailRequest
-from esi_client.rest import ApiException
+import eve_esi_python
+from eve_esi_python.models.post_characters_character_id_mail_request import PostCharactersCharacterIdMailRequest
+from eve_esi_python.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to https://esi.evetech.net
 # See configuration.py for a list of all supported configuration parameters.
-configuration = esi_client.Configuration(
+configuration = eve_esi_python.Configuration(
     host = "https://esi.evetech.net"
 )
 
@@ -558,15 +558,15 @@ configuration = esi_client.Configuration(
 configuration.access_token = os.environ["ACCESS_TOKEN"]
 
 # Enter a context with an instance of the API client
-with esi_client.ApiClient(configuration) as api_client:
+with eve_esi_python.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = esi_client.MailApi(api_client)
+    api_instance = eve_esi_python.MailApi(api_client)
     character_id = 56 # int | The ID of the character
     x_compatibility_date = '2020-01-01' # date | The compatibility date for the request.
     accept_language = 'en' # str | The language to use for the response. Defaults to 'en'. (optional)
     if_none_match = 'if_none_match_example' # str | The ETag of the previous request. A 304 will be returned if this matches the current ETag. (optional)
     x_tenant = 'tranquility' # str | The tenant ID for the request. Defaults to 'tranquility'. (optional)
-    post_characters_character_id_mail_request = esi_client.PostCharactersCharacterIdMailRequest() # PostCharactersCharacterIdMailRequest |  (optional)
+    post_characters_character_id_mail_request = eve_esi_python.PostCharactersCharacterIdMailRequest() # PostCharactersCharacterIdMailRequest |  (optional)
 
     try:
         # Send a new mail
@@ -625,14 +625,14 @@ Create a mail label
 * OAuth Authentication (OAuth2):
 
 ```python
-import esi_client
-from esi_client.models.post_characters_character_id_mail_labels_request import PostCharactersCharacterIdMailLabelsRequest
-from esi_client.rest import ApiException
+import eve_esi_python
+from eve_esi_python.models.post_characters_character_id_mail_labels_request import PostCharactersCharacterIdMailLabelsRequest
+from eve_esi_python.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to https://esi.evetech.net
 # See configuration.py for a list of all supported configuration parameters.
-configuration = esi_client.Configuration(
+configuration = eve_esi_python.Configuration(
     host = "https://esi.evetech.net"
 )
 
@@ -644,15 +644,15 @@ configuration = esi_client.Configuration(
 configuration.access_token = os.environ["ACCESS_TOKEN"]
 
 # Enter a context with an instance of the API client
-with esi_client.ApiClient(configuration) as api_client:
+with eve_esi_python.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = esi_client.MailApi(api_client)
+    api_instance = eve_esi_python.MailApi(api_client)
     character_id = 56 # int | The ID of the character
     x_compatibility_date = '2020-01-01' # date | The compatibility date for the request.
     accept_language = 'en' # str | The language to use for the response. Defaults to 'en'. (optional)
     if_none_match = 'if_none_match_example' # str | The ETag of the previous request. A 304 will be returned if this matches the current ETag. (optional)
     x_tenant = 'tranquility' # str | The tenant ID for the request. Defaults to 'tranquility'. (optional)
-    post_characters_character_id_mail_labels_request = esi_client.PostCharactersCharacterIdMailLabelsRequest() # PostCharactersCharacterIdMailLabelsRequest |  (optional)
+    post_characters_character_id_mail_labels_request = eve_esi_python.PostCharactersCharacterIdMailLabelsRequest() # PostCharactersCharacterIdMailLabelsRequest |  (optional)
 
     try:
         # Create a mail label
@@ -711,14 +711,14 @@ Update metadata about a mail
 * OAuth Authentication (OAuth2):
 
 ```python
-import esi_client
-from esi_client.models.put_characters_character_id_mail_mail_id_request import PutCharactersCharacterIdMailMailIdRequest
-from esi_client.rest import ApiException
+import eve_esi_python
+from eve_esi_python.models.put_characters_character_id_mail_mail_id_request import PutCharactersCharacterIdMailMailIdRequest
+from eve_esi_python.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to https://esi.evetech.net
 # See configuration.py for a list of all supported configuration parameters.
-configuration = esi_client.Configuration(
+configuration = eve_esi_python.Configuration(
     host = "https://esi.evetech.net"
 )
 
@@ -730,16 +730,16 @@ configuration = esi_client.Configuration(
 configuration.access_token = os.environ["ACCESS_TOKEN"]
 
 # Enter a context with an instance of the API client
-with esi_client.ApiClient(configuration) as api_client:
+with eve_esi_python.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = esi_client.MailApi(api_client)
+    api_instance = eve_esi_python.MailApi(api_client)
     character_id = 56 # int | The ID of the character
     mail_id = 56 # int | 
     x_compatibility_date = '2020-01-01' # date | The compatibility date for the request.
     accept_language = 'en' # str | The language to use for the response. Defaults to 'en'. (optional)
     if_none_match = 'if_none_match_example' # str | The ETag of the previous request. A 304 will be returned if this matches the current ETag. (optional)
     x_tenant = 'tranquility' # str | The tenant ID for the request. Defaults to 'tranquility'. (optional)
-    put_characters_character_id_mail_mail_id_request = esi_client.PutCharactersCharacterIdMailMailIdRequest() # PutCharactersCharacterIdMailMailIdRequest |  (optional)
+    put_characters_character_id_mail_mail_id_request = eve_esi_python.PutCharactersCharacterIdMailMailIdRequest() # PutCharactersCharacterIdMailMailIdRequest |  (optional)
 
     try:
         # Update metadata about a mail

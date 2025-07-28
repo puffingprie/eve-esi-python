@@ -17,7 +17,7 @@ Name | Type | Description | Notes
 ## Example
 
 ```python
-from esi_client.models.killmails_killmail_id_killmail_hash_get_victim import KillmailsKillmailIdKillmailHashGetVictim
+from eve_esi_python.models.killmails_killmail_id_killmail_hash_get_victim import KillmailsKillmailIdKillmailHashGetVictim
 
 # TODO update the JSON string below
 json = "{}"

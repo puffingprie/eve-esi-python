@@ -12,7 +12,7 @@ wheels = [
 ]
 
 [[package]]
-name = "esi-client"
+name = "eve-esi-python"
 version = "0.1.0"
 source = { editable = "." }
 dependencies = [

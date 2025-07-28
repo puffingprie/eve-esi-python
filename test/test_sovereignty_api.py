@@ -15,7 +15,7 @@
 
 import unittest
 
-from esi_client.api.sovereignty_api import SovereigntyApi
+from eve_esi_python.api.sovereignty_api import SovereigntyApi
 
 
 class TestSovereigntyApi(unittest.TestCase):

@@ -13,7 +13,7 @@ Name | Type | Description | Notes
 ## Example
 
 ```python
-from esi_client.models.insurance_prices_get_inner_levels_inner import InsurancePricesGetInnerLevelsInner
+from eve_esi_python.models.insurance_prices_get_inner_levels_inner import InsurancePricesGetInnerLevelsInner
 
 # TODO update the JSON string below
 json = "{}"

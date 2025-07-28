@@ -20,7 +20,7 @@ Name | Type | Description | Notes
 ## Example
 
 ```python
-from esi_client.models.universe_bloodlines_get_inner import UniverseBloodlinesGetInner
+from eve_esi_python.models.universe_bloodlines_get_inner import UniverseBloodlinesGetInner
 
 # TODO update the JSON string below
 json = "{}"

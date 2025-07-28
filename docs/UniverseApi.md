@@ -1,4 +1,4 @@
-# esi_client.UniverseApi
+# eve_esi_python.UniverseApi
 
 All URIs are relative to *https://esi.evetech.net*
 
@@ -49,22 +49,22 @@ This route expires daily at 11:05
 
 
 ```python
-import esi_client
-from esi_client.models.universe_ancestries_get_inner import UniverseAncestriesGetInner
-from esi_client.rest import ApiException
+import eve_esi_python
+from eve_esi_python.models.universe_ancestries_get_inner import UniverseAncestriesGetInner
+from eve_esi_python.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to https://esi.evetech.net
 # See configuration.py for a list of all supported configuration parameters.
-configuration = esi_client.Configuration(
+configuration = eve_esi_python.Configuration(
     host = "https://esi.evetech.net"
 )
 
 
 # Enter a context with an instance of the API client
-with esi_client.ApiClient(configuration) as api_client:
+with eve_esi_python.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = esi_client.UniverseApi(api_client)
+    api_instance = eve_esi_python.UniverseApi(api_client)
     x_compatibility_date = '2020-01-01' # date | The compatibility date for the request.
     accept_language = 'en' # str | The language to use for the response. Defaults to 'en'. (optional)
     if_none_match = 'if_none_match_example' # str | The ETag of the previous request. A 304 will be returned if this matches the current ETag. (optional)
@@ -126,22 +126,22 @@ This route expires daily at 11:05
 
 
 ```python
-import esi_client
-from esi_client.models.universe_asteroid_belts_asteroid_belt_id_get import UniverseAsteroidBeltsAsteroidBeltIdGet
-from esi_client.rest import ApiException
+import eve_esi_python
+from eve_esi_python.models.universe_asteroid_belts_asteroid_belt_id_get import UniverseAsteroidBeltsAsteroidBeltIdGet
+from eve_esi_python.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to https://esi.evetech.net
 # See configuration.py for a list of all supported configuration parameters.
-configuration = esi_client.Configuration(
+configuration = eve_esi_python.Configuration(
     host = "https://esi.evetech.net"
 )
 
 
 # Enter a context with an instance of the API client
-with esi_client.ApiClient(configuration) as api_client:
+with eve_esi_python.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = esi_client.UniverseApi(api_client)
+    api_instance = eve_esi_python.UniverseApi(api_client)
     asteroid_belt_id = 56 # int | 
     x_compatibility_date = '2020-01-01' # date | The compatibility date for the request.
     accept_language = 'en' # str | The language to use for the response. Defaults to 'en'. (optional)
@@ -205,22 +205,22 @@ This route expires daily at 11:05
 
 
 ```python
-import esi_client
-from esi_client.models.universe_bloodlines_get_inner import UniverseBloodlinesGetInner
-from esi_client.rest import ApiException
+import eve_esi_python
+from eve_esi_python.models.universe_bloodlines_get_inner import UniverseBloodlinesGetInner
+from eve_esi_python.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to https://esi.evetech.net
 # See configuration.py for a list of all supported configuration parameters.
-configuration = esi_client.Configuration(
+configuration = eve_esi_python.Configuration(
     host = "https://esi.evetech.net"
 )
 
 
 # Enter a context with an instance of the API client
-with esi_client.ApiClient(configuration) as api_client:
+with eve_esi_python.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = esi_client.UniverseApi(api_client)
+    api_instance = eve_esi_python.UniverseApi(api_client)
     x_compatibility_date = '2020-01-01' # date | The compatibility date for the request.
     accept_language = 'en' # str | The language to use for the response. Defaults to 'en'. (optional)
     if_none_match = 'if_none_match_example' # str | The ETag of the previous request. A 304 will be returned if this matches the current ETag. (optional)
@@ -282,21 +282,21 @@ This route expires daily at 11:05
 
 
 ```python
-import esi_client
-from esi_client.rest import ApiException
+import eve_esi_python
+from eve_esi_python.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to https://esi.evetech.net
 # See configuration.py for a list of all supported configuration parameters.
-configuration = esi_client.Configuration(
+configuration = eve_esi_python.Configuration(
     host = "https://esi.evetech.net"
 )
 
 
 # Enter a context with an instance of the API client
-with esi_client.ApiClient(configuration) as api_client:
+with eve_esi_python.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = esi_client.UniverseApi(api_client)
+    api_instance = eve_esi_python.UniverseApi(api_client)
     x_compatibility_date = '2020-01-01' # date | The compatibility date for the request.
     accept_language = 'en' # str | The language to use for the response. Defaults to 'en'. (optional)
     if_none_match = 'if_none_match_example' # str | The ETag of the previous request. A 304 will be returned if this matches the current ETag. (optional)
@@ -358,22 +358,22 @@ This route expires daily at 11:05
 
 
 ```python
-import esi_client
-from esi_client.models.universe_categories_category_id_get import UniverseCategoriesCategoryIdGet
-from esi_client.rest import ApiException
+import eve_esi_python
+from eve_esi_python.models.universe_categories_category_id_get import UniverseCategoriesCategoryIdGet
+from eve_esi_python.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to https://esi.evetech.net
 # See configuration.py for a list of all supported configuration parameters.
-configuration = esi_client.Configuration(
+configuration = eve_esi_python.Configuration(
     host = "https://esi.evetech.net"
 )
 
 
 # Enter a context with an instance of the API client
-with esi_client.ApiClient(configuration) as api_client:
+with eve_esi_python.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = esi_client.UniverseApi(api_client)
+    api_instance = eve_esi_python.UniverseApi(api_client)
     category_id = 56 # int | 
     x_compatibility_date = '2020-01-01' # date | The compatibility date for the request.
     accept_language = 'en' # str | The language to use for the response. Defaults to 'en'. (optional)
@@ -437,21 +437,21 @@ This route expires daily at 11:05
 
 
 ```python
-import esi_client
-from esi_client.rest import ApiException
+import eve_esi_python
+from eve_esi_python.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to https://esi.evetech.net
 # See configuration.py for a list of all supported configuration parameters.
-configuration = esi_client.Configuration(
+configuration = eve_esi_python.Configuration(
     host = "https://esi.evetech.net"
 )
 
 
 # Enter a context with an instance of the API client
-with esi_client.ApiClient(configuration) as api_client:
+with eve_esi_python.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = esi_client.UniverseApi(api_client)
+    api_instance = eve_esi_python.UniverseApi(api_client)
     x_compatibility_date = '2020-01-01' # date | The compatibility date for the request.
     accept_language = 'en' # str | The language to use for the response. Defaults to 'en'. (optional)
     if_none_match = 'if_none_match_example' # str | The ETag of the previous request. A 304 will be returned if this matches the current ETag. (optional)
@@ -513,22 +513,22 @@ This route expires daily at 11:05
 
 
 ```python
-import esi_client
-from esi_client.models.universe_constellations_constellation_id_get import UniverseConstellationsConstellationIdGet
-from esi_client.rest import ApiException
+import eve_esi_python
+from eve_esi_python.models.universe_constellations_constellation_id_get import UniverseConstellationsConstellationIdGet
+from eve_esi_python.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to https://esi.evetech.net
 # See configuration.py for a list of all supported configuration parameters.
-configuration = esi_client.Configuration(
+configuration = eve_esi_python.Configuration(
     host = "https://esi.evetech.net"
 )
 
 
 # Enter a context with an instance of the API client
-with esi_client.ApiClient(configuration) as api_client:
+with eve_esi_python.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = esi_client.UniverseApi(api_client)
+    api_instance = eve_esi_python.UniverseApi(api_client)
     constellation_id = 56 # int | 
     x_compatibility_date = '2020-01-01' # date | The compatibility date for the request.
     accept_language = 'en' # str | The language to use for the response. Defaults to 'en'. (optional)
@@ -592,22 +592,22 @@ This route expires daily at 11:05
 
 
 ```python
-import esi_client
-from esi_client.models.universe_factions_get_inner import UniverseFactionsGetInner
-from esi_client.rest import ApiException
+import eve_esi_python
+from eve_esi_python.models.universe_factions_get_inner import UniverseFactionsGetInner
+from eve_esi_python.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to https://esi.evetech.net
 # See configuration.py for a list of all supported configuration parameters.
-configuration = esi_client.Configuration(
+configuration = eve_esi_python.Configuration(
     host = "https://esi.evetech.net"
 )
 
 
 # Enter a context with an instance of the API client
-with esi_client.ApiClient(configuration) as api_client:
+with eve_esi_python.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = esi_client.UniverseApi(api_client)
+    api_instance = eve_esi_python.UniverseApi(api_client)
     x_compatibility_date = '2020-01-01' # date | The compatibility date for the request.
     accept_language = 'en' # str | The language to use for the response. Defaults to 'en'. (optional)
     if_none_match = 'if_none_match_example' # str | The ETag of the previous request. A 304 will be returned if this matches the current ETag. (optional)
@@ -669,21 +669,21 @@ This route expires daily at 11:05
 
 
 ```python
-import esi_client
-from esi_client.rest import ApiException
+import eve_esi_python
+from eve_esi_python.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to https://esi.evetech.net
 # See configuration.py for a list of all supported configuration parameters.
-configuration = esi_client.Configuration(
+configuration = eve_esi_python.Configuration(
     host = "https://esi.evetech.net"
 )
 
 
 # Enter a context with an instance of the API client
-with esi_client.ApiClient(configuration) as api_client:
+with eve_esi_python.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = esi_client.UniverseApi(api_client)
+    api_instance = eve_esi_python.UniverseApi(api_client)
     x_compatibility_date = '2020-01-01' # date | The compatibility date for the request.
     accept_language = 'en' # str | The language to use for the response. Defaults to 'en'. (optional)
     if_none_match = 'if_none_match_example' # str | The ETag of the previous request. A 304 will be returned if this matches the current ETag. (optional)
@@ -745,22 +745,22 @@ This route expires daily at 11:05
 
 
 ```python
-import esi_client
-from esi_client.models.universe_graphics_graphic_id_get import UniverseGraphicsGraphicIdGet
-from esi_client.rest import ApiException
+import eve_esi_python
+from eve_esi_python.models.universe_graphics_graphic_id_get import UniverseGraphicsGraphicIdGet
+from eve_esi_python.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to https://esi.evetech.net
 # See configuration.py for a list of all supported configuration parameters.
-configuration = esi_client.Configuration(
+configuration = eve_esi_python.Configuration(
     host = "https://esi.evetech.net"
 )
 
 
 # Enter a context with an instance of the API client
-with esi_client.ApiClient(configuration) as api_client:
+with eve_esi_python.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = esi_client.UniverseApi(api_client)
+    api_instance = eve_esi_python.UniverseApi(api_client)
     graphic_id = 56 # int | 
     x_compatibility_date = '2020-01-01' # date | The compatibility date for the request.
     accept_language = 'en' # str | The language to use for the response. Defaults to 'en'. (optional)
@@ -824,21 +824,21 @@ This route expires daily at 11:05
 
 
 ```python
-import esi_client
-from esi_client.rest import ApiException
+import eve_esi_python
+from eve_esi_python.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to https://esi.evetech.net
 # See configuration.py for a list of all supported configuration parameters.
-configuration = esi_client.Configuration(
+configuration = eve_esi_python.Configuration(
     host = "https://esi.evetech.net"
 )
 
 
 # Enter a context with an instance of the API client
-with esi_client.ApiClient(configuration) as api_client:
+with eve_esi_python.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = esi_client.UniverseApi(api_client)
+    api_instance = eve_esi_python.UniverseApi(api_client)
     x_compatibility_date = '2020-01-01' # date | The compatibility date for the request.
     page = 56 # int |  (optional)
     accept_language = 'en' # str | The language to use for the response. Defaults to 'en'. (optional)
@@ -902,22 +902,22 @@ This route expires daily at 11:05
 
 
 ```python
-import esi_client
-from esi_client.models.universe_groups_group_id_get import UniverseGroupsGroupIdGet
-from esi_client.rest import ApiException
+import eve_esi_python
+from eve_esi_python.models.universe_groups_group_id_get import UniverseGroupsGroupIdGet
+from eve_esi_python.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to https://esi.evetech.net
 # See configuration.py for a list of all supported configuration parameters.
-configuration = esi_client.Configuration(
+configuration = eve_esi_python.Configuration(
     host = "https://esi.evetech.net"
 )
 
 
 # Enter a context with an instance of the API client
-with esi_client.ApiClient(configuration) as api_client:
+with eve_esi_python.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = esi_client.UniverseApi(api_client)
+    api_instance = eve_esi_python.UniverseApi(api_client)
     group_id = 56 # int | 
     x_compatibility_date = '2020-01-01' # date | The compatibility date for the request.
     accept_language = 'en' # str | The language to use for the response. Defaults to 'en'. (optional)
@@ -981,22 +981,22 @@ This route expires daily at 11:05
 
 
 ```python
-import esi_client
-from esi_client.models.universe_moons_moon_id_get import UniverseMoonsMoonIdGet
-from esi_client.rest import ApiException
+import eve_esi_python
+from eve_esi_python.models.universe_moons_moon_id_get import UniverseMoonsMoonIdGet
+from eve_esi_python.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to https://esi.evetech.net
 # See configuration.py for a list of all supported configuration parameters.
-configuration = esi_client.Configuration(
+configuration = eve_esi_python.Configuration(
     host = "https://esi.evetech.net"
 )
 
 
 # Enter a context with an instance of the API client
-with esi_client.ApiClient(configuration) as api_client:
+with eve_esi_python.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = esi_client.UniverseApi(api_client)
+    api_instance = eve_esi_python.UniverseApi(api_client)
     moon_id = 56 # int | 
     x_compatibility_date = '2020-01-01' # date | The compatibility date for the request.
     accept_language = 'en' # str | The language to use for the response. Defaults to 'en'. (optional)
@@ -1060,22 +1060,22 @@ This route expires daily at 11:05
 
 
 ```python
-import esi_client
-from esi_client.models.universe_planets_planet_id_get import UniversePlanetsPlanetIdGet
-from esi_client.rest import ApiException
+import eve_esi_python
+from eve_esi_python.models.universe_planets_planet_id_get import UniversePlanetsPlanetIdGet
+from eve_esi_python.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to https://esi.evetech.net
 # See configuration.py for a list of all supported configuration parameters.
-configuration = esi_client.Configuration(
+configuration = eve_esi_python.Configuration(
     host = "https://esi.evetech.net"
 )
 
 
 # Enter a context with an instance of the API client
-with esi_client.ApiClient(configuration) as api_client:
+with eve_esi_python.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = esi_client.UniverseApi(api_client)
+    api_instance = eve_esi_python.UniverseApi(api_client)
     planet_id = 56 # int | 
     x_compatibility_date = '2020-01-01' # date | The compatibility date for the request.
     accept_language = 'en' # str | The language to use for the response. Defaults to 'en'. (optional)
@@ -1139,22 +1139,22 @@ This route expires daily at 11:05
 
 
 ```python
-import esi_client
-from esi_client.models.universe_races_get_inner import UniverseRacesGetInner
-from esi_client.rest import ApiException
+import eve_esi_python
+from eve_esi_python.models.universe_races_get_inner import UniverseRacesGetInner
+from eve_esi_python.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to https://esi.evetech.net
 # See configuration.py for a list of all supported configuration parameters.
-configuration = esi_client.Configuration(
+configuration = eve_esi_python.Configuration(
     host = "https://esi.evetech.net"
 )
 
 
 # Enter a context with an instance of the API client
-with esi_client.ApiClient(configuration) as api_client:
+with eve_esi_python.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = esi_client.UniverseApi(api_client)
+    api_instance = eve_esi_python.UniverseApi(api_client)
     x_compatibility_date = '2020-01-01' # date | The compatibility date for the request.
     accept_language = 'en' # str | The language to use for the response. Defaults to 'en'. (optional)
     if_none_match = 'if_none_match_example' # str | The ETag of the previous request. A 304 will be returned if this matches the current ETag. (optional)
@@ -1216,21 +1216,21 @@ This route expires daily at 11:05
 
 
 ```python
-import esi_client
-from esi_client.rest import ApiException
+import eve_esi_python
+from eve_esi_python.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to https://esi.evetech.net
 # See configuration.py for a list of all supported configuration parameters.
-configuration = esi_client.Configuration(
+configuration = eve_esi_python.Configuration(
     host = "https://esi.evetech.net"
 )
 
 
 # Enter a context with an instance of the API client
-with esi_client.ApiClient(configuration) as api_client:
+with eve_esi_python.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = esi_client.UniverseApi(api_client)
+    api_instance = eve_esi_python.UniverseApi(api_client)
     x_compatibility_date = '2020-01-01' # date | The compatibility date for the request.
     accept_language = 'en' # str | The language to use for the response. Defaults to 'en'. (optional)
     if_none_match = 'if_none_match_example' # str | The ETag of the previous request. A 304 will be returned if this matches the current ETag. (optional)
@@ -1292,22 +1292,22 @@ This route expires daily at 11:05
 
 
 ```python
-import esi_client
-from esi_client.models.universe_regions_region_id_get import UniverseRegionsRegionIdGet
-from esi_client.rest import ApiException
+import eve_esi_python
+from eve_esi_python.models.universe_regions_region_id_get import UniverseRegionsRegionIdGet
+from eve_esi_python.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to https://esi.evetech.net
 # See configuration.py for a list of all supported configuration parameters.
-configuration = esi_client.Configuration(
+configuration = eve_esi_python.Configuration(
     host = "https://esi.evetech.net"
 )
 
 
 # Enter a context with an instance of the API client
-with esi_client.ApiClient(configuration) as api_client:
+with eve_esi_python.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = esi_client.UniverseApi(api_client)
+    api_instance = eve_esi_python.UniverseApi(api_client)
     region_id = 56 # int | 
     x_compatibility_date = '2020-01-01' # date | The compatibility date for the request.
     accept_language = 'en' # str | The language to use for the response. Defaults to 'en'. (optional)
@@ -1371,22 +1371,22 @@ This route expires daily at 11:05
 
 
 ```python
-import esi_client
-from esi_client.models.universe_stargates_stargate_id_get import UniverseStargatesStargateIdGet
-from esi_client.rest import ApiException
+import eve_esi_python
+from eve_esi_python.models.universe_stargates_stargate_id_get import UniverseStargatesStargateIdGet
+from eve_esi_python.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to https://esi.evetech.net
 # See configuration.py for a list of all supported configuration parameters.
-configuration = esi_client.Configuration(
+configuration = eve_esi_python.Configuration(
     host = "https://esi.evetech.net"
 )
 
 
 # Enter a context with an instance of the API client
-with esi_client.ApiClient(configuration) as api_client:
+with eve_esi_python.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = esi_client.UniverseApi(api_client)
+    api_instance = eve_esi_python.UniverseApi(api_client)
     stargate_id = 56 # int | 
     x_compatibility_date = '2020-01-01' # date | The compatibility date for the request.
     accept_language = 'en' # str | The language to use for the response. Defaults to 'en'. (optional)
@@ -1450,22 +1450,22 @@ This route expires daily at 11:05
 
 
 ```python
-import esi_client
-from esi_client.models.universe_stars_star_id_get import UniverseStarsStarIdGet
-from esi_client.rest import ApiException
+import eve_esi_python
+from eve_esi_python.models.universe_stars_star_id_get import UniverseStarsStarIdGet
+from eve_esi_python.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to https://esi.evetech.net
 # See configuration.py for a list of all supported configuration parameters.
-configuration = esi_client.Configuration(
+configuration = eve_esi_python.Configuration(
     host = "https://esi.evetech.net"
 )
 
 
 # Enter a context with an instance of the API client
-with esi_client.ApiClient(configuration) as api_client:
+with eve_esi_python.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = esi_client.UniverseApi(api_client)
+    api_instance = eve_esi_python.UniverseApi(api_client)
     star_id = 56 # int | 
     x_compatibility_date = '2020-01-01' # date | The compatibility date for the request.
     accept_language = 'en' # str | The language to use for the response. Defaults to 'en'. (optional)
@@ -1529,22 +1529,22 @@ This route expires daily at 11:05
 
 
 ```python
-import esi_client
-from esi_client.models.universe_stations_station_id_get import UniverseStationsStationIdGet
-from esi_client.rest import ApiException
+import eve_esi_python
+from eve_esi_python.models.universe_stations_station_id_get import UniverseStationsStationIdGet
+from eve_esi_python.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to https://esi.evetech.net
 # See configuration.py for a list of all supported configuration parameters.
-configuration = esi_client.Configuration(
+configuration = eve_esi_python.Configuration(
     host = "https://esi.evetech.net"
 )
 
 
 # Enter a context with an instance of the API client
-with esi_client.ApiClient(configuration) as api_client:
+with eve_esi_python.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = esi_client.UniverseApi(api_client)
+    api_instance = eve_esi_python.UniverseApi(api_client)
     station_id = 56 # int | 
     x_compatibility_date = '2020-01-01' # date | The compatibility date for the request.
     accept_language = 'en' # str | The language to use for the response. Defaults to 'en'. (optional)
@@ -1606,21 +1606,21 @@ List all public structures
 
 
 ```python
-import esi_client
-from esi_client.rest import ApiException
+import eve_esi_python
+from eve_esi_python.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to https://esi.evetech.net
 # See configuration.py for a list of all supported configuration parameters.
-configuration = esi_client.Configuration(
+configuration = eve_esi_python.Configuration(
     host = "https://esi.evetech.net"
 )
 
 
 # Enter a context with an instance of the API client
-with esi_client.ApiClient(configuration) as api_client:
+with eve_esi_python.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = esi_client.UniverseApi(api_client)
+    api_instance = eve_esi_python.UniverseApi(api_client)
     x_compatibility_date = '2020-01-01' # date | The compatibility date for the request.
     filter = 'filter_example' # str |  (optional)
     accept_language = 'en' # str | The language to use for the response. Defaults to 'en'. (optional)
@@ -1683,14 +1683,14 @@ Returns information on requested structure if you are on the ACL. Otherwise, ret
 * OAuth Authentication (OAuth2):
 
 ```python
-import esi_client
-from esi_client.models.universe_structures_structure_id_get import UniverseStructuresStructureIdGet
-from esi_client.rest import ApiException
+import eve_esi_python
+from eve_esi_python.models.universe_structures_structure_id_get import UniverseStructuresStructureIdGet
+from eve_esi_python.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to https://esi.evetech.net
 # See configuration.py for a list of all supported configuration parameters.
-configuration = esi_client.Configuration(
+configuration = eve_esi_python.Configuration(
     host = "https://esi.evetech.net"
 )
 
@@ -1702,9 +1702,9 @@ configuration = esi_client.Configuration(
 configuration.access_token = os.environ["ACCESS_TOKEN"]
 
 # Enter a context with an instance of the API client
-with esi_client.ApiClient(configuration) as api_client:
+with eve_esi_python.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = esi_client.UniverseApi(api_client)
+    api_instance = eve_esi_python.UniverseApi(api_client)
     structure_id = 56 # int | 
     x_compatibility_date = '2020-01-01' # date | The compatibility date for the request.
     accept_language = 'en' # str | The language to use for the response. Defaults to 'en'. (optional)
@@ -1766,22 +1766,22 @@ Get the number of jumps in solar systems within the last hour ending at the time
 
 
 ```python
-import esi_client
-from esi_client.models.universe_system_jumps_get_inner import UniverseSystemJumpsGetInner
-from esi_client.rest import ApiException
+import eve_esi_python
+from eve_esi_python.models.universe_system_jumps_get_inner import UniverseSystemJumpsGetInner
+from eve_esi_python.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to https://esi.evetech.net
 # See configuration.py for a list of all supported configuration parameters.
-configuration = esi_client.Configuration(
+configuration = eve_esi_python.Configuration(
     host = "https://esi.evetech.net"
 )
 
 
 # Enter a context with an instance of the API client
-with esi_client.ApiClient(configuration) as api_client:
+with eve_esi_python.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = esi_client.UniverseApi(api_client)
+    api_instance = eve_esi_python.UniverseApi(api_client)
     x_compatibility_date = '2020-01-01' # date | The compatibility date for the request.
     accept_language = 'en' # str | The language to use for the response. Defaults to 'en'. (optional)
     if_none_match = 'if_none_match_example' # str | The ETag of the previous request. A 304 will be returned if this matches the current ETag. (optional)
@@ -1841,22 +1841,22 @@ Get the number of ship, pod and NPC kills per solar system within the last hour 
 
 
 ```python
-import esi_client
-from esi_client.models.universe_system_kills_get_inner import UniverseSystemKillsGetInner
-from esi_client.rest import ApiException
+import eve_esi_python
+from eve_esi_python.models.universe_system_kills_get_inner import UniverseSystemKillsGetInner
+from eve_esi_python.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to https://esi.evetech.net
 # See configuration.py for a list of all supported configuration parameters.
-configuration = esi_client.Configuration(
+configuration = eve_esi_python.Configuration(
     host = "https://esi.evetech.net"
 )
 
 
 # Enter a context with an instance of the API client
-with esi_client.ApiClient(configuration) as api_client:
+with eve_esi_python.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = esi_client.UniverseApi(api_client)
+    api_instance = eve_esi_python.UniverseApi(api_client)
     x_compatibility_date = '2020-01-01' # date | The compatibility date for the request.
     accept_language = 'en' # str | The language to use for the response. Defaults to 'en'. (optional)
     if_none_match = 'if_none_match_example' # str | The ETag of the previous request. A 304 will be returned if this matches the current ETag. (optional)
@@ -1918,21 +1918,21 @@ This route expires daily at 11:05
 
 
 ```python
-import esi_client
-from esi_client.rest import ApiException
+import eve_esi_python
+from eve_esi_python.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to https://esi.evetech.net
 # See configuration.py for a list of all supported configuration parameters.
-configuration = esi_client.Configuration(
+configuration = eve_esi_python.Configuration(
     host = "https://esi.evetech.net"
 )
 
 
 # Enter a context with an instance of the API client
-with esi_client.ApiClient(configuration) as api_client:
+with eve_esi_python.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = esi_client.UniverseApi(api_client)
+    api_instance = eve_esi_python.UniverseApi(api_client)
     x_compatibility_date = '2020-01-01' # date | The compatibility date for the request.
     accept_language = 'en' # str | The language to use for the response. Defaults to 'en'. (optional)
     if_none_match = 'if_none_match_example' # str | The ETag of the previous request. A 304 will be returned if this matches the current ETag. (optional)
@@ -1994,22 +1994,22 @@ This route expires daily at 11:05
 
 
 ```python
-import esi_client
-from esi_client.models.universe_systems_system_id_get import UniverseSystemsSystemIdGet
-from esi_client.rest import ApiException
+import eve_esi_python
+from eve_esi_python.models.universe_systems_system_id_get import UniverseSystemsSystemIdGet
+from eve_esi_python.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to https://esi.evetech.net
 # See configuration.py for a list of all supported configuration parameters.
-configuration = esi_client.Configuration(
+configuration = eve_esi_python.Configuration(
     host = "https://esi.evetech.net"
 )
 
 
 # Enter a context with an instance of the API client
-with esi_client.ApiClient(configuration) as api_client:
+with eve_esi_python.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = esi_client.UniverseApi(api_client)
+    api_instance = eve_esi_python.UniverseApi(api_client)
     system_id = 56 # int | 
     x_compatibility_date = '2020-01-01' # date | The compatibility date for the request.
     accept_language = 'en' # str | The language to use for the response. Defaults to 'en'. (optional)
@@ -2073,21 +2073,21 @@ This route expires daily at 11:05
 
 
 ```python
-import esi_client
-from esi_client.rest import ApiException
+import eve_esi_python
+from eve_esi_python.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to https://esi.evetech.net
 # See configuration.py for a list of all supported configuration parameters.
-configuration = esi_client.Configuration(
+configuration = eve_esi_python.Configuration(
     host = "https://esi.evetech.net"
 )
 
 
 # Enter a context with an instance of the API client
-with esi_client.ApiClient(configuration) as api_client:
+with eve_esi_python.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = esi_client.UniverseApi(api_client)
+    api_instance = eve_esi_python.UniverseApi(api_client)
     x_compatibility_date = '2020-01-01' # date | The compatibility date for the request.
     page = 56 # int |  (optional)
     accept_language = 'en' # str | The language to use for the response. Defaults to 'en'. (optional)
@@ -2151,22 +2151,22 @@ This route expires daily at 11:05
 
 
 ```python
-import esi_client
-from esi_client.models.universe_types_type_id_get import UniverseTypesTypeIdGet
-from esi_client.rest import ApiException
+import eve_esi_python
+from eve_esi_python.models.universe_types_type_id_get import UniverseTypesTypeIdGet
+from eve_esi_python.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to https://esi.evetech.net
 # See configuration.py for a list of all supported configuration parameters.
-configuration = esi_client.Configuration(
+configuration = eve_esi_python.Configuration(
     host = "https://esi.evetech.net"
 )
 
 
 # Enter a context with an instance of the API client
-with esi_client.ApiClient(configuration) as api_client:
+with eve_esi_python.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = esi_client.UniverseApi(api_client)
+    api_instance = eve_esi_python.UniverseApi(api_client)
     type_id = 56 # int | 
     x_compatibility_date = '2020-01-01' # date | The compatibility date for the request.
     accept_language = 'en' # str | The language to use for the response. Defaults to 'en'. (optional)
@@ -2228,22 +2228,22 @@ Resolve a set of names to IDs in the following categories: agents, alliances, ch
 
 
 ```python
-import esi_client
-from esi_client.models.universe_ids_post import UniverseIdsPost
-from esi_client.rest import ApiException
+import eve_esi_python
+from eve_esi_python.models.universe_ids_post import UniverseIdsPost
+from eve_esi_python.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to https://esi.evetech.net
 # See configuration.py for a list of all supported configuration parameters.
-configuration = esi_client.Configuration(
+configuration = eve_esi_python.Configuration(
     host = "https://esi.evetech.net"
 )
 
 
 # Enter a context with an instance of the API client
-with esi_client.ApiClient(configuration) as api_client:
+with eve_esi_python.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = esi_client.UniverseApi(api_client)
+    api_instance = eve_esi_python.UniverseApi(api_client)
     x_compatibility_date = '2020-01-01' # date | The compatibility date for the request.
     accept_language = 'en' # str | The language to use for the response. Defaults to 'en'. (optional)
     if_none_match = 'if_none_match_example' # str | The ETag of the previous request. A 304 will be returned if this matches the current ETag. (optional)
@@ -2305,22 +2305,22 @@ Resolve a set of IDs to names and categories. Supported ID's for resolving are: 
 
 
 ```python
-import esi_client
-from esi_client.models.universe_names_post_inner import UniverseNamesPostInner
-from esi_client.rest import ApiException
+import eve_esi_python
+from eve_esi_python.models.universe_names_post_inner import UniverseNamesPostInner
+from eve_esi_python.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to https://esi.evetech.net
 # See configuration.py for a list of all supported configuration parameters.
-configuration = esi_client.Configuration(
+configuration = eve_esi_python.Configuration(
     host = "https://esi.evetech.net"
 )
 
 
 # Enter a context with an instance of the API client
-with esi_client.ApiClient(configuration) as api_client:
+with eve_esi_python.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = esi_client.UniverseApi(api_client)
+    api_instance = eve_esi_python.UniverseApi(api_client)
     x_compatibility_date = '2020-01-01' # date | The compatibility date for the request.
     accept_language = 'en' # str | The language to use for the response. Defaults to 'en'. (optional)
     if_none_match = 'if_none_match_example' # str | The ETag of the previous request. A 304 will be returned if this matches the current ETag. (optional)

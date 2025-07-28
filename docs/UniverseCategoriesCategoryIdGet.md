@@ -13,7 +13,7 @@ Name | Type | Description | Notes
 ## Example
 
 ```python
-from esi_client.models.universe_categories_category_id_get import UniverseCategoriesCategoryIdGet
+from eve_esi_python.models.universe_categories_category_id_get import UniverseCategoriesCategoryIdGet
 
 # TODO update the JSON string below
 json = "{}"

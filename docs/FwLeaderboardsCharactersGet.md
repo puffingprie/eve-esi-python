@@ -11,7 +11,7 @@ Name | Type | Description | Notes
 ## Example
 
 ```python
-from esi_client.models.fw_leaderboards_characters_get import FwLeaderboardsCharactersGet
+from eve_esi_python.models.fw_leaderboards_characters_get import FwLeaderboardsCharactersGet
 
 # TODO update the JSON string below
 json = "{}"

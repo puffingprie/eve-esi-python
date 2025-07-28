@@ -1,4 +1,4 @@
-# esi_client.WalletApi
+# eve_esi_python.WalletApi
 
 All URIs are relative to *https://esi.evetech.net*
 
@@ -24,13 +24,13 @@ Returns a character's wallet balance
 * OAuth Authentication (OAuth2):
 
 ```python
-import esi_client
-from esi_client.rest import ApiException
+import eve_esi_python
+from eve_esi_python.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to https://esi.evetech.net
 # See configuration.py for a list of all supported configuration parameters.
-configuration = esi_client.Configuration(
+configuration = eve_esi_python.Configuration(
     host = "https://esi.evetech.net"
 )
 
@@ -42,9 +42,9 @@ configuration = esi_client.Configuration(
 configuration.access_token = os.environ["ACCESS_TOKEN"]
 
 # Enter a context with an instance of the API client
-with esi_client.ApiClient(configuration) as api_client:
+with eve_esi_python.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = esi_client.WalletApi(api_client)
+    api_instance = eve_esi_python.WalletApi(api_client)
     character_id = 56 # int | The ID of the character
     x_compatibility_date = '2020-01-01' # date | The compatibility date for the request.
     accept_language = 'en' # str | The language to use for the response. Defaults to 'en'. (optional)
@@ -107,14 +107,14 @@ Retrieve the given character's wallet journal going 30 days back
 * OAuth Authentication (OAuth2):
 
 ```python
-import esi_client
-from esi_client.models.characters_character_id_wallet_journal_get_inner import CharactersCharacterIdWalletJournalGetInner
-from esi_client.rest import ApiException
+import eve_esi_python
+from eve_esi_python.models.characters_character_id_wallet_journal_get_inner import CharactersCharacterIdWalletJournalGetInner
+from eve_esi_python.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to https://esi.evetech.net
 # See configuration.py for a list of all supported configuration parameters.
-configuration = esi_client.Configuration(
+configuration = eve_esi_python.Configuration(
     host = "https://esi.evetech.net"
 )
 
@@ -126,9 +126,9 @@ configuration = esi_client.Configuration(
 configuration.access_token = os.environ["ACCESS_TOKEN"]
 
 # Enter a context with an instance of the API client
-with esi_client.ApiClient(configuration) as api_client:
+with eve_esi_python.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = esi_client.WalletApi(api_client)
+    api_instance = eve_esi_python.WalletApi(api_client)
     character_id = 56 # int | The ID of the character
     x_compatibility_date = '2020-01-01' # date | The compatibility date for the request.
     page = 56 # int |  (optional)
@@ -193,14 +193,14 @@ Get wallet transactions of a character
 * OAuth Authentication (OAuth2):
 
 ```python
-import esi_client
-from esi_client.models.characters_character_id_wallet_transactions_get_inner import CharactersCharacterIdWalletTransactionsGetInner
-from esi_client.rest import ApiException
+import eve_esi_python
+from eve_esi_python.models.characters_character_id_wallet_transactions_get_inner import CharactersCharacterIdWalletTransactionsGetInner
+from eve_esi_python.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to https://esi.evetech.net
 # See configuration.py for a list of all supported configuration parameters.
-configuration = esi_client.Configuration(
+configuration = eve_esi_python.Configuration(
     host = "https://esi.evetech.net"
 )
 
@@ -212,9 +212,9 @@ configuration = esi_client.Configuration(
 configuration.access_token = os.environ["ACCESS_TOKEN"]
 
 # Enter a context with an instance of the API client
-with esi_client.ApiClient(configuration) as api_client:
+with eve_esi_python.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = esi_client.WalletApi(api_client)
+    api_instance = eve_esi_python.WalletApi(api_client)
     character_id = 56 # int | The ID of the character
     x_compatibility_date = '2020-01-01' # date | The compatibility date for the request.
     from_id = 56 # int |  (optional)
@@ -281,14 +281,14 @@ Requires one of the following EVE corporation role(s): Accountant, Junior_Accoun
 * OAuth Authentication (OAuth2):
 
 ```python
-import esi_client
-from esi_client.models.corporations_corporation_id_wallets_get_inner import CorporationsCorporationIdWalletsGetInner
-from esi_client.rest import ApiException
+import eve_esi_python
+from eve_esi_python.models.corporations_corporation_id_wallets_get_inner import CorporationsCorporationIdWalletsGetInner
+from eve_esi_python.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to https://esi.evetech.net
 # See configuration.py for a list of all supported configuration parameters.
-configuration = esi_client.Configuration(
+configuration = eve_esi_python.Configuration(
     host = "https://esi.evetech.net"
 )
 
@@ -300,9 +300,9 @@ configuration = esi_client.Configuration(
 configuration.access_token = os.environ["ACCESS_TOKEN"]
 
 # Enter a context with an instance of the API client
-with esi_client.ApiClient(configuration) as api_client:
+with eve_esi_python.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = esi_client.WalletApi(api_client)
+    api_instance = eve_esi_python.WalletApi(api_client)
     corporation_id = 56 # int | The ID of the corporation
     x_compatibility_date = '2020-01-01' # date | The compatibility date for the request.
     accept_language = 'en' # str | The language to use for the response. Defaults to 'en'. (optional)
@@ -367,14 +367,14 @@ Requires one of the following EVE corporation role(s): Accountant, Junior_Accoun
 * OAuth Authentication (OAuth2):
 
 ```python
-import esi_client
-from esi_client.models.corporations_corporation_id_wallets_division_journal_get_inner import CorporationsCorporationIdWalletsDivisionJournalGetInner
-from esi_client.rest import ApiException
+import eve_esi_python
+from eve_esi_python.models.corporations_corporation_id_wallets_division_journal_get_inner import CorporationsCorporationIdWalletsDivisionJournalGetInner
+from eve_esi_python.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to https://esi.evetech.net
 # See configuration.py for a list of all supported configuration parameters.
-configuration = esi_client.Configuration(
+configuration = eve_esi_python.Configuration(
     host = "https://esi.evetech.net"
 )
 
@@ -386,9 +386,9 @@ configuration = esi_client.Configuration(
 configuration.access_token = os.environ["ACCESS_TOKEN"]
 
 # Enter a context with an instance of the API client
-with esi_client.ApiClient(configuration) as api_client:
+with eve_esi_python.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = esi_client.WalletApi(api_client)
+    api_instance = eve_esi_python.WalletApi(api_client)
     corporation_id = 56 # int | The ID of the corporation
     division = 56 # int | 
     x_compatibility_date = '2020-01-01' # date | The compatibility date for the request.
@@ -457,14 +457,14 @@ Requires one of the following EVE corporation role(s): Accountant, Junior_Accoun
 * OAuth Authentication (OAuth2):
 
 ```python
-import esi_client
-from esi_client.models.corporations_corporation_id_wallets_division_transactions_get_inner import CorporationsCorporationIdWalletsDivisionTransactionsGetInner
-from esi_client.rest import ApiException
+import eve_esi_python
+from eve_esi_python.models.corporations_corporation_id_wallets_division_transactions_get_inner import CorporationsCorporationIdWalletsDivisionTransactionsGetInner
+from eve_esi_python.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to https://esi.evetech.net
 # See configuration.py for a list of all supported configuration parameters.
-configuration = esi_client.Configuration(
+configuration = eve_esi_python.Configuration(
     host = "https://esi.evetech.net"
 )
 
@@ -476,9 +476,9 @@ configuration = esi_client.Configuration(
 configuration.access_token = os.environ["ACCESS_TOKEN"]
 
 # Enter a context with an instance of the API client
-with esi_client.ApiClient(configuration) as api_client:
+with eve_esi_python.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = esi_client.WalletApi(api_client)
+    api_instance = eve_esi_python.WalletApi(api_client)
     corporation_id = 56 # int | The ID of the corporation
     division = 56 # int | 
     x_compatibility_date = '2020-01-01' # date | The compatibility date for the request.

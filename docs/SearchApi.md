@@ -1,4 +1,4 @@
-# esi_client.SearchApi
+# eve_esi_python.SearchApi
 
 All URIs are relative to *https://esi.evetech.net*
 
@@ -19,14 +19,14 @@ Search for entities that match a given sub-string.
 * OAuth Authentication (OAuth2):
 
 ```python
-import esi_client
-from esi_client.models.characters_character_id_search_get import CharactersCharacterIdSearchGet
-from esi_client.rest import ApiException
+import eve_esi_python
+from eve_esi_python.models.characters_character_id_search_get import CharactersCharacterIdSearchGet
+from eve_esi_python.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to https://esi.evetech.net
 # See configuration.py for a list of all supported configuration parameters.
-configuration = esi_client.Configuration(
+configuration = eve_esi_python.Configuration(
     host = "https://esi.evetech.net"
 )
 
@@ -38,9 +38,9 @@ configuration = esi_client.Configuration(
 configuration.access_token = os.environ["ACCESS_TOKEN"]
 
 # Enter a context with an instance of the API client
-with esi_client.ApiClient(configuration) as api_client:
+with eve_esi_python.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = esi_client.SearchApi(api_client)
+    api_instance = eve_esi_python.SearchApi(api_client)
     categories = ['categories_example'] # List[str] | 
     character_id = 56 # int | The ID of the character
     search = 'search_example' # str | 

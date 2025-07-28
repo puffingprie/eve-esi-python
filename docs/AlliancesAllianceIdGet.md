@@ -16,7 +16,7 @@ Name | Type | Description | Notes
 ## Example
 
 ```python
-from esi_client.models.alliances_alliance_id_get import AlliancesAllianceIdGet
+from eve_esi_python.models.alliances_alliance_id_get import AlliancesAllianceIdGet
 
 # TODO update the JSON string below
 json = "{}"

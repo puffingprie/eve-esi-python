@@ -15,7 +15,7 @@
 
 import unittest
 
-from esi_client.api.corporation_api import CorporationApi
+from eve_esi_python.api.corporation_api import CorporationApi
 
 
 class TestCorporationApi(unittest.TestCase):

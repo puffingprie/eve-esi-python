@@ -15,7 +15,7 @@ Name | Type | Description | Notes
 ## Example
 
 ```python
-from esi_client.models.markets_region_id_history_get_inner import MarketsRegionIdHistoryGetInner
+from eve_esi_python.models.markets_region_id_history_get_inner import MarketsRegionIdHistoryGetInner
 
 # TODO update the JSON string below
 json = "{}"

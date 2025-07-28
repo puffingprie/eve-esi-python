@@ -15,7 +15,7 @@
 
 import unittest
 
-from esi_client.api.universe_api import UniverseApi
+from eve_esi_python.api.universe_api import UniverseApi
 
 
 class TestUniverseApi(unittest.TestCase):

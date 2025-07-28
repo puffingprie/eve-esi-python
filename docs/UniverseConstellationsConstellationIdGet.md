@@ -14,7 +14,7 @@ Name | Type | Description | Notes
 ## Example
 
 ```python
-from esi_client.models.universe_constellations_constellation_id_get import UniverseConstellationsConstellationIdGet
+from eve_esi_python.models.universe_constellations_constellation_id_get import UniverseConstellationsConstellationIdGet
 
 # TODO update the JSON string below
 json = "{}"

@@ -16,7 +16,7 @@ Name | Type | Description | Notes
 ## Example
 
 ```python
-from esi_client.models.dogma_effects_effect_id_get_modifiers_inner import DogmaEffectsEffectIdGetModifiersInner
+from eve_esi_python.models.dogma_effects_effect_id_get_modifiers_inner import DogmaEffectsEffectIdGetModifiersInner
 
 # TODO update the JSON string below
 json = "{}"

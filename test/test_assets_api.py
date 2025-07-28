@@ -15,7 +15,7 @@
 
 import unittest
 
-from esi_client.api.assets_api import AssetsApi
+from eve_esi_python.api.assets_api import AssetsApi
 
 
 class TestAssetsApi(unittest.TestCase):

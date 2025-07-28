@@ -12,7 +12,7 @@ Name | Type | Description | Notes
 ## Example
 
 ```python
-from esi_client.models.error_detail import ErrorDetail
+from eve_esi_python.models.error_detail import ErrorDetail
 
 # TODO update the JSON string below
 json = "{}"

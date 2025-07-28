@@ -1,4 +1,4 @@
-# esi_client.IndustryApi
+# eve_esi_python.IndustryApi
 
 All URIs are relative to *https://esi.evetech.net*
 
@@ -26,14 +26,14 @@ List industry jobs placed by a character
 * OAuth Authentication (OAuth2):
 
 ```python
-import esi_client
-from esi_client.models.characters_character_id_industry_jobs_get_inner import CharactersCharacterIdIndustryJobsGetInner
-from esi_client.rest import ApiException
+import eve_esi_python
+from eve_esi_python.models.characters_character_id_industry_jobs_get_inner import CharactersCharacterIdIndustryJobsGetInner
+from eve_esi_python.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to https://esi.evetech.net
 # See configuration.py for a list of all supported configuration parameters.
-configuration = esi_client.Configuration(
+configuration = eve_esi_python.Configuration(
     host = "https://esi.evetech.net"
 )
 
@@ -45,9 +45,9 @@ configuration = esi_client.Configuration(
 configuration.access_token = os.environ["ACCESS_TOKEN"]
 
 # Enter a context with an instance of the API client
-with esi_client.ApiClient(configuration) as api_client:
+with eve_esi_python.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = esi_client.IndustryApi(api_client)
+    api_instance = eve_esi_python.IndustryApi(api_client)
     character_id = 56 # int | The ID of the character
     x_compatibility_date = '2020-01-01' # date | The compatibility date for the request.
     include_completed = True # bool |  (optional)
@@ -112,14 +112,14 @@ Paginated record of all mining done by a character for the past 30 days
 * OAuth Authentication (OAuth2):
 
 ```python
-import esi_client
-from esi_client.models.characters_character_id_mining_get_inner import CharactersCharacterIdMiningGetInner
-from esi_client.rest import ApiException
+import eve_esi_python
+from eve_esi_python.models.characters_character_id_mining_get_inner import CharactersCharacterIdMiningGetInner
+from eve_esi_python.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to https://esi.evetech.net
 # See configuration.py for a list of all supported configuration parameters.
-configuration = esi_client.Configuration(
+configuration = eve_esi_python.Configuration(
     host = "https://esi.evetech.net"
 )
 
@@ -131,9 +131,9 @@ configuration = esi_client.Configuration(
 configuration.access_token = os.environ["ACCESS_TOKEN"]
 
 # Enter a context with an instance of the API client
-with esi_client.ApiClient(configuration) as api_client:
+with eve_esi_python.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = esi_client.IndustryApi(api_client)
+    api_instance = eve_esi_python.IndustryApi(api_client)
     character_id = 56 # int | The ID of the character
     x_compatibility_date = '2020-01-01' # date | The compatibility date for the request.
     page = 56 # int |  (optional)
@@ -200,14 +200,14 @@ Requires one of the following EVE corporation role(s): Station_Manager
 * OAuth Authentication (OAuth2):
 
 ```python
-import esi_client
-from esi_client.models.corporation_corporation_id_mining_extractions_get_inner import CorporationCorporationIdMiningExtractionsGetInner
-from esi_client.rest import ApiException
+import eve_esi_python
+from eve_esi_python.models.corporation_corporation_id_mining_extractions_get_inner import CorporationCorporationIdMiningExtractionsGetInner
+from eve_esi_python.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to https://esi.evetech.net
 # See configuration.py for a list of all supported configuration parameters.
-configuration = esi_client.Configuration(
+configuration = eve_esi_python.Configuration(
     host = "https://esi.evetech.net"
 )
 
@@ -219,9 +219,9 @@ configuration = esi_client.Configuration(
 configuration.access_token = os.environ["ACCESS_TOKEN"]
 
 # Enter a context with an instance of the API client
-with esi_client.ApiClient(configuration) as api_client:
+with eve_esi_python.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = esi_client.IndustryApi(api_client)
+    api_instance = eve_esi_python.IndustryApi(api_client)
     corporation_id = 56 # int | The ID of the corporation
     x_compatibility_date = '2020-01-01' # date | The compatibility date for the request.
     page = 56 # int |  (optional)
@@ -288,14 +288,14 @@ Requires one of the following EVE corporation role(s): Accountant
 * OAuth Authentication (OAuth2):
 
 ```python
-import esi_client
-from esi_client.models.corporation_corporation_id_mining_observers_get_inner import CorporationCorporationIdMiningObserversGetInner
-from esi_client.rest import ApiException
+import eve_esi_python
+from eve_esi_python.models.corporation_corporation_id_mining_observers_get_inner import CorporationCorporationIdMiningObserversGetInner
+from eve_esi_python.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to https://esi.evetech.net
 # See configuration.py for a list of all supported configuration parameters.
-configuration = esi_client.Configuration(
+configuration = eve_esi_python.Configuration(
     host = "https://esi.evetech.net"
 )
 
@@ -307,9 +307,9 @@ configuration = esi_client.Configuration(
 configuration.access_token = os.environ["ACCESS_TOKEN"]
 
 # Enter a context with an instance of the API client
-with esi_client.ApiClient(configuration) as api_client:
+with eve_esi_python.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = esi_client.IndustryApi(api_client)
+    api_instance = eve_esi_python.IndustryApi(api_client)
     corporation_id = 56 # int | The ID of the corporation
     x_compatibility_date = '2020-01-01' # date | The compatibility date for the request.
     page = 56 # int |  (optional)
@@ -376,14 +376,14 @@ Requires one of the following EVE corporation role(s): Accountant
 * OAuth Authentication (OAuth2):
 
 ```python
-import esi_client
-from esi_client.models.corporation_corporation_id_mining_observers_observer_id_get_inner import CorporationCorporationIdMiningObserversObserverIdGetInner
-from esi_client.rest import ApiException
+import eve_esi_python
+from eve_esi_python.models.corporation_corporation_id_mining_observers_observer_id_get_inner import CorporationCorporationIdMiningObserversObserverIdGetInner
+from eve_esi_python.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to https://esi.evetech.net
 # See configuration.py for a list of all supported configuration parameters.
-configuration = esi_client.Configuration(
+configuration = eve_esi_python.Configuration(
     host = "https://esi.evetech.net"
 )
 
@@ -395,9 +395,9 @@ configuration = esi_client.Configuration(
 configuration.access_token = os.environ["ACCESS_TOKEN"]
 
 # Enter a context with an instance of the API client
-with esi_client.ApiClient(configuration) as api_client:
+with eve_esi_python.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = esi_client.IndustryApi(api_client)
+    api_instance = eve_esi_python.IndustryApi(api_client)
     corporation_id = 56 # int | The ID of the corporation
     observer_id = 56 # int | 
     x_compatibility_date = '2020-01-01' # date | The compatibility date for the request.
@@ -466,14 +466,14 @@ Requires one of the following EVE corporation role(s): Factory_Manager
 * OAuth Authentication (OAuth2):
 
 ```python
-import esi_client
-from esi_client.models.corporations_corporation_id_industry_jobs_get_inner import CorporationsCorporationIdIndustryJobsGetInner
-from esi_client.rest import ApiException
+import eve_esi_python
+from eve_esi_python.models.corporations_corporation_id_industry_jobs_get_inner import CorporationsCorporationIdIndustryJobsGetInner
+from eve_esi_python.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to https://esi.evetech.net
 # See configuration.py for a list of all supported configuration parameters.
-configuration = esi_client.Configuration(
+configuration = eve_esi_python.Configuration(
     host = "https://esi.evetech.net"
 )
 
@@ -485,9 +485,9 @@ configuration = esi_client.Configuration(
 configuration.access_token = os.environ["ACCESS_TOKEN"]
 
 # Enter a context with an instance of the API client
-with esi_client.ApiClient(configuration) as api_client:
+with eve_esi_python.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = esi_client.IndustryApi(api_client)
+    api_instance = eve_esi_python.IndustryApi(api_client)
     corporation_id = 56 # int | The ID of the corporation
     x_compatibility_date = '2020-01-01' # date | The compatibility date for the request.
     include_completed = False # bool |  (optional) (default to False)
@@ -553,22 +553,22 @@ Return a list of industry facilities
 
 
 ```python
-import esi_client
-from esi_client.models.industry_facilities_get_inner import IndustryFacilitiesGetInner
-from esi_client.rest import ApiException
+import eve_esi_python
+from eve_esi_python.models.industry_facilities_get_inner import IndustryFacilitiesGetInner
+from eve_esi_python.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to https://esi.evetech.net
 # See configuration.py for a list of all supported configuration parameters.
-configuration = esi_client.Configuration(
+configuration = eve_esi_python.Configuration(
     host = "https://esi.evetech.net"
 )
 
 
 # Enter a context with an instance of the API client
-with esi_client.ApiClient(configuration) as api_client:
+with eve_esi_python.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = esi_client.IndustryApi(api_client)
+    api_instance = eve_esi_python.IndustryApi(api_client)
     x_compatibility_date = '2020-01-01' # date | The compatibility date for the request.
     accept_language = 'en' # str | The language to use for the response. Defaults to 'en'. (optional)
     if_none_match = 'if_none_match_example' # str | The ETag of the previous request. A 304 will be returned if this matches the current ETag. (optional)
@@ -628,22 +628,22 @@ Return cost indices for solar systems
 
 
 ```python
-import esi_client
-from esi_client.models.industry_systems_get_inner import IndustrySystemsGetInner
-from esi_client.rest import ApiException
+import eve_esi_python
+from eve_esi_python.models.industry_systems_get_inner import IndustrySystemsGetInner
+from eve_esi_python.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to https://esi.evetech.net
 # See configuration.py for a list of all supported configuration parameters.
-configuration = esi_client.Configuration(
+configuration = eve_esi_python.Configuration(
     host = "https://esi.evetech.net"
 )
 
 
 # Enter a context with an instance of the API client
-with esi_client.ApiClient(configuration) as api_client:
+with eve_esi_python.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = esi_client.IndustryApi(api_client)
+    api_instance = eve_esi_python.IndustryApi(api_client)
     x_compatibility_date = '2020-01-01' # date | The compatibility date for the request.
     accept_language = 'en' # str | The language to use for the response. Defaults to 'en'. (optional)
     if_none_match = 'if_none_match_example' # str | The ETag of the previous request. A 304 will be returned if this matches the current ETag. (optional)

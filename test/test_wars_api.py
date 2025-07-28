@@ -15,7 +15,7 @@
 
 import unittest
 
-from esi_client.api.wars_api import WarsApi
+from eve_esi_python.api.wars_api import WarsApi
 
 
 class TestWarsApi(unittest.TestCase):

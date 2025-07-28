@@ -11,7 +11,7 @@ Name | Type | Description | Notes
 ## Example
 
 ```python
-from esi_client.models.put_fleets_fleet_id_request import PutFleetsFleetIdRequest
+from eve_esi_python.models.put_fleets_fleet_id_request import PutFleetsFleetIdRequest
 
 # TODO update the JSON string below
 json = "{}"

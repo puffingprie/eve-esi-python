@@ -13,7 +13,7 @@ Name | Type | Description | Notes
 ## Example
 
 ```python
-from esi_client.models.post_characters_character_id_mail_request import PostCharactersCharacterIdMailRequest
+from eve_esi_python.models.post_characters_character_id_mail_request import PostCharactersCharacterIdMailRequest
 
 # TODO update the JSON string below
 json = "{}"

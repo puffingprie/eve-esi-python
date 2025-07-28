@@ -1,4 +1,4 @@
-# esi_client.ContractsApi
+# eve_esi_python.ContractsApi
 
 All URIs are relative to *https://esi.evetech.net*
 
@@ -27,14 +27,14 @@ Returns contracts available to a character, only if the character is issuer, acc
 * OAuth Authentication (OAuth2):
 
 ```python
-import esi_client
-from esi_client.models.characters_character_id_contracts_get_inner import CharactersCharacterIdContractsGetInner
-from esi_client.rest import ApiException
+import eve_esi_python
+from eve_esi_python.models.characters_character_id_contracts_get_inner import CharactersCharacterIdContractsGetInner
+from eve_esi_python.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to https://esi.evetech.net
 # See configuration.py for a list of all supported configuration parameters.
-configuration = esi_client.Configuration(
+configuration = eve_esi_python.Configuration(
     host = "https://esi.evetech.net"
 )
 
@@ -46,9 +46,9 @@ configuration = esi_client.Configuration(
 configuration.access_token = os.environ["ACCESS_TOKEN"]
 
 # Enter a context with an instance of the API client
-with esi_client.ApiClient(configuration) as api_client:
+with eve_esi_python.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = esi_client.ContractsApi(api_client)
+    api_instance = eve_esi_python.ContractsApi(api_client)
     character_id = 56 # int | The ID of the character
     x_compatibility_date = '2020-01-01' # date | The compatibility date for the request.
     page = 56 # int |  (optional)
@@ -113,14 +113,14 @@ Lists bids on a particular auction contract
 * OAuth Authentication (OAuth2):
 
 ```python
-import esi_client
-from esi_client.models.characters_character_id_contracts_contract_id_bids_get_inner import CharactersCharacterIdContractsContractIdBidsGetInner
-from esi_client.rest import ApiException
+import eve_esi_python
+from eve_esi_python.models.characters_character_id_contracts_contract_id_bids_get_inner import CharactersCharacterIdContractsContractIdBidsGetInner
+from eve_esi_python.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to https://esi.evetech.net
 # See configuration.py for a list of all supported configuration parameters.
-configuration = esi_client.Configuration(
+configuration = eve_esi_python.Configuration(
     host = "https://esi.evetech.net"
 )
 
@@ -132,9 +132,9 @@ configuration = esi_client.Configuration(
 configuration.access_token = os.environ["ACCESS_TOKEN"]
 
 # Enter a context with an instance of the API client
-with esi_client.ApiClient(configuration) as api_client:
+with eve_esi_python.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = esi_client.ContractsApi(api_client)
+    api_instance = eve_esi_python.ContractsApi(api_client)
     character_id = 56 # int | The ID of the character
     contract_id = 56 # int | 
     x_compatibility_date = '2020-01-01' # date | The compatibility date for the request.
@@ -199,14 +199,14 @@ Lists items of a particular contract
 * OAuth Authentication (OAuth2):
 
 ```python
-import esi_client
-from esi_client.models.characters_character_id_contracts_contract_id_items_get_inner import CharactersCharacterIdContractsContractIdItemsGetInner
-from esi_client.rest import ApiException
+import eve_esi_python
+from eve_esi_python.models.characters_character_id_contracts_contract_id_items_get_inner import CharactersCharacterIdContractsContractIdItemsGetInner
+from eve_esi_python.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to https://esi.evetech.net
 # See configuration.py for a list of all supported configuration parameters.
-configuration = esi_client.Configuration(
+configuration = eve_esi_python.Configuration(
     host = "https://esi.evetech.net"
 )
 
@@ -218,9 +218,9 @@ configuration = esi_client.Configuration(
 configuration.access_token = os.environ["ACCESS_TOKEN"]
 
 # Enter a context with an instance of the API client
-with esi_client.ApiClient(configuration) as api_client:
+with eve_esi_python.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = esi_client.ContractsApi(api_client)
+    api_instance = eve_esi_python.ContractsApi(api_client)
     character_id = 56 # int | The ID of the character
     contract_id = 56 # int | 
     x_compatibility_date = '2020-01-01' # date | The compatibility date for the request.
@@ -284,22 +284,22 @@ Lists bids on a public auction contract
 
 
 ```python
-import esi_client
-from esi_client.models.contracts_public_bids_contract_id_get_inner import ContractsPublicBidsContractIdGetInner
-from esi_client.rest import ApiException
+import eve_esi_python
+from eve_esi_python.models.contracts_public_bids_contract_id_get_inner import ContractsPublicBidsContractIdGetInner
+from eve_esi_python.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to https://esi.evetech.net
 # See configuration.py for a list of all supported configuration parameters.
-configuration = esi_client.Configuration(
+configuration = eve_esi_python.Configuration(
     host = "https://esi.evetech.net"
 )
 
 
 # Enter a context with an instance of the API client
-with esi_client.ApiClient(configuration) as api_client:
+with eve_esi_python.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = esi_client.ContractsApi(api_client)
+    api_instance = eve_esi_python.ContractsApi(api_client)
     contract_id = 56 # int | 
     x_compatibility_date = '2020-01-01' # date | The compatibility date for the request.
     page = 56 # int |  (optional)
@@ -363,22 +363,22 @@ Lists items of a public contract
 
 
 ```python
-import esi_client
-from esi_client.models.contracts_public_items_contract_id_get_inner import ContractsPublicItemsContractIdGetInner
-from esi_client.rest import ApiException
+import eve_esi_python
+from eve_esi_python.models.contracts_public_items_contract_id_get_inner import ContractsPublicItemsContractIdGetInner
+from eve_esi_python.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to https://esi.evetech.net
 # See configuration.py for a list of all supported configuration parameters.
-configuration = esi_client.Configuration(
+configuration = eve_esi_python.Configuration(
     host = "https://esi.evetech.net"
 )
 
 
 # Enter a context with an instance of the API client
-with esi_client.ApiClient(configuration) as api_client:
+with eve_esi_python.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = esi_client.ContractsApi(api_client)
+    api_instance = eve_esi_python.ContractsApi(api_client)
     contract_id = 56 # int | 
     x_compatibility_date = '2020-01-01' # date | The compatibility date for the request.
     page = 56 # int |  (optional)
@@ -442,22 +442,22 @@ Returns a paginated list of all public contracts in the given region
 
 
 ```python
-import esi_client
-from esi_client.models.contracts_public_region_id_get_inner import ContractsPublicRegionIdGetInner
-from esi_client.rest import ApiException
+import eve_esi_python
+from eve_esi_python.models.contracts_public_region_id_get_inner import ContractsPublicRegionIdGetInner
+from eve_esi_python.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to https://esi.evetech.net
 # See configuration.py for a list of all supported configuration parameters.
-configuration = esi_client.Configuration(
+configuration = eve_esi_python.Configuration(
     host = "https://esi.evetech.net"
 )
 
 
 # Enter a context with an instance of the API client
-with esi_client.ApiClient(configuration) as api_client:
+with eve_esi_python.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = esi_client.ContractsApi(api_client)
+    api_instance = eve_esi_python.ContractsApi(api_client)
     region_id = 56 # int | 
     x_compatibility_date = '2020-01-01' # date | The compatibility date for the request.
     page = 56 # int |  (optional)
@@ -522,14 +522,14 @@ Returns contracts available to a corporation, only if the corporation is issuer,
 * OAuth Authentication (OAuth2):
 
 ```python
-import esi_client
-from esi_client.models.corporations_corporation_id_contracts_get_inner import CorporationsCorporationIdContractsGetInner
-from esi_client.rest import ApiException
+import eve_esi_python
+from eve_esi_python.models.corporations_corporation_id_contracts_get_inner import CorporationsCorporationIdContractsGetInner
+from eve_esi_python.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to https://esi.evetech.net
 # See configuration.py for a list of all supported configuration parameters.
-configuration = esi_client.Configuration(
+configuration = eve_esi_python.Configuration(
     host = "https://esi.evetech.net"
 )
 
@@ -541,9 +541,9 @@ configuration = esi_client.Configuration(
 configuration.access_token = os.environ["ACCESS_TOKEN"]
 
 # Enter a context with an instance of the API client
-with esi_client.ApiClient(configuration) as api_client:
+with eve_esi_python.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = esi_client.ContractsApi(api_client)
+    api_instance = eve_esi_python.ContractsApi(api_client)
     corporation_id = 56 # int | The ID of the corporation
     x_compatibility_date = '2020-01-01' # date | The compatibility date for the request.
     page = 56 # int |  (optional)
@@ -608,14 +608,14 @@ Lists bids on a particular auction contract
 * OAuth Authentication (OAuth2):
 
 ```python
-import esi_client
-from esi_client.models.characters_character_id_contracts_contract_id_bids_get_inner import CharactersCharacterIdContractsContractIdBidsGetInner
-from esi_client.rest import ApiException
+import eve_esi_python
+from eve_esi_python.models.characters_character_id_contracts_contract_id_bids_get_inner import CharactersCharacterIdContractsContractIdBidsGetInner
+from eve_esi_python.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to https://esi.evetech.net
 # See configuration.py for a list of all supported configuration parameters.
-configuration = esi_client.Configuration(
+configuration = eve_esi_python.Configuration(
     host = "https://esi.evetech.net"
 )
 
@@ -627,9 +627,9 @@ configuration = esi_client.Configuration(
 configuration.access_token = os.environ["ACCESS_TOKEN"]
 
 # Enter a context with an instance of the API client
-with esi_client.ApiClient(configuration) as api_client:
+with eve_esi_python.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = esi_client.ContractsApi(api_client)
+    api_instance = eve_esi_python.ContractsApi(api_client)
     contract_id = 56 # int | 
     corporation_id = 56 # int | The ID of the corporation
     x_compatibility_date = '2020-01-01' # date | The compatibility date for the request.
@@ -696,14 +696,14 @@ Lists items of a particular contract
 * OAuth Authentication (OAuth2):
 
 ```python
-import esi_client
-from esi_client.models.characters_character_id_contracts_contract_id_items_get_inner import CharactersCharacterIdContractsContractIdItemsGetInner
-from esi_client.rest import ApiException
+import eve_esi_python
+from eve_esi_python.models.characters_character_id_contracts_contract_id_items_get_inner import CharactersCharacterIdContractsContractIdItemsGetInner
+from eve_esi_python.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to https://esi.evetech.net
 # See configuration.py for a list of all supported configuration parameters.
-configuration = esi_client.Configuration(
+configuration = eve_esi_python.Configuration(
     host = "https://esi.evetech.net"
 )
 
@@ -715,9 +715,9 @@ configuration = esi_client.Configuration(
 configuration.access_token = os.environ["ACCESS_TOKEN"]
 
 # Enter a context with an instance of the API client
-with esi_client.ApiClient(configuration) as api_client:
+with eve_esi_python.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = esi_client.ContractsApi(api_client)
+    api_instance = eve_esi_python.ContractsApi(api_client)
     contract_id = 56 # int | 
     corporation_id = 56 # int | The ID of the corporation
     x_compatibility_date = '2020-01-01' # date | The compatibility date for the request.

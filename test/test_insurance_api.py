@@ -15,7 +15,7 @@
 
 import unittest
 
-from esi_client.api.insurance_api import InsuranceApi
+from eve_esi_python.api.insurance_api import InsuranceApi
 
 
 class TestInsuranceApi(unittest.TestCase):

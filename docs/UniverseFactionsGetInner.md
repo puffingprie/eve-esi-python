@@ -19,7 +19,7 @@ Name | Type | Description | Notes
 ## Example
 
 ```python
-from esi_client.models.universe_factions_get_inner import UniverseFactionsGetInner
+from eve_esi_python.models.universe_factions_get_inner import UniverseFactionsGetInner
 
 # TODO update the JSON string below
 json = "{}"

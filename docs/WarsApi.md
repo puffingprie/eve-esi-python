@@ -1,4 +1,4 @@
-# esi_client.WarsApi
+# eve_esi_python.WarsApi
 
 All URIs are relative to *https://esi.evetech.net*
 
@@ -20,21 +20,21 @@ Return a list of wars
 
 
 ```python
-import esi_client
-from esi_client.rest import ApiException
+import eve_esi_python
+from eve_esi_python.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to https://esi.evetech.net
 # See configuration.py for a list of all supported configuration parameters.
-configuration = esi_client.Configuration(
+configuration = eve_esi_python.Configuration(
     host = "https://esi.evetech.net"
 )
 
 
 # Enter a context with an instance of the API client
-with esi_client.ApiClient(configuration) as api_client:
+with eve_esi_python.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = esi_client.WarsApi(api_client)
+    api_instance = eve_esi_python.WarsApi(api_client)
     x_compatibility_date = '2020-01-01' # date | The compatibility date for the request.
     max_war_id = 56 # int |  (optional)
     accept_language = 'en' # str | The language to use for the response. Defaults to 'en'. (optional)
@@ -96,22 +96,22 @@ Return details about a war
 
 
 ```python
-import esi_client
-from esi_client.models.wars_war_id_get import WarsWarIdGet
-from esi_client.rest import ApiException
+import eve_esi_python
+from eve_esi_python.models.wars_war_id_get import WarsWarIdGet
+from eve_esi_python.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to https://esi.evetech.net
 # See configuration.py for a list of all supported configuration parameters.
-configuration = esi_client.Configuration(
+configuration = eve_esi_python.Configuration(
     host = "https://esi.evetech.net"
 )
 
 
 # Enter a context with an instance of the API client
-with esi_client.ApiClient(configuration) as api_client:
+with eve_esi_python.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = esi_client.WarsApi(api_client)
+    api_instance = eve_esi_python.WarsApi(api_client)
     war_id = 56 # int | 
     x_compatibility_date = '2020-01-01' # date | The compatibility date for the request.
     accept_language = 'en' # str | The language to use for the response. Defaults to 'en'. (optional)
@@ -173,22 +173,22 @@ Return a list of kills related to a war
 
 
 ```python
-import esi_client
-from esi_client.models.characters_character_id_killmails_recent_get_inner import CharactersCharacterIdKillmailsRecentGetInner
-from esi_client.rest import ApiException
+import eve_esi_python
+from eve_esi_python.models.characters_character_id_killmails_recent_get_inner import CharactersCharacterIdKillmailsRecentGetInner
+from eve_esi_python.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to https://esi.evetech.net
 # See configuration.py for a list of all supported configuration parameters.
-configuration = esi_client.Configuration(
+configuration = eve_esi_python.Configuration(
     host = "https://esi.evetech.net"
 )
 
 
 # Enter a context with an instance of the API client
-with esi_client.ApiClient(configuration) as api_client:
+with eve_esi_python.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = esi_client.WarsApi(api_client)
+    api_instance = eve_esi_python.WarsApi(api_client)
     war_id = 56 # int | 
     x_compatibility_date = '2020-01-01' # date | The compatibility date for the request.
     page = 56 # int |  (optional)

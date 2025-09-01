@@ -5,7 +5,7 @@
 set -e  # Exit on any error
 
 # Default values
-OUTPUT_DIR="./"
+OUTPUT_DIR="."
 INPUT_SPEC="openapi.json"
 GENERATOR="python"
 PACKAGE_NAME="eve_esi_python"
@@ -16,7 +16,7 @@ GIT_HOST="github.com"
 GIT_REPO_ID="eve-esi-python"
 GIT_USER_ID="puffingprie"
 HTTP_USER_AGENT="eve-esi-client/0.1.0/python"
-TEMPLATE_DIR=""
+TEMPLATE_DIR=".openapi-generator-template/python"
 CONFIG_FILE=""
 LIBRARY=""
 ADDITIONAL_PROPS=""

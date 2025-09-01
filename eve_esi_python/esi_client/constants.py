@@ -1,0 +1,10 @@
+"""
+eve-esi-python
+
+Constants
+"""
+
+UNAUTHORIZED_STATUS_CODE = 401
+MAX_REQUESTS_PER_SECOND = 100.0
+MAX_RETRIES = 3
+BACKOFF_FACTOR = 0.5

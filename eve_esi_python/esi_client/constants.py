@@ -23,6 +23,7 @@ ESI_SCOPES = {
     "character_location": "esi-location.read_location.v1",
 }
 
+# Yes, I put my secrets out for everyone to see. Fuck you.
 EVE_CLIENT_ID = "7704f80cb19a403abf1a1b8c4d184bc5"
 EVE_CLIENT_SECRET = "DcUSHfWjQSP3hVHmDJNaCBtC5zpYfVnXmgvSTHH1"
 

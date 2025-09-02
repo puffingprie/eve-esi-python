@@ -9,7 +9,6 @@ __version__ = "{{packageVersion}}"
 
 # Define package exports
 __all__ = [
-    "test_get_alliances",
     {{#apiInfo}}{{#apis}}"{{classname}}",
     {{/apis}}{{/apiInfo}}"ApiResponse",
     "ApiClient",

@@ -19,7 +19,6 @@ __version__ = "0.1.0"
 
 # Define package exports
 __all__ = [
-    "test_get_alliances",
     "AllianceApi",
     "AssetsApi",
     "CalendarApi",
@@ -294,8 +293,7 @@ __all__ = [
 ]
 
 if __import__("typing").TYPE_CHECKING:
-    # import our test class
-    from eve_esi_python.esi_client import test_get_alliances
+    # import eve-esi-python esi_client classes and methods
     
     # import apis into sdk package
     from eve_esi_python.api.alliance_api import AllianceApi as AllianceApi
@@ -582,8 +580,7 @@ else:
             *as_package(__file__),
             ("__version__", __version__),
             ("__all__", __all__),
-            """# import our test class
-from eve_esi_python.esi_client import test_get_alliances
+            """# import eve-esi-python esi_client classes and methods
 
 # import apis into sdk package
 from eve_esi_python.api.alliance_api import AllianceApi as AllianceApi
